@@ -81,3 +81,17 @@ Outputs are written to `results/`:
 - `summary.csv`: model-level latency and optimality gap
 - `selected_partitions.json`: selected candidate indices
 - `gantt_events.json`: timing events for plotting
+
+## Cost model note
+
+This is an emulated mobile-edge experiment, not a socket deployment.  The
+runner profiles FX-node execution on the available local machine, sums profiled
+node costs into branch prefix/suffix costs, and applies fixed latency scales:
+
+- `d_i^q`: profiled branch prefix latency multiplied by `mobile_latency_scale`
+- `t_i^q`: profiled cut activation bytes divided by `bandwidth_mbps`
+- `s_i^q`: profiled branch suffix latency multiplied by `server_latency_scale`
+
+If CIFAR10 cannot be downloaded, the loader falls back to deterministic random
+inputs so the pipeline can still be smoke-tested.  Report that fallback if it is
+used for a final run.

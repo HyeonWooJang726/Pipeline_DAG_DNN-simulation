@@ -1,15 +1,23 @@
 seed: 0
-num_images: 100
+num_images: 8
 batch_size: 1
 bandwidth_mbps: 100.0
+cifar10_root: ./data
+download_cifar10: true
 
 # Emulated speed settings.
 # Use measured segment latency multiplied by these factors.
 mobile_latency_scale: 4.0
 server_latency_scale: 1.0
 
-# Limit candidates to avoid brute-force explosion.
-max_candidates_per_branch: 5
+# Limit candidates for a minimal run.  If the Cartesian product is larger than
+# global_max_bruteforce_combinations, the selector switches to Pareto DP.
+max_candidates_per_branch: 3
+global_max_bruteforce_combinations: 250000
+
+# FX-node profiling settings.
+profile_warmup: 1
+profile_repeat: 3
 
 models:
   - name: vgg11
