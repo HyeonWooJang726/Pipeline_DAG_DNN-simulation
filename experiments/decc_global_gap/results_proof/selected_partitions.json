@@ -1,0 +1,670 @@
+[
+  {
+    "model": "vgg11",
+    "block_id": "features",
+    "decc_style_raw_vector": [
+      2
+    ],
+    "decc_style_vector": [
+      2
+    ],
+    "global_raw_vector": [
+      2
+    ],
+    "global_vector": [
+      2
+    ],
+    "decc_style_cut_nodes": [
+      "_20"
+    ],
+    "global_cut_nodes": [
+      "_20"
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer1.0",
+    "decc_style_raw_vector": [
+      0
+    ],
+    "decc_style_vector": [
+      0
+    ],
+    "global_raw_vector": [
+      0
+    ],
+    "global_vector": [
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "conv1"
+    ],
+    "global_cut_nodes": [
+      "conv1"
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer1.1",
+    "decc_style_raw_vector": [
+      0
+    ],
+    "decc_style_vector": [
+      0
+    ],
+    "global_raw_vector": [
+      0
+    ],
+    "global_vector": [
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "conv1"
+    ],
+    "global_cut_nodes": [
+      "conv1"
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer2.0",
+    "decc_style_raw_vector": [
+      0,
+      0
+    ],
+    "decc_style_vector": [
+      0,
+      0
+    ],
+    "global_raw_vector": [
+      0,
+      0
+    ],
+    "global_vector": [
+      0,
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "conv1",
+      "downsample_0"
+    ],
+    "global_cut_nodes": [
+      "conv1",
+      "downsample_0"
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer2.1",
+    "decc_style_raw_vector": [
+      0
+    ],
+    "decc_style_vector": [
+      0
+    ],
+    "global_raw_vector": [
+      0
+    ],
+    "global_vector": [
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "conv1"
+    ],
+    "global_cut_nodes": [
+      "conv1"
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer3.0",
+    "decc_style_raw_vector": [
+      0,
+      0
+    ],
+    "decc_style_vector": [
+      0,
+      0
+    ],
+    "global_raw_vector": [
+      0,
+      0
+    ],
+    "global_vector": [
+      0,
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "conv1",
+      "downsample_0"
+    ],
+    "global_cut_nodes": [
+      "conv1",
+      "downsample_0"
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer3.1",
+    "decc_style_raw_vector": [
+      0
+    ],
+    "decc_style_vector": [
+      0
+    ],
+    "global_raw_vector": [
+      0
+    ],
+    "global_vector": [
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "conv1"
+    ],
+    "global_cut_nodes": [
+      "conv1"
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer4.0",
+    "decc_style_raw_vector": [
+      0,
+      0
+    ],
+    "decc_style_vector": [
+      0,
+      0
+    ],
+    "global_raw_vector": [
+      0,
+      0
+    ],
+    "global_vector": [
+      0,
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "conv1",
+      "downsample_0"
+    ],
+    "global_cut_nodes": [
+      "conv1",
+      "downsample_0"
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer4.1",
+    "decc_style_raw_vector": [
+      0
+    ],
+    "decc_style_vector": [
+      0
+    ],
+    "global_raw_vector": [
+      0
+    ],
+    "global_vector": [
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "conv1"
+    ],
+    "global_cut_nodes": [
+      "conv1"
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_5b",
+    "decc_style_raw_vector": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "decc_style_vector": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "global_raw_vector": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "global_vector": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "branch1x1_conv",
+      "branch5x5_1_conv",
+      "branch3x3dbl_1_conv",
+      "branch_pool_bn"
+    ],
+    "global_cut_nodes": [
+      "branch1x1_conv",
+      "branch5x5_1_conv",
+      "branch3x3dbl_1_conv",
+      "avg_pool2d"
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_5c",
+    "decc_style_raw_vector": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "decc_style_vector": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "global_raw_vector": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "global_vector": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "branch1x1_conv",
+      "branch5x5_1_conv",
+      "branch3x3dbl_1_conv",
+      "branch_pool_bn"
+    ],
+    "global_cut_nodes": [
+      "branch1x1_conv",
+      "branch5x5_1_conv",
+      "branch3x3dbl_1_conv",
+      "avg_pool2d"
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_5d",
+    "decc_style_raw_vector": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "decc_style_vector": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "global_raw_vector": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "global_vector": [
+      0,
+      0,
+      0,
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "branch1x1_conv",
+      "branch5x5_1_conv",
+      "branch3x3dbl_1_conv",
+      "branch_pool_bn"
+    ],
+    "global_cut_nodes": [
+      "branch1x1_conv",
+      "branch5x5_1_conv",
+      "branch3x3dbl_1_conv",
+      "avg_pool2d"
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6a",
+    "decc_style_raw_vector": [
+      0,
+      2,
+      0
+    ],
+    "decc_style_vector": [
+      0,
+      2,
+      0
+    ],
+    "global_raw_vector": [
+      0,
+      2,
+      0
+    ],
+    "global_vector": [
+      0,
+      2,
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "branch3x3_conv",
+      "relu_3",
+      "max_pool2d"
+    ],
+    "global_cut_nodes": [
+      "branch3x3_conv",
+      "relu_3",
+      "max_pool2d"
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6b",
+    "decc_style_raw_vector": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "decc_style_vector": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "global_raw_vector": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "global_vector": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "branch1x1_conv",
+      "branch7x7_1_conv",
+      "branch7x7dbl_1_conv",
+      "branch_pool_bn"
+    ],
+    "global_cut_nodes": [
+      "branch1x1_conv",
+      "branch7x7_1_conv",
+      "branch7x7dbl_3_bn",
+      "avg_pool2d"
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6c",
+    "decc_style_raw_vector": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "decc_style_vector": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "global_raw_vector": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "global_vector": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "branch1x1_conv",
+      "branch7x7_1_conv",
+      "branch7x7dbl_1_conv",
+      "branch_pool_bn"
+    ],
+    "global_cut_nodes": [
+      "branch1x1_conv",
+      "branch7x7_1_conv",
+      "branch7x7dbl_3_bn",
+      "avg_pool2d"
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6d",
+    "decc_style_raw_vector": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "decc_style_vector": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "global_raw_vector": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "global_vector": [
+      0,
+      0,
+      1,
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "branch1x1_conv",
+      "branch7x7_1_conv",
+      "branch7x7dbl_1_conv",
+      "branch_pool_bn"
+    ],
+    "global_cut_nodes": [
+      "branch1x1_conv",
+      "branch7x7_1_conv",
+      "branch7x7dbl_3_bn",
+      "avg_pool2d"
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6e",
+    "decc_style_raw_vector": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "decc_style_vector": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "global_raw_vector": [
+      0,
+      0,
+      2,
+      0
+    ],
+    "global_vector": [
+      0,
+      0,
+      2,
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "branch1x1_conv",
+      "branch7x7_1_conv",
+      "branch7x7dbl_1_conv",
+      "branch_pool_bn"
+    ],
+    "global_cut_nodes": [
+      "branch1x1_conv",
+      "branch7x7_1_conv",
+      "relu_8",
+      "avg_pool2d"
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_7a",
+    "decc_style_raw_vector": [
+      2,
+      2,
+      0
+    ],
+    "decc_style_vector": [
+      2,
+      2,
+      0
+    ],
+    "global_raw_vector": [
+      0,
+      2,
+      0
+    ],
+    "global_vector": [
+      0,
+      2,
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "relu_1",
+      "relu_5",
+      "max_pool2d"
+    ],
+    "global_cut_nodes": [
+      "branch3x3_1_conv",
+      "relu_5",
+      "max_pool2d"
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_7b",
+    "decc_style_raw_vector": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "decc_style_vector": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "global_raw_vector": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "global_vector": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "branch1x1_conv",
+      "branch3x3_1_conv",
+      "branch3x3_2b_conv",
+      "branch3x3dbl_1_conv",
+      "branch3x3dbl_3b_conv",
+      "branch_pool_bn"
+    ],
+    "global_cut_nodes": [
+      "branch1x1_conv",
+      "branch3x3_1_conv",
+      "branch3x3_2b_conv",
+      "branch3x3dbl_2_bn",
+      "branch3x3dbl_3b_conv",
+      "avg_pool2d"
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_7c",
+    "decc_style_raw_vector": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "decc_style_vector": [
+      0,
+      0,
+      0,
+      0,
+      0,
+      1
+    ],
+    "global_raw_vector": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "global_vector": [
+      0,
+      0,
+      0,
+      1,
+      0,
+      0
+    ],
+    "decc_style_cut_nodes": [
+      "branch1x1_conv",
+      "branch3x3_1_conv",
+      "branch3x3_2b_conv",
+      "branch3x3dbl_1_conv",
+      "branch3x3dbl_3b_conv",
+      "branch_pool_bn"
+    ],
+    "global_cut_nodes": [
+      "branch1x1_conv",
+      "branch3x3_1_conv",
+      "branch3x3_2b_conv",
+      "branch3x3dbl_2_bn",
+      "branch3x3dbl_3b_conv",
+      "avg_pool2d"
+    ]
+  }
+]

@@ -1,0 +1,41 @@
+# Python virtual environments
+venv/
+venv1/
+.venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Python build/cache
+*.egg-info/
+build/
+dist/
+.cache/
+.pytest_cache/
+
+# Dataset / downloaded files
+data/
+download/
+downloads/
+*.tar
+*.tar.gz
+*.zip
+*.gz
+
+# Experiment local data
+experiments/decc_global_gap/data/
+experiments/decc_global_gap/download/
+experiments/decc_global_gap/downloads/
+experiments/decc_global_gap/**/*.tar
+experiments/decc_global_gap/**/*.tar.gz
+experiments/decc_global_gap/**/__pycache__/

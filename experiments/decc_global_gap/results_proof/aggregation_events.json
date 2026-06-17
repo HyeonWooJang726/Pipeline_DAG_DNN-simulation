@@ -1,0 +1,844 @@
+[
+  {
+    "model": "vgg11",
+    "block_id": "features",
+    "decc_style": [],
+    "global": []
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer1.0",
+    "decc_style": [],
+    "global": []
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer1.1",
+    "decc_style": [],
+    "global": []
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer2.0",
+    "decc_style": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "bn2",
+        "to_branch": 1,
+        "to_node": "add",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "bn2",
+        "to_branch": 1,
+        "to_node": "add",
+        "moved_nodes": [
+          "add",
+          "relu_1"
+        ],
+        "moved_suffix_server_cost": 3.700004890561104e-05
+      }
+    ],
+    "global": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "bn2",
+        "to_branch": 1,
+        "to_node": "add",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "bn2",
+        "to_branch": 1,
+        "to_node": "add",
+        "moved_nodes": [
+          "add",
+          "relu_1"
+        ],
+        "moved_suffix_server_cost": 3.700004890561104e-05
+      }
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer2.1",
+    "decc_style": [],
+    "global": []
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer3.0",
+    "decc_style": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "bn2",
+        "to_branch": 1,
+        "to_node": "add",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "bn2",
+        "to_branch": 1,
+        "to_node": "add",
+        "moved_nodes": [
+          "add",
+          "relu_1"
+        ],
+        "moved_suffix_server_cost": 6.290001329034567e-05
+      }
+    ],
+    "global": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "bn2",
+        "to_branch": 1,
+        "to_node": "add",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "bn2",
+        "to_branch": 1,
+        "to_node": "add",
+        "moved_nodes": [
+          "add",
+          "relu_1"
+        ],
+        "moved_suffix_server_cost": 6.290001329034567e-05
+      }
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer3.1",
+    "decc_style": [],
+    "global": []
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer4.0",
+    "decc_style": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "bn2",
+        "to_branch": 1,
+        "to_node": "add",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "bn2",
+        "to_branch": 1,
+        "to_node": "add",
+        "moved_nodes": [
+          "add",
+          "relu_1"
+        ],
+        "moved_suffix_server_cost": 3.619998460635543e-05
+      }
+    ],
+    "global": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "bn2",
+        "to_branch": 1,
+        "to_node": "add",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "bn2",
+        "to_branch": 1,
+        "to_node": "add",
+        "moved_nodes": [
+          "add",
+          "relu_1"
+        ],
+        "moved_suffix_server_cost": 3.619998460635543e-05
+      }
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer4.1",
+    "decc_style": [],
+    "global": []
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_5b",
+    "decc_style": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 4.5199994929134846e-05
+      }
+    ],
+    "global": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 4.5199994929134846e-05
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_5c",
+    "decc_style": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 7.090001599863172e-05
+      }
+    ],
+    "global": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 7.090001599863172e-05
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_5d",
+    "decc_style": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 5.319999763742089e-05
+      }
+    ],
+    "global": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 5.319999763742089e-05
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6a",
+    "decc_style": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 2,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 2,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 3.9300008211284876e-05
+      }
+    ],
+    "global": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 2,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 2,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 3.9300008211284876e-05
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6b",
+    "decc_style": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 3.99000127799809e-05
+      }
+    ],
+    "global": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 3.99000127799809e-05
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6c",
+    "decc_style": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 5.930004408583045e-05
+      }
+    ],
+    "global": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 5.930004408583045e-05
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6d",
+    "decc_style": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 4.239997360855341e-05
+      }
+    ],
+    "global": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 4.239997360855341e-05
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6e",
+    "decc_style": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 4.75000124424696e-05
+      }
+    ],
+    "global": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 3,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 4.75000124424696e-05
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_7a",
+    "decc_style": [],
+    "global": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu_1",
+        "to_branch": 2,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu_1",
+        "to_branch": 2,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 5.3800002206116915e-05
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_7b",
+    "decc_style": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 1,
+        "from_node": "relu_1",
+        "to_branch": 2,
+        "to_node": "branch3x3_2b_conv",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 3,
+        "from_node": "relu_5",
+        "to_branch": 4,
+        "to_node": "branch3x3dbl_3b_conv",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 5,
+        "to_node": "cat_2",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 1,
+        "from_node": "relu_1",
+        "to_branch": 2,
+        "to_node": "branch3x3_2b_conv",
+        "moved_nodes": [
+          "branch3x3_2b_conv",
+          "branch3x3_2b_bn",
+          "relu_3",
+          "cat"
+        ],
+        "moved_suffix_server_cost": 0.0003179999766871333
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 3,
+        "from_node": "relu_5",
+        "to_branch": 4,
+        "to_node": "branch3x3dbl_3b_conv",
+        "moved_nodes": [
+          "branch3x3dbl_3b_conv",
+          "branch3x3dbl_3b_bn",
+          "relu_7",
+          "cat_1"
+        ],
+        "moved_suffix_server_cost": 0.00031970004783943295
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 5,
+        "to_node": "cat_2",
+        "moved_nodes": [
+          "cat_2"
+        ],
+        "moved_suffix_server_cost": 4.050001734867692e-05
+      }
+    ],
+    "global": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 1,
+        "from_node": "relu_1",
+        "to_branch": 2,
+        "to_node": "branch3x3_2b_conv",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 3,
+        "from_node": "relu_5",
+        "to_branch": 4,
+        "to_node": "branch3x3dbl_3b_conv",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 5,
+        "to_node": "cat_2",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 1,
+        "from_node": "relu_1",
+        "to_branch": 2,
+        "to_node": "branch3x3_2b_conv",
+        "moved_nodes": [
+          "branch3x3_2b_conv",
+          "branch3x3_2b_bn",
+          "relu_3",
+          "cat"
+        ],
+        "moved_suffix_server_cost": 0.0003179999766871333
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 3,
+        "from_node": "relu_5",
+        "to_branch": 4,
+        "to_node": "branch3x3dbl_3b_conv",
+        "moved_nodes": [
+          "branch3x3dbl_3b_conv",
+          "branch3x3dbl_3b_bn",
+          "relu_7",
+          "cat_1"
+        ],
+        "moved_suffix_server_cost": 0.00031970004783943295
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 5,
+        "to_node": "cat_2",
+        "moved_nodes": [
+          "cat_2"
+        ],
+        "moved_suffix_server_cost": 4.050001734867692e-05
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_7c",
+    "decc_style": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 1,
+        "from_node": "relu_1",
+        "to_branch": 2,
+        "to_node": "branch3x3_2b_conv",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 3,
+        "from_node": "relu_5",
+        "to_branch": 4,
+        "to_node": "branch3x3dbl_3b_conv",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 5,
+        "to_node": "cat_2",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 1,
+        "from_node": "relu_1",
+        "to_branch": 2,
+        "to_node": "branch3x3_2b_conv",
+        "moved_nodes": [
+          "branch3x3_2b_conv",
+          "branch3x3_2b_bn",
+          "relu_3",
+          "cat"
+        ],
+        "moved_suffix_server_cost": 0.0003847999614663422
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 3,
+        "from_node": "relu_5",
+        "to_branch": 4,
+        "to_node": "branch3x3dbl_3b_conv",
+        "moved_nodes": [
+          "branch3x3dbl_3b_conv",
+          "branch3x3dbl_3b_bn",
+          "relu_7",
+          "cat_1"
+        ],
+        "moved_suffix_server_cost": 0.00036940001882612705
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 5,
+        "to_node": "cat_2",
+        "moved_nodes": [
+          "cat_2"
+        ],
+        "moved_suffix_server_cost": 3.7999998312443495e-05
+      }
+    ],
+    "global": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 1,
+        "from_node": "relu_1",
+        "to_branch": 2,
+        "to_node": "branch3x3_2b_conv",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 3,
+        "from_node": "relu_5",
+        "to_branch": 4,
+        "to_node": "branch3x3dbl_3b_conv",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 5,
+        "to_node": "cat_2",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 1,
+        "from_node": "relu_1",
+        "to_branch": 2,
+        "to_node": "branch3x3_2b_conv",
+        "moved_nodes": [
+          "branch3x3_2b_conv",
+          "branch3x3_2b_bn",
+          "relu_3",
+          "cat"
+        ],
+        "moved_suffix_server_cost": 0.0003847999614663422
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 3,
+        "from_node": "relu_5",
+        "to_branch": 4,
+        "to_node": "branch3x3dbl_3b_conv",
+        "moved_nodes": [
+          "branch3x3dbl_3b_conv",
+          "branch3x3dbl_3b_bn",
+          "relu_7",
+          "cat_1"
+        ],
+        "moved_suffix_server_cost": 0.00036940001882612705
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu",
+        "to_branch": 5,
+        "to_node": "cat_2",
+        "moved_nodes": [
+          "cat_2"
+        ],
+        "moved_suffix_server_cost": 3.7999998312443495e-05
+      }
+    ]
+  }
+]

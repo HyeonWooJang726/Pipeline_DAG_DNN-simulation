@@ -1,0 +1,2896 @@
+[
+  {
+    "model": "vgg11",
+    "block_id": "features",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        2
+      ],
+      "repaired_vector": [
+        2
+      ],
+      "cut_nodes": [
+        "_20"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 118.41759970411658,
+          "t_ms": 8.02816,
+          "s_ms": 0.0,
+          "cut_index": 20,
+          "cut_node": "_20",
+          "cloud_only": false
+        }
+      ],
+      "aggregation_events": [],
+      "final_latency_ms": 126.44575970411658,
+      "device_busy_ms": 118.41759970411658,
+      "tx_busy_ms": 8.02816,
+      "server_busy_ms": 0.0,
+      "bottleneck_stage": "device"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        2
+      ],
+      "repaired_vector": [
+        2
+      ],
+      "cut_nodes": [
+        "_20"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 118.41759970411658,
+          "t_ms": 8.02816,
+          "s_ms": 0.0,
+          "cut_index": 20,
+          "cut_node": "_20",
+          "cloud_only": false
+        }
+      ],
+      "aggregation_events": [],
+      "final_latency_ms": 126.44575970411658,
+      "device_busy_ms": 118.41759970411658,
+      "tx_busy_ms": 8.02816,
+      "server_busy_ms": 0.0,
+      "bottleneck_stage": "device"
+    }
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer1.0",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0
+      ],
+      "repaired_vector": [
+        0
+      ],
+      "cut_nodes": [
+        "conv1"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 2.40200012922287,
+          "t_ms": 64.22528,
+          "s_ms": 0.7240999257192016,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        }
+      ],
+      "aggregation_events": [],
+      "final_latency_ms": 67.35138005494207,
+      "device_busy_ms": 2.40200012922287,
+      "tx_busy_ms": 64.22528,
+      "server_busy_ms": 0.7240999257192016,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0
+      ],
+      "repaired_vector": [
+        0
+      ],
+      "cut_nodes": [
+        "conv1"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 2.40200012922287,
+          "t_ms": 64.22528,
+          "s_ms": 0.7240999257192016,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        }
+      ],
+      "aggregation_events": [],
+      "final_latency_ms": 67.35138005494207,
+      "device_busy_ms": 2.40200012922287,
+      "tx_busy_ms": 64.22528,
+      "server_busy_ms": 0.7240999257192016,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer1.1",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0
+      ],
+      "repaired_vector": [
+        0
+      ],
+      "cut_nodes": [
+        "conv1"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 2.1792000625282526,
+          "t_ms": 64.22528,
+          "s_ms": 0.6680000224150717,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        }
+      ],
+      "aggregation_events": [],
+      "final_latency_ms": 67.07248008494332,
+      "device_busy_ms": 2.1792000625282526,
+      "tx_busy_ms": 64.22528,
+      "server_busy_ms": 0.6680000224150717,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0
+      ],
+      "repaired_vector": [
+        0
+      ],
+      "cut_nodes": [
+        "conv1"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 2.1792000625282526,
+          "t_ms": 64.22528,
+          "s_ms": 0.6680000224150717,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        }
+      ],
+      "aggregation_events": [],
+      "final_latency_ms": 67.07248008494332,
+      "device_busy_ms": 2.1792000625282526,
+      "tx_busy_ms": 64.22528,
+      "server_busy_ms": 0.6680000224150717,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer2.0",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0
+      ],
+      "cut_nodes": [
+        "conv1",
+        "downsample_0"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.3723999727517366,
+          "t_ms": 32.11264,
+          "s_ms": 0.6600999622605741,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.23450003936886787,
+          "cut_index": 0,
+          "cut_node": "downsample_0",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "bn2",
+          "to_branch": 1,
+          "to_node": "add",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "bn2",
+          "to_branch": 1,
+          "to_node": "add",
+          "moved_nodes": [
+            "add",
+            "relu_1"
+          ],
+          "moved_suffix_server_cost": 3.700004890561104e-05
+        }
+      ],
+      "final_latency_ms": 34.37963997438118,
+      "device_busy_ms": 1.3723999727517366,
+      "tx_busy_ms": 32.11264,
+      "server_busy_ms": 0.894600001629442,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0
+      ],
+      "cut_nodes": [
+        "conv1",
+        "downsample_0"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.3723999727517366,
+          "t_ms": 32.11264,
+          "s_ms": 0.6600999622605741,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.23450003936886787,
+          "cut_index": 0,
+          "cut_node": "downsample_0",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "bn2",
+          "to_branch": 1,
+          "to_node": "add",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "bn2",
+          "to_branch": 1,
+          "to_node": "add",
+          "moved_nodes": [
+            "add",
+            "relu_1"
+          ],
+          "moved_suffix_server_cost": 3.700004890561104e-05
+        }
+      ],
+      "final_latency_ms": 34.37963997438118,
+      "device_busy_ms": 1.3723999727517366,
+      "tx_busy_ms": 32.11264,
+      "server_busy_ms": 0.894600001629442,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer2.1",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0
+      ],
+      "repaired_vector": [
+        0
+      ],
+      "cut_nodes": [
+        "conv1"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.8331999890506268,
+          "t_ms": 32.11264,
+          "s_ms": 0.8920999825932086,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        }
+      ],
+      "aggregation_events": [],
+      "final_latency_ms": 34.837939971643834,
+      "device_busy_ms": 1.8331999890506268,
+      "tx_busy_ms": 32.11264,
+      "server_busy_ms": 0.8920999825932086,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0
+      ],
+      "repaired_vector": [
+        0
+      ],
+      "cut_nodes": [
+        "conv1"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.8331999890506268,
+          "t_ms": 32.11264,
+          "s_ms": 0.8920999825932086,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        }
+      ],
+      "aggregation_events": [],
+      "final_latency_ms": 34.837939971643834,
+      "device_busy_ms": 1.8331999890506268,
+      "tx_busy_ms": 32.11264,
+      "server_busy_ms": 0.8920999825932086,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer3.0",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0
+      ],
+      "cut_nodes": [
+        "conv1",
+        "downsample_0"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.8716000486165285,
+          "t_ms": 16.05632,
+          "s_ms": 0.920899969059974,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.25949999690055847,
+          "cut_index": 0,
+          "cut_node": "downsample_0",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "bn2",
+          "to_branch": 1,
+          "to_node": "add",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "bn2",
+          "to_branch": 1,
+          "to_node": "add",
+          "moved_nodes": [
+            "add",
+            "relu_1"
+          ],
+          "moved_suffix_server_cost": 6.290001329034567e-05
+        }
+      ],
+      "final_latency_ms": 19.10832001457706,
+      "device_busy_ms": 1.8716000486165285,
+      "tx_busy_ms": 16.05632,
+      "server_busy_ms": 1.1803999659605324,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0
+      ],
+      "cut_nodes": [
+        "conv1",
+        "downsample_0"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.8716000486165285,
+          "t_ms": 16.05632,
+          "s_ms": 0.920899969059974,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.25949999690055847,
+          "cut_index": 0,
+          "cut_node": "downsample_0",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "bn2",
+          "to_branch": 1,
+          "to_node": "add",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "bn2",
+          "to_branch": 1,
+          "to_node": "add",
+          "moved_nodes": [
+            "add",
+            "relu_1"
+          ],
+          "moved_suffix_server_cost": 6.290001329034567e-05
+        }
+      ],
+      "final_latency_ms": 19.10832001457706,
+      "device_busy_ms": 1.8716000486165285,
+      "tx_busy_ms": 16.05632,
+      "server_busy_ms": 1.1803999659605324,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer3.1",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0
+      ],
+      "repaired_vector": [
+        0
+      ],
+      "cut_nodes": [
+        "conv1"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 2.5487998500466347,
+          "t_ms": 16.05632,
+          "s_ms": 0.6688000285066664,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        }
+      ],
+      "aggregation_events": [],
+      "final_latency_ms": 19.2739198785533,
+      "device_busy_ms": 2.5487998500466347,
+      "tx_busy_ms": 16.05632,
+      "server_busy_ms": 0.6688000285066664,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0
+      ],
+      "repaired_vector": [
+        0
+      ],
+      "cut_nodes": [
+        "conv1"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 2.5487998500466347,
+          "t_ms": 16.05632,
+          "s_ms": 0.6688000285066664,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        }
+      ],
+      "aggregation_events": [],
+      "final_latency_ms": 19.2739198785533,
+      "device_busy_ms": 2.5487998500466347,
+      "tx_busy_ms": 16.05632,
+      "server_busy_ms": 0.6688000285066664,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer4.0",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0
+      ],
+      "cut_nodes": [
+        "conv1",
+        "downsample_0"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 2.0612000953406096,
+          "t_ms": 8.02816,
+          "s_ms": 1.0227999882772565,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.16229995526373386,
+          "cut_index": 0,
+          "cut_node": "downsample_0",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "bn2",
+          "to_branch": 1,
+          "to_node": "add",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "bn2",
+          "to_branch": 1,
+          "to_node": "add",
+          "moved_nodes": [
+            "add",
+            "relu_1"
+          ],
+          "moved_suffix_server_cost": 3.619998460635543e-05
+        }
+      ],
+      "final_latency_ms": 11.2744600388816,
+      "device_busy_ms": 2.0612000953406096,
+      "tx_busy_ms": 8.02816,
+      "server_busy_ms": 1.1850999435409904,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0
+      ],
+      "cut_nodes": [
+        "conv1",
+        "downsample_0"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 2.0612000953406096,
+          "t_ms": 8.02816,
+          "s_ms": 1.0227999882772565,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.16229995526373386,
+          "cut_index": 0,
+          "cut_node": "downsample_0",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "bn2",
+          "to_branch": 1,
+          "to_node": "add",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "bn2",
+          "to_branch": 1,
+          "to_node": "add",
+          "moved_nodes": [
+            "add",
+            "relu_1"
+          ],
+          "moved_suffix_server_cost": 3.619998460635543e-05
+        }
+      ],
+      "final_latency_ms": 11.2744600388816,
+      "device_busy_ms": 2.0612000953406096,
+      "tx_busy_ms": 8.02816,
+      "server_busy_ms": 1.1850999435409904,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer4.1",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0
+      ],
+      "repaired_vector": [
+        0
+      ],
+      "cut_nodes": [
+        "conv1"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 4.4027999974787235,
+          "t_ms": 8.02816,
+          "s_ms": 1.2679999927058816,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        }
+      ],
+      "aggregation_events": [],
+      "final_latency_ms": 13.698959990184605,
+      "device_busy_ms": 4.4027999974787235,
+      "tx_busy_ms": 8.02816,
+      "server_busy_ms": 1.2679999927058816,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0
+      ],
+      "repaired_vector": [
+        0
+      ],
+      "cut_nodes": [
+        "conv1"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 4.4027999974787235,
+          "t_ms": 8.02816,
+          "s_ms": 1.2679999927058816,
+          "cut_index": 0,
+          "cut_node": "conv1",
+          "cloud_only": false
+        }
+      ],
+      "aggregation_events": [],
+      "final_latency_ms": 13.698959990184605,
+      "device_busy_ms": 4.4027999974787235,
+      "tx_busy_ms": 8.02816,
+      "server_busy_ms": 1.2679999927058816,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_5b",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch5x5_1_conv",
+        "branch3x3dbl_1_conv",
+        "branch_pool_bn"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 0.6744000129401684,
+          "t_ms": 25.088,
+          "s_ms": 0.10350003140047193,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.5672001279890537,
+          "t_ms": 18.816,
+          "s_ms": 0.508700089994818,
+          "cut_index": 0,
+          "cut_node": "branch5x5_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 0.601199921220541,
+          "t_ms": 25.088,
+          "s_ms": 0.8721001213416457,
+          "cut_index": 0,
+          "cut_node": "branch3x3dbl_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.47450000420212746,
+          "cut_index": 2,
+          "cut_node": "branch_pool_bn",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 4.5199994929134846e-05
+        }
+      ],
+      "final_latency_ms": 71.01300013848395,
+      "device_busy_ms": 1.842800062149763,
+      "tx_busy_ms": 68.992,
+      "server_busy_ms": 1.958800246939063,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch5x5_1_conv",
+        "branch3x3dbl_1_conv",
+        "avg_pool2d"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 0.6744000129401684,
+          "t_ms": 25.088,
+          "s_ms": 0.10350003140047193,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.5672001279890537,
+          "t_ms": 18.816,
+          "s_ms": 0.508700089994818,
+          "cut_index": 0,
+          "cut_node": "branch5x5_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 0.601199921220541,
+          "t_ms": 25.088,
+          "s_ms": 0.8721001213416457,
+          "cut_index": 0,
+          "cut_node": "branch3x3dbl_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.47450000420212746,
+          "cut_index": 0,
+          "cut_node": "avg_pool2d",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 4.5199994929134846e-05
+        }
+      ],
+      "final_latency_ms": 71.01300013848395,
+      "device_busy_ms": 1.842800062149763,
+      "tx_busy_ms": 68.992,
+      "server_busy_ms": 1.958800246939063,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_5c",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch5x5_1_conv",
+        "branch3x3dbl_1_conv",
+        "branch_pool_bn"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 0.708000035956502,
+          "t_ms": 25.088,
+          "s_ms": 0.12400001287460327,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.6132000125944614,
+          "t_ms": 18.816,
+          "s_ms": 0.6453999667428434,
+          "cut_index": 0,
+          "cut_node": "branch5x5_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 1.25039997510612,
+          "t_ms": 25.088,
+          "s_ms": 1.1335999588482082,
+          "cut_index": 0,
+          "cut_node": "branch3x3dbl_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.839299988001585,
+          "cut_index": 2,
+          "cut_node": "branch_pool_bn",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 7.090001599863172e-05
+        }
+      ],
+      "final_latency_ms": 71.6728999828063,
+      "device_busy_ms": 2.5716000236570835,
+      "tx_busy_ms": 68.992,
+      "server_busy_ms": 2.74229992646724,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch5x5_1_conv",
+        "branch3x3dbl_1_conv",
+        "avg_pool2d"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 0.708000035956502,
+          "t_ms": 25.088,
+          "s_ms": 0.12400001287460327,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.6132000125944614,
+          "t_ms": 18.816,
+          "s_ms": 0.6453999667428434,
+          "cut_index": 0,
+          "cut_node": "branch5x5_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 1.25039997510612,
+          "t_ms": 25.088,
+          "s_ms": 1.1335999588482082,
+          "cut_index": 0,
+          "cut_node": "branch3x3dbl_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.839299988001585,
+          "cut_index": 0,
+          "cut_node": "avg_pool2d",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 7.090001599863172e-05
+        }
+      ],
+      "final_latency_ms": 71.6728999828063,
+      "device_busy_ms": 2.5716000236570835,
+      "tx_busy_ms": 68.992,
+      "server_busy_ms": 2.74229992646724,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_5d",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch5x5_1_conv",
+        "branch3x3dbl_1_conv",
+        "branch_pool_bn"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 0.7943999953567982,
+          "t_ms": 25.088,
+          "s_ms": 0.10059995111078024,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.6492000538855791,
+          "t_ms": 18.816,
+          "s_ms": 0.5155001999810338,
+          "cut_index": 0,
+          "cut_node": "branch5x5_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 0.7588001899421215,
+          "t_ms": 25.088,
+          "s_ms": 1.6061999485827982,
+          "cut_index": 0,
+          "cut_node": "branch3x3dbl_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.7452000863850117,
+          "cut_index": 2,
+          "cut_node": "branch_pool_bn",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 5.319999763742089e-05
+        }
+      ],
+      "final_latency_ms": 72.13780003032461,
+      "device_busy_ms": 2.202400239184499,
+      "tx_busy_ms": 68.992,
+      "server_busy_ms": 2.967500186059624,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch5x5_1_conv",
+        "branch3x3dbl_1_conv",
+        "avg_pool2d"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 0.7943999953567982,
+          "t_ms": 25.088,
+          "s_ms": 0.10059995111078024,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.6492000538855791,
+          "t_ms": 18.816,
+          "s_ms": 0.5155001999810338,
+          "cut_index": 0,
+          "cut_node": "branch5x5_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 0.7588001899421215,
+          "t_ms": 25.088,
+          "s_ms": 1.6061999485827982,
+          "cut_index": 0,
+          "cut_node": "branch3x3dbl_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.7452000863850117,
+          "cut_index": 0,
+          "cut_node": "avg_pool2d",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 5.319999763742089e-05
+        }
+      ],
+      "final_latency_ms": 72.13780003032461,
+      "device_busy_ms": 2.202400239184499,
+      "tx_busy_ms": 68.992,
+      "server_busy_ms": 2.967500186059624,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6a",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        2,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        2,
+        0
+      ],
+      "cut_nodes": [
+        "branch3x3_conv",
+        "relu_3",
+        "max_pool2d"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 4.516799934208393,
+          "t_ms": 35.51232,
+          "s_ms": 0.10789994848892093,
+          "cut_index": 0,
+          "cut_node": "branch3x3_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 3.60920000821352,
+          "t_ms": 8.87808,
+          "s_ms": 0.0,
+          "cut_index": 8,
+          "cut_node": "relu_3",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.3863999736495316,
+          "cut_index": 0,
+          "cut_node": "max_pool2d",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 2,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 2,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 3.9300008211284876e-05
+        }
+      ],
+      "final_latency_ms": 49.293599907857924,
+      "device_busy_ms": 8.125999942421913,
+      "tx_busy_ms": 44.3904,
+      "server_busy_ms": 0.49429992213845253,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        2,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        2,
+        0
+      ],
+      "cut_nodes": [
+        "branch3x3_conv",
+        "relu_3",
+        "max_pool2d"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 4.516799934208393,
+          "t_ms": 35.51232,
+          "s_ms": 0.10789994848892093,
+          "cut_index": 0,
+          "cut_node": "branch3x3_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 3.60920000821352,
+          "t_ms": 8.87808,
+          "s_ms": 0.0,
+          "cut_index": 8,
+          "cut_node": "relu_3",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.3863999736495316,
+          "cut_index": 0,
+          "cut_node": "max_pool2d",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 2,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 2,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 3.9300008211284876e-05
+        }
+      ],
+      "final_latency_ms": 49.293599907857924,
+      "device_busy_ms": 8.125999942421913,
+      "tx_busy_ms": 44.3904,
+      "server_busy_ms": 0.49429992213845253,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6b",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch7x7_1_conv",
+        "branch7x7dbl_1_conv",
+        "branch_pool_bn"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.0495998430997133,
+          "t_ms": 17.75616,
+          "s_ms": 0.09270006557926536,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.8223999757319689,
+          "t_ms": 11.837439999999999,
+          "s_ms": 0.6026000482961535,
+          "cut_index": 0,
+          "cut_node": "branch7x7_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 0.8040000684559345,
+          "t_ms": 11.837439999999999,
+          "s_ms": 1.112600031774491,
+          "cut_index": 0,
+          "cut_node": "branch7x7dbl_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.5591999506577849,
+          "cut_index": 2,
+          "cut_node": "branch_pool_bn",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 3.99000127799809e-05
+        }
+      ],
+      "final_latency_ms": 44.152439825531985,
+      "device_busy_ms": 2.6759998872876167,
+      "tx_busy_ms": 41.431039999999996,
+      "server_busy_ms": 2.367100096307695,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch7x7_1_conv",
+        "branch7x7dbl_3_bn",
+        "avg_pool2d"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.0495998430997133,
+          "t_ms": 17.75616,
+          "s_ms": 0.09270006557926536,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.8223999757319689,
+          "t_ms": 11.837439999999999,
+          "s_ms": 0.6026000482961535,
+          "cut_index": 0,
+          "cut_node": "branch7x7_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 3.013199893757701,
+          "t_ms": 11.837439999999999,
+          "s_ms": 0.5603000754490495,
+          "cut_index": 7,
+          "cut_node": "branch7x7dbl_3_bn",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.5591999506577849,
+          "cut_index": 0,
+          "cut_node": "avg_pool2d",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 3.99000127799809e-05
+        }
+      ],
+      "final_latency_ms": 43.600139869206544,
+      "device_busy_ms": 4.885199712589383,
+      "tx_busy_ms": 41.431039999999996,
+      "server_busy_ms": 1.8148001399822533,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6c",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch7x7_1_conv",
+        "branch7x7dbl_1_conv",
+        "branch_pool_bn"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.2199999764561653,
+          "t_ms": 17.75616,
+          "s_ms": 0.11000002268701792,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 1.0420000180602074,
+          "t_ms": 14.796800000000001,
+          "s_ms": 0.811500009149313,
+          "cut_index": 0,
+          "cut_node": "branch7x7_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 1.1956000234931707,
+          "t_ms": 14.796800000000001,
+          "s_ms": 1.6307998448610306,
+          "cut_index": 0,
+          "cut_node": "branch7x7dbl_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.6795000517740846,
+          "cut_index": 2,
+          "cut_node": "branch_pool_bn",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 5.930004408583045e-05
+        }
+      ],
+      "final_latency_ms": 50.88005987309128,
+      "device_busy_ms": 3.4576000180095434,
+      "tx_busy_ms": 47.349759999999996,
+      "server_busy_ms": 3.231799928471446,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch7x7_1_conv",
+        "branch7x7dbl_3_bn",
+        "avg_pool2d"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.2199999764561653,
+          "t_ms": 17.75616,
+          "s_ms": 0.11000002268701792,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 1.0420000180602074,
+          "t_ms": 14.796800000000001,
+          "s_ms": 0.811500009149313,
+          "cut_index": 0,
+          "cut_node": "branch7x7_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 4.4191996566951275,
+          "t_ms": 14.796800000000001,
+          "s_ms": 0.8248999365605414,
+          "cut_index": 7,
+          "cut_node": "branch7x7dbl_3_bn",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.6795000517740846,
+          "cut_index": 0,
+          "cut_node": "avg_pool2d",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 5.930004408583045e-05
+        }
+      ],
+      "final_latency_ms": 50.07415996479079,
+      "device_busy_ms": 6.6811996512115,
+      "tx_busy_ms": 47.349759999999996,
+      "server_busy_ms": 2.425900020170957,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6d",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch7x7_1_conv",
+        "branch7x7dbl_1_conv",
+        "branch_pool_bn"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.2947998475283384,
+          "t_ms": 17.75616,
+          "s_ms": 0.09789998875930905,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 1.113999867811799,
+          "t_ms": 14.796800000000001,
+          "s_ms": 1.004299963824451,
+          "cut_index": 0,
+          "cut_node": "branch7x7_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 1.0447998065501451,
+          "t_ms": 14.796800000000001,
+          "s_ms": 1.2639000196941197,
+          "cut_index": 0,
+          "cut_node": "branch7x7dbl_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.563700043130666,
+          "cut_index": 2,
+          "cut_node": "branch_pool_bn",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 4.239997360855341e-05
+        }
+      ],
+      "final_latency_ms": 50.47215991035312,
+      "device_busy_ms": 3.4535995218902826,
+      "tx_busy_ms": 47.349759999999996,
+      "server_busy_ms": 2.9298000154085457,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        1,
+        0
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch7x7_1_conv",
+        "branch7x7dbl_3_bn",
+        "avg_pool2d"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.2947998475283384,
+          "t_ms": 17.75616,
+          "s_ms": 0.09789998875930905,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 1.113999867811799,
+          "t_ms": 14.796800000000001,
+          "s_ms": 1.004299963824451,
+          "cut_index": 0,
+          "cut_node": "branch7x7_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 3.5867998376488686,
+          "t_ms": 14.796800000000001,
+          "s_ms": 0.6284000119194388,
+          "cut_index": 7,
+          "cut_node": "branch7x7dbl_3_bn",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.563700043130666,
+          "cut_index": 0,
+          "cut_node": "avg_pool2d",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 4.239997360855341e-05
+        }
+      ],
+      "final_latency_ms": 49.83665990257844,
+      "device_busy_ms": 5.995599552989006,
+      "tx_busy_ms": 47.349759999999996,
+      "server_busy_ms": 2.294300007633865,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6e",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        0,
+        1
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch7x7_1_conv",
+        "branch7x7dbl_1_conv",
+        "branch_pool_bn"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.01200002245605,
+          "t_ms": 17.75616,
+          "s_ms": 0.09480002336204052,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.9191997814923525,
+          "t_ms": 17.75616,
+          "s_ms": 1.0297999251633883,
+          "cut_index": 0,
+          "cut_node": "branch7x7_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 1.3211998157203197,
+          "t_ms": 17.75616,
+          "s_ms": 1.9886999507434666,
+          "cut_index": 0,
+          "cut_node": "branch7x7dbl_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.6105999345891178,
+          "cut_index": 2,
+          "cut_node": "branch_pool_bn",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 4.75000124424696e-05
+        }
+      ],
+      "final_latency_ms": 56.87977990778863,
+      "device_busy_ms": 3.252399619668722,
+      "tx_busy_ms": 53.26848,
+      "server_busy_ms": 3.723899833858013,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        2,
+        0
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch7x7_1_conv",
+        "relu_8",
+        "avg_pool2d"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.01200002245605,
+          "t_ms": 17.75616,
+          "s_ms": 0.09480002336204052,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 0.9191997814923525,
+          "t_ms": 17.75616,
+          "s_ms": 1.0297999251633883,
+          "cut_index": 0,
+          "cut_node": "branch7x7_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 9.275999618694186,
+          "t_ms": 17.75616,
+          "s_ms": 0.0,
+          "cut_index": 14,
+          "cut_node": "relu_8",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.6105999345891178,
+          "cut_index": 0,
+          "cut_node": "avg_pool2d",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 3,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 4.75000124424696e-05
+        }
+      ],
+      "final_latency_ms": 54.891079957045164,
+      "device_busy_ms": 11.207199422642589,
+      "tx_busy_ms": 53.26848,
+      "server_busy_ms": 1.7351998831145465,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_7a",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        2,
+        2,
+        0
+      ],
+      "repaired_vector": [
+        2,
+        2,
+        0
+      ],
+      "cut_nodes": [
+        "relu_1",
+        "relu_5",
+        "max_pool2d"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 2.6759998872876167,
+          "t_ms": 6.553599999999999,
+          "s_ms": 0.0,
+          "cut_index": 5,
+          "cut_node": "relu_1",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 7.973599713295698,
+          "t_ms": 3.9321599999999997,
+          "s_ms": 0.0,
+          "cut_index": 11,
+          "cut_node": "relu_5",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 1.2104001361876726,
+          "t_ms": 15.728639999999999,
+          "s_ms": 0.053800002206116915,
+          "cut_index": 0,
+          "cut_node": "max_pool2d",
+          "cloud_only": false
+        }
+      ],
+      "aggregation_events": [],
+      "final_latency_ms": 30.36419960278943,
+      "device_busy_ms": 11.859999736770988,
+      "tx_busy_ms": 26.214399999999998,
+      "server_busy_ms": 0.053800002206116915,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        2,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        2,
+        0
+      ],
+      "cut_nodes": [
+        "branch3x3_1_conv",
+        "relu_5",
+        "max_pool2d"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.0924001690000296,
+          "t_ms": 17.75616,
+          "s_ms": 0.4496999317780137,
+          "cut_index": 0,
+          "cut_node": "branch3x3_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 7.973599713295698,
+          "t_ms": 3.9321599999999997,
+          "s_ms": 0.0,
+          "cut_index": 11,
+          "cut_node": "relu_5",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.30260003404691815,
+          "cut_index": 0,
+          "cut_node": "max_pool2d",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu_1",
+          "to_branch": 2,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu_1",
+          "to_branch": 2,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 5.3800002206116915e-05
+        }
+      ],
+      "final_latency_ms": 23.08332020304695,
+      "device_busy_ms": 9.065999882295728,
+      "tx_busy_ms": 21.68832,
+      "server_busy_ms": 0.7522999658249319,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_7b",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch3x3_1_conv",
+        "branch3x3_2b_conv",
+        "branch3x3dbl_1_conv",
+        "branch3x3dbl_3b_conv",
+        "branch_pool_bn"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.0740000288933516,
+          "t_ms": 6.553599999999999,
+          "s_ms": 0.09510002564638853,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 1.1788001284003258,
+          "t_ms": 7.864319999999999,
+          "s_ms": 0.6948999362066388,
+          "cut_index": 0,
+          "cut_node": "branch3x3_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.0,
+          "cut_index": 0,
+          "cut_node": "branch3x3_2b_conv",
+          "cloud_only": true
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 1.2892000377178192,
+          "t_ms": 9.175040000000001,
+          "s_ms": 1.3248001341708004,
+          "cut_index": 0,
+          "cut_node": "branch3x3dbl_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 4,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.0,
+          "cut_index": 0,
+          "cut_node": "branch3x3dbl_3b_conv",
+          "cloud_only": true
+        },
+        {
+          "branch_id": 5,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.33570005325600505,
+          "cut_index": 2,
+          "cut_node": "branch_pool_bn",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 1,
+          "from_node": "relu_1",
+          "to_branch": 2,
+          "to_node": "branch3x3_2b_conv",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 3,
+          "from_node": "relu_5",
+          "to_branch": 4,
+          "to_node": "branch3x3dbl_3b_conv",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 5,
+          "to_node": "cat_2",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 1,
+          "from_node": "relu_1",
+          "to_branch": 2,
+          "to_node": "branch3x3_2b_conv",
+          "moved_nodes": [
+            "branch3x3_2b_conv",
+            "branch3x3_2b_bn",
+            "relu_3",
+            "cat"
+          ],
+          "moved_suffix_server_cost": 0.0003179999766871333
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 3,
+          "from_node": "relu_5",
+          "to_branch": 4,
+          "to_node": "branch3x3dbl_3b_conv",
+          "moved_nodes": [
+            "branch3x3dbl_3b_conv",
+            "branch3x3dbl_3b_bn",
+            "relu_7",
+            "cat_1"
+          ],
+          "moved_suffix_server_cost": 0.00031970004783943295
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 5,
+          "to_node": "cat_2",
+          "moved_nodes": [
+            "cat_2"
+          ],
+          "moved_suffix_server_cost": 4.050001734867692e-05
+        }
+      ],
+      "final_latency_ms": 26.327460216320155,
+      "device_busy_ms": 3.5420001950114965,
+      "tx_busy_ms": 23.592959999999998,
+      "server_busy_ms": 2.450500149279833,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch3x3_1_conv",
+        "branch3x3_2b_conv",
+        "branch3x3dbl_2_bn",
+        "branch3x3dbl_3b_conv",
+        "avg_pool2d"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.0740000288933516,
+          "t_ms": 6.553599999999999,
+          "s_ms": 0.09510002564638853,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 1.1788001284003258,
+          "t_ms": 7.864319999999999,
+          "s_ms": 0.6948999362066388,
+          "cut_index": 0,
+          "cut_node": "branch3x3_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.0,
+          "cut_index": 0,
+          "cut_node": "branch3x3_2b_conv",
+          "cloud_only": true
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 4.036400001496077,
+          "t_ms": 7.864319999999999,
+          "s_ms": 0.6380001432262361,
+          "cut_index": 4,
+          "cut_node": "branch3x3dbl_2_bn",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 4,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.0,
+          "cut_index": 0,
+          "cut_node": "branch3x3dbl_3b_conv",
+          "cloud_only": true
+        },
+        {
+          "branch_id": 5,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.33570005325600505,
+          "cut_index": 0,
+          "cut_node": "avg_pool2d",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 1,
+          "from_node": "relu_1",
+          "to_branch": 2,
+          "to_node": "branch3x3_2b_conv",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 3,
+          "from_node": "relu_5",
+          "to_branch": 4,
+          "to_node": "branch3x3dbl_3b_conv",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 5,
+          "to_node": "cat_2",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 1,
+          "from_node": "relu_1",
+          "to_branch": 2,
+          "to_node": "branch3x3_2b_conv",
+          "moved_nodes": [
+            "branch3x3_2b_conv",
+            "branch3x3_2b_bn",
+            "relu_3",
+            "cat"
+          ],
+          "moved_suffix_server_cost": 0.0003179999766871333
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 3,
+          "from_node": "relu_5",
+          "to_branch": 4,
+          "to_node": "branch3x3dbl_3b_conv",
+          "moved_nodes": [
+            "branch3x3dbl_3b_conv",
+            "branch3x3dbl_3b_bn",
+            "relu_7",
+            "cat_1"
+          ],
+          "moved_suffix_server_cost": 0.00031970004783943295
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 5,
+          "to_node": "cat_2",
+          "moved_nodes": [
+            "cat_2"
+          ],
+          "moved_suffix_server_cost": 4.050001734867692e-05
+        }
+      ],
+      "final_latency_ms": 24.32994022537559,
+      "device_busy_ms": 6.289200158789754,
+      "tx_busy_ms": 22.282239999999998,
+      "server_busy_ms": 1.7637001583352685,
+      "bottleneck_stage": "tx"
+    }
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_7c",
+    "status": "evaluated",
+    "decc_style": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch3x3_1_conv",
+        "branch3x3_2b_conv",
+        "branch3x3dbl_1_conv",
+        "branch3x3dbl_3b_conv",
+        "branch_pool_bn"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.6852000262588263,
+          "t_ms": 6.553599999999999,
+          "s_ms": 0.09790004696696997,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 1.8155998550355434,
+          "t_ms": 7.864319999999999,
+          "s_ms": 0.8056999649852514,
+          "cut_index": 0,
+          "cut_node": "branch3x3_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.0,
+          "cut_index": 0,
+          "cut_node": "branch3x3_2b_conv",
+          "cloud_only": true
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 2.0828000269830227,
+          "t_ms": 9.175040000000001,
+          "s_ms": 1.5076000709086657,
+          "cut_index": 0,
+          "cut_node": "branch3x3dbl_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 4,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.0,
+          "cut_index": 0,
+          "cut_node": "branch3x3dbl_3b_conv",
+          "cloud_only": true
+        },
+        {
+          "branch_id": 5,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.4843000788241625,
+          "cut_index": 2,
+          "cut_node": "branch_pool_bn",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 1,
+          "from_node": "relu_1",
+          "to_branch": 2,
+          "to_node": "branch3x3_2b_conv",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 3,
+          "from_node": "relu_5",
+          "to_branch": 4,
+          "to_node": "branch3x3dbl_3b_conv",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 5,
+          "to_node": "cat_2",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 1,
+          "from_node": "relu_1",
+          "to_branch": 2,
+          "to_node": "branch3x3_2b_conv",
+          "moved_nodes": [
+            "branch3x3_2b_conv",
+            "branch3x3_2b_bn",
+            "relu_3",
+            "cat"
+          ],
+          "moved_suffix_server_cost": 0.0003847999614663422
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 3,
+          "from_node": "relu_5",
+          "to_branch": 4,
+          "to_node": "branch3x3dbl_3b_conv",
+          "moved_nodes": [
+            "branch3x3dbl_3b_conv",
+            "branch3x3dbl_3b_bn",
+            "relu_7",
+            "cat_1"
+          ],
+          "moved_suffix_server_cost": 0.00036940001882612705
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 5,
+          "to_node": "cat_2",
+          "moved_nodes": [
+            "cat_2"
+          ],
+          "moved_suffix_server_cost": 3.7999998312443495e-05
+        }
+      ],
+      "final_latency_ms": 27.270060175991656,
+      "device_busy_ms": 5.583599908277392,
+      "tx_busy_ms": 23.592959999999998,
+      "server_busy_ms": 2.8955001616850495,
+      "bottleneck_stage": "tx"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "repaired_vector": [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      "cut_nodes": [
+        "branch1x1_conv",
+        "branch3x3_1_conv",
+        "branch3x3_2b_conv",
+        "branch3x3dbl_2_bn",
+        "branch3x3dbl_3b_conv",
+        "avg_pool2d"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 1.6852000262588263,
+          "t_ms": 6.553599999999999,
+          "s_ms": 0.09790004696696997,
+          "cut_index": 0,
+          "cut_node": "branch1x1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 1.8155998550355434,
+          "t_ms": 7.864319999999999,
+          "s_ms": 0.8056999649852514,
+          "cut_index": 0,
+          "cut_node": "branch3x3_1_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.0,
+          "cut_index": 0,
+          "cut_node": "branch3x3_2b_conv",
+          "cloud_only": true
+        },
+        {
+          "branch_id": 3,
+          "d_ms": 5.140800029039383,
+          "t_ms": 7.864319999999999,
+          "s_ms": 0.7431000703945756,
+          "cut_index": 4,
+          "cut_node": "branch3x3dbl_2_bn",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 4,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.0,
+          "cut_index": 0,
+          "cut_node": "branch3x3dbl_3b_conv",
+          "cloud_only": true
+        },
+        {
+          "branch_id": 5,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.4843000788241625,
+          "cut_index": 0,
+          "cut_node": "avg_pool2d",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 1,
+          "from_node": "relu_1",
+          "to_branch": 2,
+          "to_node": "branch3x3_2b_conv",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 3,
+          "from_node": "relu_5",
+          "to_branch": 4,
+          "to_node": "branch3x3dbl_3b_conv",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 5,
+          "to_node": "cat_2",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 1,
+          "from_node": "relu_1",
+          "to_branch": 2,
+          "to_node": "branch3x3_2b_conv",
+          "moved_nodes": [
+            "branch3x3_2b_conv",
+            "branch3x3_2b_bn",
+            "relu_3",
+            "cat"
+          ],
+          "moved_suffix_server_cost": 0.0003847999614663422
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 3,
+          "from_node": "relu_5",
+          "to_branch": 4,
+          "to_node": "branch3x3dbl_3b_conv",
+          "moved_nodes": [
+            "branch3x3dbl_3b_conv",
+            "branch3x3dbl_3b_bn",
+            "relu_7",
+            "cat_1"
+          ],
+          "moved_suffix_server_cost": 0.00036940001882612705
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu",
+          "to_branch": 5,
+          "to_node": "cat_2",
+          "moved_nodes": [
+            "cat_2"
+          ],
+          "moved_suffix_server_cost": 3.7999998312443495e-05
+        }
+      ],
+      "final_latency_ms": 25.194840175477566,
+      "device_busy_ms": 8.641599910333753,
+      "tx_busy_ms": 22.282239999999998,
+      "server_busy_ms": 2.1310001611709595,
+      "bottleneck_stage": "tx"
+    }
+  }
+]

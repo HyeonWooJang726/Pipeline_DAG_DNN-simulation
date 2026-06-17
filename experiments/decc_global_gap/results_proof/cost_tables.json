@@ -1,0 +1,2880 @@
+[
+  {
+    "model": "vgg11",
+    "block_id": "features",
+    "block_type": "chain",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "_0",
+            "d_ms": 4.675199976190925,
+            "t_ms": 1027.60448,
+            "s_ms": 28.435599931981415,
+            "total_local_ms": 1060.7152799081723,
+            "prefix_latency_raw": 0.0011687999940477312,
+            "suffix_latency_raw": 0.028435599931981415,
+            "activation_bytes": 12845056,
+            "full_branch_server_cost": 0.029604399926029146,
+            "full_branch_mobile_cost": 0.11841759970411658
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 10,
+            "cut_node": "_10",
+            "d_ms": 65.47360005788505,
+            "t_ms": 64.22528,
+            "s_ms": 13.235999911557883,
+            "total_local_ms": 142.93487996944293,
+            "prefix_latency_raw": 0.016368400014471263,
+            "suffix_latency_raw": 0.013235999911557883,
+            "activation_bytes": 802816,
+            "full_branch_server_cost": 0.029604399926029146,
+            "full_branch_mobile_cost": 0.11841759970411658
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 20,
+            "cut_node": "_20",
+            "d_ms": 118.41759970411658,
+            "t_ms": 8.02816,
+            "s_ms": 0.0,
+            "total_local_ms": 126.44575970411658,
+            "prefix_latency_raw": 0.029604399926029146,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 100352,
+            "full_branch_server_cost": 0.029604399926029146,
+            "full_branch_mobile_cost": 0.11841759970411658
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer1.0",
+    "block_type": "residual",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "conv1",
+            "d_ms": 2.40200012922287,
+            "t_ms": 64.22528,
+            "s_ms": 0.7240999257192016,
+            "total_local_ms": 67.35138005494207,
+            "prefix_latency_raw": 0.0006005000323057175,
+            "suffix_latency_raw": 0.0007240999257192016,
+            "activation_bytes": 802816,
+            "full_branch_server_cost": 0.001324599958024919,
+            "full_branch_mobile_cost": 0.005298399832099676
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 3,
+            "cut_node": "conv2",
+            "d_ms": 4.960399819537997,
+            "t_ms": 64.22528,
+            "s_ms": 0.08450000314041972,
+            "total_local_ms": 69.27017982267841,
+            "prefix_latency_raw": 0.0012400999548844993,
+            "suffix_latency_raw": 8.450000314041972e-05,
+            "activation_bytes": 802816,
+            "full_branch_server_cost": 0.001324599958024919,
+            "full_branch_mobile_cost": 0.005298399832099676
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 6,
+            "cut_node": "relu_1",
+            "d_ms": 5.298399832099676,
+            "t_ms": 64.22528,
+            "s_ms": 0.0,
+            "total_local_ms": 69.52367983209967,
+            "prefix_latency_raw": 0.001324599958024919,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 802816,
+            "full_branch_server_cost": 0.001324599958024919,
+            "full_branch_mobile_cost": 0.005298399832099676
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer1.1",
+    "block_type": "residual",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "conv1",
+            "d_ms": 2.1792000625282526,
+            "t_ms": 64.22528,
+            "s_ms": 0.6680000224150717,
+            "total_local_ms": 67.07248008494332,
+            "prefix_latency_raw": 0.0005448000156320632,
+            "suffix_latency_raw": 0.0006680000224150717,
+            "activation_bytes": 802816,
+            "full_branch_server_cost": 0.0012128000380471349,
+            "full_branch_mobile_cost": 0.0048512001521885395
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 3,
+            "cut_node": "conv2",
+            "d_ms": 4.521600203588605,
+            "t_ms": 64.22528,
+            "s_ms": 0.08239998714998364,
+            "total_local_ms": 68.82928019073859,
+            "prefix_latency_raw": 0.0011304000508971512,
+            "suffix_latency_raw": 8.239998714998364e-05,
+            "activation_bytes": 802816,
+            "full_branch_server_cost": 0.0012128000380471349,
+            "full_branch_mobile_cost": 0.0048512001521885395
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 6,
+            "cut_node": "relu_1",
+            "d_ms": 4.8512001521885395,
+            "t_ms": 64.22528,
+            "s_ms": 0.0,
+            "total_local_ms": 69.07648015218854,
+            "prefix_latency_raw": 0.0012128000380471349,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 802816,
+            "full_branch_server_cost": 0.0012128000380471349,
+            "full_branch_mobile_cost": 0.0048512001521885395
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer2.0",
+    "block_type": "residual",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "conv1",
+            "d_ms": 1.3723999727517366,
+            "t_ms": 32.11264,
+            "s_ms": 0.6230999133549631,
+            "total_local_ms": 34.1081398861067,
+            "prefix_latency_raw": 0.00034309999318793416,
+            "suffix_latency_raw": 0.0006230999133549631,
+            "activation_bytes": 401408,
+            "full_branch_server_cost": 0.0009661999065428972,
+            "full_branch_mobile_cost": 0.003864799626171589
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "relu",
+            "d_ms": 1.560799777507782,
+            "t_ms": 32.11264,
+            "s_ms": 0.5759999621659517,
+            "total_local_ms": 34.24943973967373,
+            "prefix_latency_raw": 0.0003901999443769455,
+            "suffix_latency_raw": 0.0005759999621659517,
+            "activation_bytes": 401408,
+            "full_branch_server_cost": 0.0009661999065428972,
+            "full_branch_mobile_cost": 0.003864799626171589
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 4,
+            "cut_node": "bn2",
+            "d_ms": 3.864799626171589,
+            "t_ms": 32.11264,
+            "s_ms": 0.0,
+            "total_local_ms": 35.97743962617159,
+            "prefix_latency_raw": 0.0009661999065428972,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 401408,
+            "full_branch_server_cost": 0.0009661999065428972,
+            "full_branch_mobile_cost": 0.003864799626171589
+          }
+        ]
+      },
+      {
+        "branch_id": 1,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "downsample_0",
+            "d_ms": 0.8320000488311052,
+            "t_ms": 32.11264,
+            "s_ms": 0.0635000760667026,
+            "total_local_ms": 33.00814012489781,
+            "prefix_latency_raw": 0.0002080000122077763,
+            "suffix_latency_raw": 6.35000760667026e-05,
+            "activation_bytes": 401408,
+            "full_branch_server_cost": 0.0002715000882744789,
+            "full_branch_mobile_cost": 0.0010860003530979156
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "downsample_1",
+            "d_ms": 0.9380001574754715,
+            "t_ms": 32.11264,
+            "s_ms": 0.03700004890561104,
+            "total_local_ms": 33.08764020638108,
+            "prefix_latency_raw": 0.00023450003936886787,
+            "suffix_latency_raw": 3.700004890561104e-05,
+            "activation_bytes": 401408,
+            "full_branch_server_cost": 0.0002715000882744789,
+            "full_branch_mobile_cost": 0.0010860003530979156
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 3,
+            "cut_node": "relu_1",
+            "d_ms": 1.0860003530979156,
+            "t_ms": 32.11264,
+            "s_ms": 0.0,
+            "total_local_ms": 33.198640353097915,
+            "prefix_latency_raw": 0.0002715000882744789,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 401408,
+            "full_branch_server_cost": 0.0002715000882744789,
+            "full_branch_mobile_cost": 0.0010860003530979156
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer2.1",
+    "block_type": "residual",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "conv1",
+            "d_ms": 1.8331999890506268,
+            "t_ms": 32.11264,
+            "s_ms": 0.8920999825932086,
+            "total_local_ms": 34.837939971643834,
+            "prefix_latency_raw": 0.0004582999972626567,
+            "suffix_latency_raw": 0.0008920999825932086,
+            "activation_bytes": 401408,
+            "full_branch_server_cost": 0.0013503999798558652,
+            "full_branch_mobile_cost": 0.005401599919423461
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 3,
+            "cut_node": "conv2",
+            "d_ms": 4.799999762326479,
+            "t_ms": 32.11264,
+            "s_ms": 0.1504000392742455,
+            "total_local_ms": 37.06303980160072,
+            "prefix_latency_raw": 0.0011999999405816197,
+            "suffix_latency_raw": 0.0001504000392742455,
+            "activation_bytes": 401408,
+            "full_branch_server_cost": 0.0013503999798558652,
+            "full_branch_mobile_cost": 0.005401599919423461
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 6,
+            "cut_node": "relu_1",
+            "d_ms": 5.401599919423461,
+            "t_ms": 32.11264,
+            "s_ms": 0.0,
+            "total_local_ms": 37.51423991942346,
+            "prefix_latency_raw": 0.0013503999798558652,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 401408,
+            "full_branch_server_cost": 0.0013503999798558652,
+            "full_branch_mobile_cost": 0.005401599919423461
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer3.0",
+    "block_type": "residual",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "conv1",
+            "d_ms": 1.8716000486165285,
+            "t_ms": 16.05632,
+            "s_ms": 0.8579999557696283,
+            "total_local_ms": 18.785920004386156,
+            "prefix_latency_raw": 0.00046790001215413213,
+            "suffix_latency_raw": 0.0008579999557696283,
+            "activation_bytes": 200704,
+            "full_branch_server_cost": 0.0013258999679237604,
+            "full_branch_mobile_cost": 0.005303599871695042
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "relu",
+            "d_ms": 2.263600006699562,
+            "t_ms": 16.05632,
+            "s_ms": 0.7599999662488699,
+            "total_local_ms": 19.07991997294843,
+            "prefix_latency_raw": 0.0005659000016748905,
+            "suffix_latency_raw": 0.0007599999662488699,
+            "activation_bytes": 200704,
+            "full_branch_server_cost": 0.0013258999679237604,
+            "full_branch_mobile_cost": 0.005303599871695042
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 4,
+            "cut_node": "bn2",
+            "d_ms": 5.303599871695042,
+            "t_ms": 16.05632,
+            "s_ms": 0.0,
+            "total_local_ms": 21.35991987169504,
+            "prefix_latency_raw": 0.0013258999679237604,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 200704,
+            "full_branch_server_cost": 0.0013258999679237604,
+            "full_branch_mobile_cost": 0.005303599871695042
+          }
+        ]
+      },
+      {
+        "branch_id": 1,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "downsample_0",
+            "d_ms": 0.7952000014483929,
+            "t_ms": 16.05632,
+            "s_ms": 0.12360000982880592,
+            "total_local_ms": 16.9751200112772,
+            "prefix_latency_raw": 0.00019880000036209822,
+            "suffix_latency_raw": 0.00012360000982880592,
+            "activation_bytes": 200704,
+            "full_branch_server_cost": 0.00032240001019090414,
+            "full_branch_mobile_cost": 0.0012896000407636166
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "downsample_1",
+            "d_ms": 1.0379999876022339,
+            "t_ms": 16.05632,
+            "s_ms": 0.06290001329034567,
+            "total_local_ms": 17.15722000089258,
+            "prefix_latency_raw": 0.00025949999690055847,
+            "suffix_latency_raw": 6.290001329034567e-05,
+            "activation_bytes": 200704,
+            "full_branch_server_cost": 0.00032240001019090414,
+            "full_branch_mobile_cost": 0.0012896000407636166
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 3,
+            "cut_node": "relu_1",
+            "d_ms": 1.2896000407636166,
+            "t_ms": 16.05632,
+            "s_ms": 0.0,
+            "total_local_ms": 17.345920040763616,
+            "prefix_latency_raw": 0.00032240001019090414,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 200704,
+            "full_branch_server_cost": 0.00032240001019090414,
+            "full_branch_mobile_cost": 0.0012896000407636166
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer3.1",
+    "block_type": "residual",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "conv1",
+            "d_ms": 2.5487998500466347,
+            "t_ms": 16.05632,
+            "s_ms": 0.6688000285066664,
+            "total_local_ms": 19.2739198785533,
+            "prefix_latency_raw": 0.0006371999625116587,
+            "suffix_latency_raw": 0.0006688000285066664,
+            "activation_bytes": 200704,
+            "full_branch_server_cost": 0.001305999991018325,
+            "full_branch_mobile_cost": 0.0052239999640733
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 3,
+            "cut_node": "conv2",
+            "d_ms": 4.993199836462736,
+            "t_ms": 16.05632,
+            "s_ms": 0.05770003190264106,
+            "total_local_ms": 21.107219868365377,
+            "prefix_latency_raw": 0.001248299959115684,
+            "suffix_latency_raw": 5.770003190264106e-05,
+            "activation_bytes": 200704,
+            "full_branch_server_cost": 0.001305999991018325,
+            "full_branch_mobile_cost": 0.0052239999640733
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 6,
+            "cut_node": "relu_1",
+            "d_ms": 5.2239999640733,
+            "t_ms": 16.05632,
+            "s_ms": 0.0,
+            "total_local_ms": 21.2803199640733,
+            "prefix_latency_raw": 0.001305999991018325,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 200704,
+            "full_branch_server_cost": 0.001305999991018325,
+            "full_branch_mobile_cost": 0.0052239999640733
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer4.0",
+    "block_type": "residual",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "conv1",
+            "d_ms": 2.0612000953406096,
+            "t_ms": 8.02816,
+            "s_ms": 0.9866000036709011,
+            "total_local_ms": 11.07596009901151,
+            "prefix_latency_raw": 0.0005153000238351524,
+            "suffix_latency_raw": 0.000986600003670901,
+            "activation_bytes": 100352,
+            "full_branch_server_cost": 0.0015019000275060534,
+            "full_branch_mobile_cost": 0.006007600110024214
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "relu",
+            "d_ms": 2.250000135973096,
+            "t_ms": 8.02816,
+            "s_ms": 0.9393999935127795,
+            "total_local_ms": 11.217560129485875,
+            "prefix_latency_raw": 0.000562500033993274,
+            "suffix_latency_raw": 0.0009393999935127795,
+            "activation_bytes": 100352,
+            "full_branch_server_cost": 0.0015019000275060534,
+            "full_branch_mobile_cost": 0.006007600110024214
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 4,
+            "cut_node": "bn2",
+            "d_ms": 6.007600110024214,
+            "t_ms": 8.02816,
+            "s_ms": 0.0,
+            "total_local_ms": 14.035760110024214,
+            "prefix_latency_raw": 0.0015019000275060534,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 100352,
+            "full_branch_server_cost": 0.0015019000275060534,
+            "full_branch_mobile_cost": 0.006007600110024214
+          }
+        ]
+      },
+      {
+        "branch_id": 1,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "downsample_0",
+            "d_ms": 0.5263998173177242,
+            "t_ms": 8.02816,
+            "s_ms": 0.06689998554065824,
+            "total_local_ms": 8.621459802858382,
+            "prefix_latency_raw": 0.00013159995432943106,
+            "suffix_latency_raw": 6.689998554065824e-05,
+            "activation_bytes": 100352,
+            "full_branch_server_cost": 0.0001984999398700893,
+            "full_branch_mobile_cost": 0.0007939997594803572
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "downsample_1",
+            "d_ms": 0.6491998210549355,
+            "t_ms": 8.02816,
+            "s_ms": 0.03619998460635543,
+            "total_local_ms": 8.71355980566129,
+            "prefix_latency_raw": 0.00016229995526373386,
+            "suffix_latency_raw": 3.619998460635543e-05,
+            "activation_bytes": 100352,
+            "full_branch_server_cost": 0.0001984999398700893,
+            "full_branch_mobile_cost": 0.0007939997594803572
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 3,
+            "cut_node": "relu_1",
+            "d_ms": 0.7939997594803572,
+            "t_ms": 8.02816,
+            "s_ms": 0.0,
+            "total_local_ms": 8.822159759480357,
+            "prefix_latency_raw": 0.0001984999398700893,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 100352,
+            "full_branch_server_cost": 0.0001984999398700893,
+            "full_branch_mobile_cost": 0.0007939997594803572
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "resnet18",
+    "block_id": "layer4.1",
+    "block_type": "residual",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "conv1",
+            "d_ms": 4.4027999974787235,
+            "t_ms": 8.02816,
+            "s_ms": 1.2679999927058816,
+            "total_local_ms": 13.698959990184605,
+            "prefix_latency_raw": 0.0011006999993696809,
+            "suffix_latency_raw": 0.0012679999927058816,
+            "activation_bytes": 100352,
+            "full_branch_server_cost": 0.0023686999920755625,
+            "full_branch_mobile_cost": 0.00947479996830225
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 3,
+            "cut_node": "conv2",
+            "d_ms": 9.084000019356608,
+            "t_ms": 8.02816,
+            "s_ms": 0.09769998723641038,
+            "total_local_ms": 17.20986000659302,
+            "prefix_latency_raw": 0.002271000004839152,
+            "suffix_latency_raw": 9.769998723641038e-05,
+            "activation_bytes": 100352,
+            "full_branch_server_cost": 0.0023686999920755625,
+            "full_branch_mobile_cost": 0.00947479996830225
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 6,
+            "cut_node": "relu_1",
+            "d_ms": 9.47479996830225,
+            "t_ms": 8.02816,
+            "s_ms": 0.0,
+            "total_local_ms": 17.50295996830225,
+            "prefix_latency_raw": 0.0023686999920755625,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 100352,
+            "full_branch_server_cost": 0.0023686999920755625,
+            "full_branch_mobile_cost": 0.00947479996830225
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_5b",
+    "block_type": "inception",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch1x1_conv",
+            "d_ms": 0.6744000129401684,
+            "t_ms": 25.088,
+            "s_ms": 0.05830003647133708,
+            "total_local_ms": 25.820700049411506,
+            "prefix_latency_raw": 0.0001686000032350421,
+            "suffix_latency_raw": 5.830003647133708e-05,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.00022690003970637918,
+            "full_branch_mobile_cost": 0.0009076001588255167
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "branch1x1_bn",
+            "d_ms": 0.8452001493424177,
+            "t_ms": 25.088,
+            "s_ms": 0.015600002370774746,
+            "total_local_ms": 25.948800151713193,
+            "prefix_latency_raw": 0.00021130003733560443,
+            "suffix_latency_raw": 1.5600002370774746e-05,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.00022690003970637918,
+            "full_branch_mobile_cost": 0.0009076001588255167
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 2,
+            "cut_node": "relu",
+            "d_ms": 0.9076001588255167,
+            "t_ms": 25.088,
+            "s_ms": 0.0,
+            "total_local_ms": 25.995600158825518,
+            "prefix_latency_raw": 0.00022690003970637918,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.00022690003970637918,
+            "full_branch_mobile_cost": 0.0009076001588255167
+          }
+        ]
+      },
+      {
+        "branch_id": 1,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch5x5_1_conv",
+            "d_ms": 0.5672001279890537,
+            "t_ms": 18.816,
+            "s_ms": 0.508700089994818,
+            "total_local_ms": 19.89190021798387,
+            "prefix_latency_raw": 0.00014180003199726343,
+            "suffix_latency_raw": 0.000508700089994818,
+            "activation_bytes": 235200,
+            "full_branch_server_cost": 0.0006505001219920814,
+            "full_branch_mobile_cost": 0.0026020004879683256
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "relu_1",
+            "d_ms": 0.78920042142272,
+            "t_ms": 18.816,
+            "s_ms": 0.4532000166364014,
+            "total_local_ms": 20.05840043805912,
+            "prefix_latency_raw": 0.00019730010535568,
+            "suffix_latency_raw": 0.0004532000166364014,
+            "activation_bytes": 235200,
+            "full_branch_server_cost": 0.0006505001219920814,
+            "full_branch_mobile_cost": 0.0026020004879683256
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 5,
+            "cut_node": "relu_2",
+            "d_ms": 2.6020004879683256,
+            "t_ms": 25.088,
+            "s_ms": 0.0,
+            "total_local_ms": 27.690000487968327,
+            "prefix_latency_raw": 0.0006505001219920814,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.0006505001219920814,
+            "full_branch_mobile_cost": 0.0026020004879683256
+          }
+        ]
+      },
+      {
+        "branch_id": 2,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch3x3dbl_1_conv",
+            "d_ms": 0.601199921220541,
+            "t_ms": 25.088,
+            "s_ms": 0.8721001213416457,
+            "total_local_ms": 26.561300042562188,
+            "prefix_latency_raw": 0.00015029998030513525,
+            "suffix_latency_raw": 0.0008721001213416457,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.001022400101646781,
+            "full_branch_mobile_cost": 0.004089600406587124
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 4,
+            "cut_node": "branch3x3dbl_2_bn",
+            "d_ms": 2.165200188755989,
+            "t_ms": 37.632,
+            "s_ms": 0.4811000544577837,
+            "total_local_ms": 40.27830024321377,
+            "prefix_latency_raw": 0.0005413000471889973,
+            "suffix_latency_raw": 0.0004811000544577837,
+            "activation_bytes": 470400,
+            "full_branch_server_cost": 0.001022400101646781,
+            "full_branch_mobile_cost": 0.004089600406587124
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 8,
+            "cut_node": "relu_5",
+            "d_ms": 4.089600406587124,
+            "t_ms": 37.632,
+            "s_ms": 0.0,
+            "total_local_ms": 41.72160040658712,
+            "prefix_latency_raw": 0.001022400101646781,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 470400,
+            "full_branch_server_cost": 0.001022400101646781,
+            "full_branch_mobile_cost": 0.004089600406587124
+          }
+        ]
+      },
+      {
+        "branch_id": 3,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "avg_pool2d",
+            "d_ms": 1.1244001798331738,
+            "t_ms": 75.264,
+            "s_ms": 0.23859995417296886,
+            "total_local_ms": 76.62700013400614,
+            "prefix_latency_raw": 0.00028110004495829344,
+            "suffix_latency_raw": 0.00023859995417296886,
+            "activation_bytes": 940800,
+            "full_branch_server_cost": 0.0005196999991312623,
+            "full_branch_mobile_cost": 0.002078799996525049
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "branch_pool_bn",
+            "d_ms": 1.8160000909119844,
+            "t_ms": 12.544,
+            "s_ms": 0.06569997640326619,
+            "total_local_ms": 14.425700067315251,
+            "prefix_latency_raw": 0.0004540000227279961,
+            "suffix_latency_raw": 6.569997640326619e-05,
+            "activation_bytes": 156800,
+            "full_branch_server_cost": 0.0005196999991312623,
+            "full_branch_mobile_cost": 0.002078799996525049
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 4,
+            "cut_node": "cat",
+            "d_ms": 2.078799996525049,
+            "t_ms": 100.352,
+            "s_ms": 0.0,
+            "total_local_ms": 102.43079999652505,
+            "prefix_latency_raw": 0.0005196999991312623,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 1254400,
+            "full_branch_server_cost": 0.0005196999991312623,
+            "full_branch_mobile_cost": 0.002078799996525049
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_5c",
+    "block_type": "inception",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch1x1_conv",
+            "d_ms": 0.708000035956502,
+            "t_ms": 25.088,
+            "s_ms": 0.053099996875971556,
+            "total_local_ms": 25.849100032832474,
+            "prefix_latency_raw": 0.0001770000089891255,
+            "suffix_latency_raw": 5.3099996875971556e-05,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.00023010000586509705,
+            "full_branch_mobile_cost": 0.0009204000234603882
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "branch1x1_bn",
+            "d_ms": 0.8584000170230865,
+            "t_ms": 25.088,
+            "s_ms": 0.015500001609325409,
+            "total_local_ms": 25.961900018632413,
+            "prefix_latency_raw": 0.00021460000425577164,
+            "suffix_latency_raw": 1.550000160932541e-05,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.00023010000586509705,
+            "full_branch_mobile_cost": 0.0009204000234603882
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 2,
+            "cut_node": "relu",
+            "d_ms": 0.9204000234603882,
+            "t_ms": 25.088,
+            "s_ms": 0.0,
+            "total_local_ms": 26.00840002346039,
+            "prefix_latency_raw": 0.00023010000586509705,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.00023010000586509705,
+            "full_branch_mobile_cost": 0.0009204000234603882
+          }
+        ]
+      },
+      {
+        "branch_id": 1,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch5x5_1_conv",
+            "d_ms": 0.6132000125944614,
+            "t_ms": 18.816,
+            "s_ms": 0.6453999667428434,
+            "total_local_ms": 20.074599979337304,
+            "prefix_latency_raw": 0.00015330000314861536,
+            "suffix_latency_raw": 0.0006453999667428434,
+            "activation_bytes": 235200,
+            "full_branch_server_cost": 0.0007986999698914587,
+            "full_branch_mobile_cost": 0.003194799879565835
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "relu_1",
+            "d_ms": 0.8079998660832644,
+            "t_ms": 18.816,
+            "s_ms": 0.5967000033706427,
+            "total_local_ms": 20.220699869453906,
+            "prefix_latency_raw": 0.0002019999665208161,
+            "suffix_latency_raw": 0.0005967000033706427,
+            "activation_bytes": 235200,
+            "full_branch_server_cost": 0.0007986999698914587,
+            "full_branch_mobile_cost": 0.003194799879565835
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 5,
+            "cut_node": "relu_2",
+            "d_ms": 3.194799879565835,
+            "t_ms": 25.088,
+            "s_ms": 0.0,
+            "total_local_ms": 28.282799879565836,
+            "prefix_latency_raw": 0.0007986999698914587,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.0007986999698914587,
+            "full_branch_mobile_cost": 0.003194799879565835
+          }
+        ]
+      },
+      {
+        "branch_id": 2,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch3x3dbl_1_conv",
+            "d_ms": 1.25039997510612,
+            "t_ms": 25.088,
+            "s_ms": 1.1335999588482082,
+            "total_local_ms": 27.47199993395433,
+            "prefix_latency_raw": 0.00031259999377653003,
+            "suffix_latency_raw": 0.0011335999588482082,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.0014461999526247382,
+            "full_branch_mobile_cost": 0.005784799810498953
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 4,
+            "cut_node": "branch3x3dbl_2_bn",
+            "d_ms": 3.3383998088538647,
+            "t_ms": 37.632,
+            "s_ms": 0.611600000411272,
+            "total_local_ms": 41.581999809265135,
+            "prefix_latency_raw": 0.0008345999522134662,
+            "suffix_latency_raw": 0.000611600000411272,
+            "activation_bytes": 470400,
+            "full_branch_server_cost": 0.0014461999526247382,
+            "full_branch_mobile_cost": 0.005784799810498953
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 8,
+            "cut_node": "relu_5",
+            "d_ms": 5.784799810498953,
+            "t_ms": 37.632,
+            "s_ms": 0.0,
+            "total_local_ms": 43.41679981049895,
+            "prefix_latency_raw": 0.0014461999526247382,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 470400,
+            "full_branch_server_cost": 0.0014461999526247382,
+            "full_branch_mobile_cost": 0.005784799810498953
+          }
+        ]
+      },
+      {
+        "branch_id": 3,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "avg_pool2d",
+            "d_ms": 1.9059998448938131,
+            "t_ms": 100.352,
+            "s_ms": 0.43370004277676344,
+            "total_local_ms": 102.69169988767058,
+            "prefix_latency_raw": 0.0004764999612234533,
+            "suffix_latency_raw": 0.00043370004277676344,
+            "activation_bytes": 1254400,
+            "full_branch_server_cost": 0.0009102000040002167,
+            "full_branch_mobile_cost": 0.003640800016000867
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "branch_pool_bn",
+            "d_ms": 3.2779998145997524,
+            "t_ms": 25.088,
+            "s_ms": 0.09070005035027862,
+            "total_local_ms": 28.456699864950032,
+            "prefix_latency_raw": 0.0008194999536499381,
+            "suffix_latency_raw": 9.070005035027862e-05,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.0009102000040002167,
+            "full_branch_mobile_cost": 0.003640800016000867
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 4,
+            "cut_node": "cat",
+            "d_ms": 3.640800016000867,
+            "t_ms": 112.896,
+            "s_ms": 0.0,
+            "total_local_ms": 116.53680001600087,
+            "prefix_latency_raw": 0.0009102000040002167,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 1411200,
+            "full_branch_server_cost": 0.0009102000040002167,
+            "full_branch_mobile_cost": 0.003640800016000867
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_5d",
+    "block_type": "inception",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch1x1_conv",
+            "d_ms": 0.7943999953567982,
+            "t_ms": 25.088,
+            "s_ms": 0.047399953473359346,
+            "total_local_ms": 25.92979994883016,
+            "prefix_latency_raw": 0.00019859999883919954,
+            "suffix_latency_raw": 4.7399953473359346e-05,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.0002459999523125589,
+            "full_branch_mobile_cost": 0.0009839998092502356
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "branch1x1_bn",
+            "d_ms": 0.9275998454540968,
+            "t_ms": 25.088,
+            "s_ms": 0.01409999094903469,
+            "total_local_ms": 26.029699836403132,
+            "prefix_latency_raw": 0.0002318999613635242,
+            "suffix_latency_raw": 1.4099990949034691e-05,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.0002459999523125589,
+            "full_branch_mobile_cost": 0.0009839998092502356
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 2,
+            "cut_node": "relu",
+            "d_ms": 0.9839998092502356,
+            "t_ms": 25.088,
+            "s_ms": 0.0,
+            "total_local_ms": 26.071999809250237,
+            "prefix_latency_raw": 0.0002459999523125589,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.0002459999523125589,
+            "full_branch_mobile_cost": 0.0009839998092502356
+          }
+        ]
+      },
+      {
+        "branch_id": 1,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch5x5_1_conv",
+            "d_ms": 0.6492000538855791,
+            "t_ms": 18.816,
+            "s_ms": 0.5155001999810338,
+            "total_local_ms": 19.980700253866612,
+            "prefix_latency_raw": 0.00016230001347139478,
+            "suffix_latency_raw": 0.0005155001999810338,
+            "activation_bytes": 235200,
+            "full_branch_server_cost": 0.0006778002134524286,
+            "full_branch_mobile_cost": 0.0027112008538097143
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "relu_1",
+            "d_ms": 0.8136003743857145,
+            "t_ms": 18.816,
+            "s_ms": 0.47440011985599995,
+            "total_local_ms": 20.104000494241713,
+            "prefix_latency_raw": 0.00020340009359642863,
+            "suffix_latency_raw": 0.00047440011985599995,
+            "activation_bytes": 235200,
+            "full_branch_server_cost": 0.0006778002134524286,
+            "full_branch_mobile_cost": 0.0027112008538097143
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 5,
+            "cut_node": "relu_2",
+            "d_ms": 2.7112008538097143,
+            "t_ms": 25.088,
+            "s_ms": 0.0,
+            "total_local_ms": 27.799200853809715,
+            "prefix_latency_raw": 0.0006778002134524286,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.0006778002134524286,
+            "full_branch_mobile_cost": 0.0027112008538097143
+          }
+        ]
+      },
+      {
+        "branch_id": 2,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch3x3dbl_1_conv",
+            "d_ms": 0.7588001899421215,
+            "t_ms": 25.088,
+            "s_ms": 1.6061999485827982,
+            "total_local_ms": 27.45300013852492,
+            "prefix_latency_raw": 0.00018970004748553038,
+            "suffix_latency_raw": 0.0016061999485827982,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.0017958999960683286,
+            "full_branch_mobile_cost": 0.0071835999842733145
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 4,
+            "cut_node": "branch3x3dbl_2_bn",
+            "d_ms": 2.528799930587411,
+            "t_ms": 37.632,
+            "s_ms": 1.1637000134214759,
+            "total_local_ms": 41.324499944008885,
+            "prefix_latency_raw": 0.0006321999826468527,
+            "suffix_latency_raw": 0.0011637000134214759,
+            "activation_bytes": 470400,
+            "full_branch_server_cost": 0.0017958999960683286,
+            "full_branch_mobile_cost": 0.0071835999842733145
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 8,
+            "cut_node": "relu_5",
+            "d_ms": 7.1835999842733145,
+            "t_ms": 37.632,
+            "s_ms": 0.0,
+            "total_local_ms": 44.81559998427331,
+            "prefix_latency_raw": 0.0017958999960683286,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 470400,
+            "full_branch_server_cost": 0.0017958999960683286,
+            "full_branch_mobile_cost": 0.0071835999842733145
+          }
+        ]
+      },
+      {
+        "branch_id": 3,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "avg_pool2d",
+            "d_ms": 1.69520010240376,
+            "t_ms": 112.896,
+            "s_ms": 0.3746000584214926,
+            "total_local_ms": 114.96580016082525,
+            "prefix_latency_raw": 0.00042380002560094,
+            "suffix_latency_raw": 0.0003746000584214926,
+            "activation_bytes": 1411200,
+            "full_branch_server_cost": 0.0007984000840224326,
+            "full_branch_mobile_cost": 0.0031936003360897303
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "branch_pool_bn",
+            "d_ms": 2.8320003766566515,
+            "t_ms": 25.088,
+            "s_ms": 0.09039998985826969,
+            "total_local_ms": 28.010400366514922,
+            "prefix_latency_raw": 0.0007080000941641629,
+            "suffix_latency_raw": 9.039998985826969e-05,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.0007984000840224326,
+            "full_branch_mobile_cost": 0.0031936003360897303
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 4,
+            "cut_node": "cat",
+            "d_ms": 3.1936003360897303,
+            "t_ms": 112.896,
+            "s_ms": 0.0,
+            "total_local_ms": 116.08960033608973,
+            "prefix_latency_raw": 0.0007984000840224326,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 1411200,
+            "full_branch_server_cost": 0.0007984000840224326,
+            "full_branch_mobile_cost": 0.0031936003360897303
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6a",
+    "block_type": "inception",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch3x3_conv",
+            "d_ms": 4.516799934208393,
+            "t_ms": 35.51232,
+            "s_ms": 0.06859994027763605,
+            "total_local_ms": 40.09771987448603,
+            "prefix_latency_raw": 0.0011291999835520983,
+            "suffix_latency_raw": 6.859994027763605e-05,
+            "activation_bytes": 443904,
+            "full_branch_server_cost": 0.0011977999238297343,
+            "full_branch_mobile_cost": 0.004791199695318937
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "branch3x3_bn",
+            "d_ms": 4.717999836429954,
+            "t_ms": 35.51232,
+            "s_ms": 0.01829996472224593,
+            "total_local_ms": 40.2486198011522,
+            "prefix_latency_raw": 0.0011794999591074884,
+            "suffix_latency_raw": 1.829996472224593e-05,
+            "activation_bytes": 443904,
+            "full_branch_server_cost": 0.0011977999238297343,
+            "full_branch_mobile_cost": 0.004791199695318937
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 2,
+            "cut_node": "relu",
+            "d_ms": 4.791199695318937,
+            "t_ms": 35.51232,
+            "s_ms": 0.0,
+            "total_local_ms": 40.30351969531894,
+            "prefix_latency_raw": 0.0011977999238297343,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 443904,
+            "full_branch_server_cost": 0.0011977999238297343,
+            "full_branch_mobile_cost": 0.004791199695318937
+          }
+        ]
+      },
+      {
+        "branch_id": 1,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch3x3dbl_1_conv",
+            "d_ms": 0.9512000251561403,
+            "t_ms": 25.088,
+            "s_ms": 0.6644999957643449,
+            "total_local_ms": 26.703700020920486,
+            "prefix_latency_raw": 0.00023780000628903508,
+            "suffix_latency_raw": 0.0006644999957643449,
+            "activation_bytes": 313600,
+            "full_branch_server_cost": 0.00090230000205338,
+            "full_branch_mobile_cost": 0.00360920000821352
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 4,
+            "cut_node": "branch3x3dbl_2_bn",
+            "d_ms": 2.6136001106351614,
+            "t_ms": 37.632,
+            "s_ms": 0.24889997439458966,
+            "total_local_ms": 40.49450008502975,
+            "prefix_latency_raw": 0.0006534000276587903,
+            "suffix_latency_raw": 0.00024889997439458966,
+            "activation_bytes": 470400,
+            "full_branch_server_cost": 0.00090230000205338,
+            "full_branch_mobile_cost": 0.00360920000821352
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 8,
+            "cut_node": "relu_3",
+            "d_ms": 3.60920000821352,
+            "t_ms": 8.87808,
+            "s_ms": 0.0,
+            "total_local_ms": 12.48728000821352,
+            "prefix_latency_raw": 0.00090230000205338,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 110976,
+            "full_branch_server_cost": 0.00090230000205338,
+            "full_branch_mobile_cost": 0.00360920000821352
+          }
+        ]
+      },
+      {
+        "branch_id": 2,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "max_pool2d",
+            "d_ms": 1.5455998945981264,
+            "t_ms": 26.63424,
+            "s_ms": 0.039300008211284876,
+            "total_local_ms": 28.21913990280941,
+            "prefix_latency_raw": 0.0003863999736495316,
+            "suffix_latency_raw": 3.9300008211284876e-05,
+            "activation_bytes": 332928,
+            "full_branch_server_cost": 0.0004256999818608165,
+            "full_branch_mobile_cost": 0.001702799927443266
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "cat",
+            "d_ms": 1.702799927443266,
+            "t_ms": 71.02464,
+            "s_ms": 0.0,
+            "total_local_ms": 72.72743992744327,
+            "prefix_latency_raw": 0.0004256999818608165,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 887808,
+            "full_branch_server_cost": 0.0004256999818608165,
+            "full_branch_mobile_cost": 0.001702799927443266
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6b",
+    "block_type": "inception",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch1x1_conv",
+            "d_ms": 1.0495998430997133,
+            "t_ms": 17.75616,
+            "s_ms": 0.05280005279928446,
+            "total_local_ms": 18.858559895899,
+            "prefix_latency_raw": 0.00026239996077492833,
+            "suffix_latency_raw": 5.280005279928446e-05,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0003152000135742128,
+            "full_branch_mobile_cost": 0.0012608000542968512
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "branch1x1_bn",
+            "d_ms": 1.2019998393952847,
+            "t_ms": 17.75616,
+            "s_ms": 0.014700053725391626,
+            "total_local_ms": 18.972859893120678,
+            "prefix_latency_raw": 0.00030049995984882116,
+            "suffix_latency_raw": 1.4700053725391626e-05,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0003152000135742128,
+            "full_branch_mobile_cost": 0.0012608000542968512
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 2,
+            "cut_node": "relu",
+            "d_ms": 1.2608000542968512,
+            "t_ms": 17.75616,
+            "s_ms": 0.0,
+            "total_local_ms": 19.016960054296852,
+            "prefix_latency_raw": 0.0003152000135742128,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0003152000135742128,
+            "full_branch_mobile_cost": 0.0012608000542968512
+          }
+        ]
+      },
+      {
+        "branch_id": 1,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch7x7_1_conv",
+            "d_ms": 0.8223999757319689,
+            "t_ms": 11.837439999999999,
+            "s_ms": 0.6026000482961535,
+            "total_local_ms": 13.262440024028121,
+            "prefix_latency_raw": 0.00020559999393299222,
+            "suffix_latency_raw": 0.0006026000482961535,
+            "activation_bytes": 147968,
+            "full_branch_server_cost": 0.0008082000422291458,
+            "full_branch_mobile_cost": 0.003232800168916583
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 4,
+            "cut_node": "branch7x7_2_bn",
+            "d_ms": 1.9776001572608948,
+            "t_ms": 11.837439999999999,
+            "s_ms": 0.31380000291392207,
+            "total_local_ms": 14.128840160174816,
+            "prefix_latency_raw": 0.0004944000393152237,
+            "suffix_latency_raw": 0.00031380000291392207,
+            "activation_bytes": 147968,
+            "full_branch_server_cost": 0.0008082000422291458,
+            "full_branch_mobile_cost": 0.003232800168916583
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 8,
+            "cut_node": "relu_3",
+            "d_ms": 3.232800168916583,
+            "t_ms": 17.75616,
+            "s_ms": 0.0,
+            "total_local_ms": 20.988960168916584,
+            "prefix_latency_raw": 0.0008082000422291458,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0008082000422291458,
+            "full_branch_mobile_cost": 0.003232800168916583
+          }
+        ]
+      },
+      {
+        "branch_id": 2,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch7x7dbl_1_conv",
+            "d_ms": 0.8040000684559345,
+            "t_ms": 11.837439999999999,
+            "s_ms": 1.112600031774491,
+            "total_local_ms": 13.754040100230425,
+            "prefix_latency_raw": 0.00020100001711398363,
+            "suffix_latency_raw": 0.001112600031774491,
+            "activation_bytes": 147968,
+            "full_branch_server_cost": 0.0013136000488884747,
+            "full_branch_mobile_cost": 0.005254400195553899
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 7,
+            "cut_node": "branch7x7dbl_3_bn",
+            "d_ms": 3.013199893757701,
+            "t_ms": 11.837439999999999,
+            "s_ms": 0.5603000754490495,
+            "total_local_ms": 15.41093996920675,
+            "prefix_latency_raw": 0.0007532999734394252,
+            "suffix_latency_raw": 0.0005603000754490495,
+            "activation_bytes": 147968,
+            "full_branch_server_cost": 0.0013136000488884747,
+            "full_branch_mobile_cost": 0.005254400195553899
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 14,
+            "cut_node": "relu_8",
+            "d_ms": 5.254400195553899,
+            "t_ms": 17.75616,
+            "s_ms": 0.0,
+            "total_local_ms": 23.0105601955539,
+            "prefix_latency_raw": 0.0013136000488884747,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0013136000488884747,
+            "full_branch_mobile_cost": 0.005254400195553899
+          }
+        ]
+      },
+      {
+        "branch_id": 3,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "avg_pool2d",
+            "d_ms": 1.0059999767690897,
+            "t_ms": 71.02464,
+            "s_ms": 0.3475999692454934,
+            "total_local_ms": 72.37823994601459,
+            "prefix_latency_raw": 0.0002514999941922724,
+            "suffix_latency_raw": 0.0003475999692454934,
+            "activation_bytes": 887808,
+            "full_branch_server_cost": 0.0005990999634377658,
+            "full_branch_mobile_cost": 0.0023963998537510633
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "branch_pool_bn",
+            "d_ms": 2.1799998357892036,
+            "t_ms": 17.75616,
+            "s_ms": 0.054100004490464926,
+            "total_local_ms": 19.99025984027967,
+            "prefix_latency_raw": 0.0005449999589473009,
+            "suffix_latency_raw": 5.4100004490464926e-05,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0005990999634377658,
+            "full_branch_mobile_cost": 0.0023963998537510633
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 4,
+            "cut_node": "cat",
+            "d_ms": 2.3963998537510633,
+            "t_ms": 71.02464,
+            "s_ms": 0.0,
+            "total_local_ms": 73.42103985375107,
+            "prefix_latency_raw": 0.0005990999634377658,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 887808,
+            "full_branch_server_cost": 0.0005990999634377658,
+            "full_branch_mobile_cost": 0.0023963998537510633
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6c",
+    "block_type": "inception",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch1x1_conv",
+            "d_ms": 1.2199999764561653,
+            "t_ms": 17.75616,
+            "s_ms": 0.05069997860118747,
+            "total_local_ms": 19.026859955057354,
+            "prefix_latency_raw": 0.00030499999411404133,
+            "suffix_latency_raw": 5.069997860118747e-05,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0003556999727152288,
+            "full_branch_mobile_cost": 0.0014227998908609152
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "branch1x1_bn",
+            "d_ms": 1.352400053292513,
+            "t_ms": 17.75616,
+            "s_ms": 0.017599959392100573,
+            "total_local_ms": 19.126160012684615,
+            "prefix_latency_raw": 0.0003381000133231282,
+            "suffix_latency_raw": 1.7599959392100573e-05,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0003556999727152288,
+            "full_branch_mobile_cost": 0.0014227998908609152
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 2,
+            "cut_node": "relu",
+            "d_ms": 1.4227998908609152,
+            "t_ms": 17.75616,
+            "s_ms": 0.0,
+            "total_local_ms": 19.178959890860916,
+            "prefix_latency_raw": 0.0003556999727152288,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0003556999727152288,
+            "full_branch_mobile_cost": 0.0014227998908609152
+          }
+        ]
+      },
+      {
+        "branch_id": 1,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch7x7_1_conv",
+            "d_ms": 1.0420000180602074,
+            "t_ms": 14.796800000000001,
+            "s_ms": 0.811500009149313,
+            "total_local_ms": 16.650300027209518,
+            "prefix_latency_raw": 0.00026050000451505184,
+            "suffix_latency_raw": 0.000811500009149313,
+            "activation_bytes": 184960,
+            "full_branch_server_cost": 0.0010720000136643648,
+            "full_branch_mobile_cost": 0.004288000054657459
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 4,
+            "cut_node": "branch7x7_2_bn",
+            "d_ms": 2.594799967482686,
+            "t_ms": 14.796800000000001,
+            "s_ms": 0.4233000217936933,
+            "total_local_ms": 17.814899989276377,
+            "prefix_latency_raw": 0.0006486999918706715,
+            "suffix_latency_raw": 0.0004233000217936933,
+            "activation_bytes": 184960,
+            "full_branch_server_cost": 0.0010720000136643648,
+            "full_branch_mobile_cost": 0.004288000054657459
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 8,
+            "cut_node": "relu_3",
+            "d_ms": 4.288000054657459,
+            "t_ms": 17.75616,
+            "s_ms": 0.0,
+            "total_local_ms": 22.04416005465746,
+            "prefix_latency_raw": 0.0010720000136643648,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0010720000136643648,
+            "full_branch_mobile_cost": 0.004288000054657459
+          }
+        ]
+      },
+      {
+        "branch_id": 2,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch7x7dbl_1_conv",
+            "d_ms": 1.1956000234931707,
+            "t_ms": 14.796800000000001,
+            "s_ms": 1.6307998448610306,
+            "total_local_ms": 17.6231998683542,
+            "prefix_latency_raw": 0.0002989000058732927,
+            "suffix_latency_raw": 0.0016307998448610306,
+            "activation_bytes": 184960,
+            "full_branch_server_cost": 0.0019296998507343233,
+            "full_branch_mobile_cost": 0.007718799402937293
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 7,
+            "cut_node": "branch7x7dbl_3_bn",
+            "d_ms": 4.4191996566951275,
+            "t_ms": 14.796800000000001,
+            "s_ms": 0.8248999365605414,
+            "total_local_ms": 20.040899593255666,
+            "prefix_latency_raw": 0.0011047999141737819,
+            "suffix_latency_raw": 0.0008248999365605414,
+            "activation_bytes": 184960,
+            "full_branch_server_cost": 0.0019296998507343233,
+            "full_branch_mobile_cost": 0.007718799402937293
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 14,
+            "cut_node": "relu_8",
+            "d_ms": 7.718799402937293,
+            "t_ms": 17.75616,
+            "s_ms": 0.0,
+            "total_local_ms": 25.474959402937294,
+            "prefix_latency_raw": 0.0019296998507343233,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0019296998507343233,
+            "full_branch_mobile_cost": 0.007718799402937293
+          }
+        ]
+      },
+      {
+        "branch_id": 3,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "avg_pool2d",
+            "d_ms": 1.123199937865138,
+            "t_ms": 71.02464,
+            "s_ms": 0.4580001113936305,
+            "total_local_ms": 72.60584004925877,
+            "prefix_latency_raw": 0.0002807999844662845,
+            "suffix_latency_raw": 0.0004580001113936305,
+            "activation_bytes": 887808,
+            "full_branch_server_cost": 0.000738800095859915,
+            "full_branch_mobile_cost": 0.00295520038343966
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "branch_pool_bn",
+            "d_ms": 2.6364000514149666,
+            "t_ms": 17.75616,
+            "s_ms": 0.07970008300617337,
+            "total_local_ms": 20.47226013442114,
+            "prefix_latency_raw": 0.0006591000128537416,
+            "suffix_latency_raw": 7.970008300617337e-05,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.000738800095859915,
+            "full_branch_mobile_cost": 0.00295520038343966
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 4,
+            "cut_node": "cat",
+            "d_ms": 2.95520038343966,
+            "t_ms": 71.02464,
+            "s_ms": 0.0,
+            "total_local_ms": 73.97984038343967,
+            "prefix_latency_raw": 0.000738800095859915,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 887808,
+            "full_branch_server_cost": 0.000738800095859915,
+            "full_branch_mobile_cost": 0.00295520038343966
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6d",
+    "block_type": "inception",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch1x1_conv",
+            "d_ms": 1.2947998475283384,
+            "t_ms": 17.75616,
+            "s_ms": 0.055500015150755644,
+            "total_local_ms": 19.106459862679095,
+            "prefix_latency_raw": 0.0003236999618820846,
+            "suffix_latency_raw": 5.5500015150755644e-05,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.00037919997703284025,
+            "full_branch_mobile_cost": 0.001516799908131361
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "branch1x1_bn",
+            "d_ms": 1.4499998651444912,
+            "t_ms": 17.75616,
+            "s_ms": 0.016700010746717453,
+            "total_local_ms": 19.22285987589121,
+            "prefix_latency_raw": 0.0003624999662861228,
+            "suffix_latency_raw": 1.6700010746717453e-05,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.00037919997703284025,
+            "full_branch_mobile_cost": 0.001516799908131361
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 2,
+            "cut_node": "relu",
+            "d_ms": 1.516799908131361,
+            "t_ms": 17.75616,
+            "s_ms": 0.0,
+            "total_local_ms": 19.272959908131362,
+            "prefix_latency_raw": 0.00037919997703284025,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.00037919997703284025,
+            "full_branch_mobile_cost": 0.001516799908131361
+          }
+        ]
+      },
+      {
+        "branch_id": 1,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch7x7_1_conv",
+            "d_ms": 1.113999867811799,
+            "t_ms": 14.796800000000001,
+            "s_ms": 1.004299963824451,
+            "total_local_ms": 16.915099831636248,
+            "prefix_latency_raw": 0.00027849996695294976,
+            "suffix_latency_raw": 0.001004299963824451,
+            "activation_bytes": 184960,
+            "full_branch_server_cost": 0.0012827999307774007,
+            "full_branch_mobile_cost": 0.005131199723109603
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 4,
+            "cut_node": "branch7x7_2_bn",
+            "d_ms": 2.81399954110384,
+            "t_ms": 14.796800000000001,
+            "s_ms": 0.5793000455014408,
+            "total_local_ms": 18.190099586605278,
+            "prefix_latency_raw": 0.00070349988527596,
+            "suffix_latency_raw": 0.0005793000455014408,
+            "activation_bytes": 184960,
+            "full_branch_server_cost": 0.0012827999307774007,
+            "full_branch_mobile_cost": 0.005131199723109603
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 8,
+            "cut_node": "relu_3",
+            "d_ms": 5.131199723109603,
+            "t_ms": 17.75616,
+            "s_ms": 0.0,
+            "total_local_ms": 22.887359723109604,
+            "prefix_latency_raw": 0.0012827999307774007,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0012827999307774007,
+            "full_branch_mobile_cost": 0.005131199723109603
+          }
+        ]
+      },
+      {
+        "branch_id": 2,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch7x7dbl_1_conv",
+            "d_ms": 1.0447998065501451,
+            "t_ms": 14.796800000000001,
+            "s_ms": 1.2639000196941197,
+            "total_local_ms": 17.105499826244262,
+            "prefix_latency_raw": 0.0002611999516375363,
+            "suffix_latency_raw": 0.0012639000196941197,
+            "activation_bytes": 184960,
+            "full_branch_server_cost": 0.001525099971331656,
+            "full_branch_mobile_cost": 0.006100399885326624
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 7,
+            "cut_node": "branch7x7dbl_3_bn",
+            "d_ms": 3.5867998376488686,
+            "t_ms": 14.796800000000001,
+            "s_ms": 0.6284000119194388,
+            "total_local_ms": 19.011999849568305,
+            "prefix_latency_raw": 0.0008966999594122171,
+            "suffix_latency_raw": 0.0006284000119194388,
+            "activation_bytes": 184960,
+            "full_branch_server_cost": 0.001525099971331656,
+            "full_branch_mobile_cost": 0.006100399885326624
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 14,
+            "cut_node": "relu_8",
+            "d_ms": 6.100399885326624,
+            "t_ms": 17.75616,
+            "s_ms": 0.0,
+            "total_local_ms": 23.856559885326625,
+            "prefix_latency_raw": 0.001525099971331656,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.001525099971331656,
+            "full_branch_mobile_cost": 0.006100399885326624
+          }
+        ]
+      },
+      {
+        "branch_id": 3,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "avg_pool2d",
+            "d_ms": 1.0079999919980764,
+            "t_ms": 71.02464,
+            "s_ms": 0.3541000187397003,
+            "total_local_ms": 72.38674001073778,
+            "prefix_latency_raw": 0.0002519999979995191,
+            "suffix_latency_raw": 0.0003541000187397003,
+            "activation_bytes": 887808,
+            "full_branch_server_cost": 0.0006061000167392194,
+            "full_branch_mobile_cost": 0.0024244000669568777
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "branch_pool_bn",
+            "d_ms": 2.1964001934975386,
+            "t_ms": 17.75616,
+            "s_ms": 0.056999968364834785,
+            "total_local_ms": 20.009560161862375,
+            "prefix_latency_raw": 0.0005491000483743846,
+            "suffix_latency_raw": 5.6999968364834785e-05,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0006061000167392194,
+            "full_branch_mobile_cost": 0.0024244000669568777
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 4,
+            "cut_node": "cat",
+            "d_ms": 2.4244000669568777,
+            "t_ms": 71.02464,
+            "s_ms": 0.0,
+            "total_local_ms": 73.44904006695688,
+            "prefix_latency_raw": 0.0006061000167392194,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 887808,
+            "full_branch_server_cost": 0.0006061000167392194,
+            "full_branch_mobile_cost": 0.0024244000669568777
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_6e",
+    "block_type": "inception",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch1x1_conv",
+            "d_ms": 1.01200002245605,
+            "t_ms": 17.75616,
+            "s_ms": 0.04730001091957092,
+            "total_local_ms": 18.815460033375622,
+            "prefix_latency_raw": 0.0002530000056140125,
+            "suffix_latency_raw": 4.730001091957092e-05,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0003003000165335834,
+            "full_branch_mobile_cost": 0.0012012000661343336
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "branch1x1_bn",
+            "d_ms": 1.140400068834424,
+            "t_ms": 17.75616,
+            "s_ms": 0.015199999324977398,
+            "total_local_ms": 18.911760068159403,
+            "prefix_latency_raw": 0.000285100017208606,
+            "suffix_latency_raw": 1.5199999324977398e-05,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0003003000165335834,
+            "full_branch_mobile_cost": 0.0012012000661343336
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 2,
+            "cut_node": "relu",
+            "d_ms": 1.2012000661343336,
+            "t_ms": 17.75616,
+            "s_ms": 0.0,
+            "total_local_ms": 18.957360066134335,
+            "prefix_latency_raw": 0.0003003000165335834,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0003003000165335834,
+            "full_branch_mobile_cost": 0.0012012000661343336
+          }
+        ]
+      },
+      {
+        "branch_id": 1,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch7x7_1_conv",
+            "d_ms": 0.9191997814923525,
+            "t_ms": 17.75616,
+            "s_ms": 1.0297999251633883,
+            "total_local_ms": 19.705159706655742,
+            "prefix_latency_raw": 0.00022979994537308812,
+            "suffix_latency_raw": 0.0010297999251633883,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0012595998705364764,
+            "full_branch_mobile_cost": 0.0050383994821459055
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 4,
+            "cut_node": "branch7x7_2_bn",
+            "d_ms": 2.779999515041709,
+            "t_ms": 17.75616,
+            "s_ms": 0.5645999917760491,
+            "total_local_ms": 21.10075950681776,
+            "prefix_latency_raw": 0.0006949998787604272,
+            "suffix_latency_raw": 0.0005645999917760491,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0012595998705364764,
+            "full_branch_mobile_cost": 0.0050383994821459055
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 8,
+            "cut_node": "relu_3",
+            "d_ms": 5.0383994821459055,
+            "t_ms": 17.75616,
+            "s_ms": 0.0,
+            "total_local_ms": 22.794559482145907,
+            "prefix_latency_raw": 0.0012595998705364764,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0012595998705364764,
+            "full_branch_mobile_cost": 0.0050383994821459055
+          }
+        ]
+      },
+      {
+        "branch_id": 2,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch7x7dbl_1_conv",
+            "d_ms": 1.3211998157203197,
+            "t_ms": 17.75616,
+            "s_ms": 1.9886999507434666,
+            "total_local_ms": 21.066059766463788,
+            "prefix_latency_raw": 0.00033029995393007994,
+            "suffix_latency_raw": 0.0019886999507434666,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0023189999046735466,
+            "full_branch_mobile_cost": 0.009275999618694186
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 7,
+            "cut_node": "branch7x7dbl_3_bn",
+            "d_ms": 5.370799684897065,
+            "t_ms": 17.75616,
+            "s_ms": 0.9762999834492803,
+            "total_local_ms": 24.103259668346347,
+            "prefix_latency_raw": 0.0013426999212242663,
+            "suffix_latency_raw": 0.0009762999834492803,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0023189999046735466,
+            "full_branch_mobile_cost": 0.009275999618694186
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 14,
+            "cut_node": "relu_8",
+            "d_ms": 9.275999618694186,
+            "t_ms": 17.75616,
+            "s_ms": 0.0,
+            "total_local_ms": 27.032159618694187,
+            "prefix_latency_raw": 0.0023189999046735466,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0023189999046735466,
+            "full_branch_mobile_cost": 0.009275999618694186
+          }
+        ]
+      },
+      {
+        "branch_id": 3,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "avg_pool2d",
+            "d_ms": 1.0143998079001904,
+            "t_ms": 71.02464,
+            "s_ms": 0.4044999950565398,
+            "total_local_ms": 72.44353980295674,
+            "prefix_latency_raw": 0.0002535999519750476,
+            "suffix_latency_raw": 0.0004044999950565398,
+            "activation_bytes": 887808,
+            "full_branch_server_cost": 0.0006580999470315874,
+            "full_branch_mobile_cost": 0.0026323997881263494
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "branch_pool_bn",
+            "d_ms": 2.37479992210865,
+            "t_ms": 17.75616,
+            "s_ms": 0.06439996650442481,
+            "total_local_ms": 20.195359888613076,
+            "prefix_latency_raw": 0.0005936999805271626,
+            "suffix_latency_raw": 6.439996650442481e-05,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0006580999470315874,
+            "full_branch_mobile_cost": 0.0026323997881263494
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 4,
+            "cut_node": "cat",
+            "d_ms": 2.6323997881263494,
+            "t_ms": 71.02464,
+            "s_ms": 0.0,
+            "total_local_ms": 73.65703978812635,
+            "prefix_latency_raw": 0.0006580999470315874,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 887808,
+            "full_branch_server_cost": 0.0006580999470315874,
+            "full_branch_mobile_cost": 0.0026323997881263494
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_7a",
+    "block_type": "inception",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch3x3_1_conv",
+            "d_ms": 1.0924001690000296,
+            "t_ms": 17.75616,
+            "s_ms": 0.3958999295718968,
+            "total_local_ms": 19.244460098571928,
+            "prefix_latency_raw": 0.0002731000422500074,
+            "suffix_latency_raw": 0.0003958999295718968,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0006689999718219042,
+            "full_branch_mobile_cost": 0.0026759998872876167
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "relu",
+            "d_ms": 1.3296001125127077,
+            "t_ms": 17.75616,
+            "s_ms": 0.33659994369372725,
+            "total_local_ms": 19.422360056206436,
+            "prefix_latency_raw": 0.00033240002812817693,
+            "suffix_latency_raw": 0.00033659994369372725,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0006689999718219042,
+            "full_branch_mobile_cost": 0.0026759998872876167
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 5,
+            "cut_node": "relu_1",
+            "d_ms": 2.6759998872876167,
+            "t_ms": 6.553599999999999,
+            "s_ms": 0.0,
+            "total_local_ms": 9.229599887287616,
+            "prefix_latency_raw": 0.0006689999718219042,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 81920,
+            "full_branch_server_cost": 0.0006689999718219042,
+            "full_branch_mobile_cost": 0.0026759998872876167
+          }
+        ]
+      },
+      {
+        "branch_id": 1,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch7x7x3_1_conv",
+            "d_ms": 1.0915999300777912,
+            "t_ms": 17.75616,
+            "s_ms": 1.7204999458044767,
+            "total_local_ms": 20.56825987588227,
+            "prefix_latency_raw": 0.0002728999825194478,
+            "suffix_latency_raw": 0.0017204999458044767,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0019933999283239245,
+            "full_branch_mobile_cost": 0.007973599713295698
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 5,
+            "cut_node": "relu_3",
+            "d_ms": 4.121599718928337,
+            "t_ms": 17.75616,
+            "s_ms": 0.9629999985918403,
+            "total_local_ms": 22.84075971752018,
+            "prefix_latency_raw": 0.0010303999297320843,
+            "suffix_latency_raw": 0.0009629999985918403,
+            "activation_bytes": 221952,
+            "full_branch_server_cost": 0.0019933999283239245,
+            "full_branch_mobile_cost": 0.007973599713295698
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 11,
+            "cut_node": "relu_5",
+            "d_ms": 7.973599713295698,
+            "t_ms": 3.9321599999999997,
+            "s_ms": 0.0,
+            "total_local_ms": 11.905759713295698,
+            "prefix_latency_raw": 0.0019933999283239245,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 49152,
+            "full_branch_server_cost": 0.0019933999283239245,
+            "full_branch_mobile_cost": 0.007973599713295698
+          }
+        ]
+      },
+      {
+        "branch_id": 2,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "max_pool2d",
+            "d_ms": 1.2104001361876726,
+            "t_ms": 15.728639999999999,
+            "s_ms": 0.053800002206116915,
+            "total_local_ms": 16.992840138393788,
+            "prefix_latency_raw": 0.00030260003404691815,
+            "suffix_latency_raw": 5.3800002206116915e-05,
+            "activation_bytes": 196608,
+            "full_branch_server_cost": 0.00035640003625303507,
+            "full_branch_mobile_cost": 0.0014256001450121403
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "cat",
+            "d_ms": 1.4256001450121403,
+            "t_ms": 26.214399999999998,
+            "s_ms": 0.0,
+            "total_local_ms": 27.640000145012138,
+            "prefix_latency_raw": 0.00035640003625303507,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 327680,
+            "full_branch_server_cost": 0.00035640003625303507,
+            "full_branch_mobile_cost": 0.0014256001450121403
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_7b",
+    "block_type": "inception",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch1x1_conv",
+            "d_ms": 1.0740000288933516,
+            "t_ms": 6.553599999999999,
+            "s_ms": 0.05460000829771161,
+            "total_local_ms": 7.682200037191063,
+            "prefix_latency_raw": 0.0002685000072233379,
+            "suffix_latency_raw": 5.460000829771161e-05,
+            "activation_bytes": 81920,
+            "full_branch_server_cost": 0.0003231000155210495,
+            "full_branch_mobile_cost": 0.001292400062084198
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "branch1x1_bn",
+            "d_ms": 1.2332000769674778,
+            "t_ms": 6.553599999999999,
+            "s_ms": 0.01479999627918005,
+            "total_local_ms": 7.801600073246657,
+            "prefix_latency_raw": 0.00030830001924186945,
+            "suffix_latency_raw": 1.479999627918005e-05,
+            "activation_bytes": 81920,
+            "full_branch_server_cost": 0.0003231000155210495,
+            "full_branch_mobile_cost": 0.001292400062084198
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 2,
+            "cut_node": "relu",
+            "d_ms": 1.292400062084198,
+            "t_ms": 6.553599999999999,
+            "s_ms": 0.0,
+            "total_local_ms": 7.846000062084197,
+            "prefix_latency_raw": 0.0003231000155210495,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 81920,
+            "full_branch_server_cost": 0.0003231000155210495,
+            "full_branch_mobile_cost": 0.001292400062084198
+          }
+        ]
+      },
+      {
+        "branch_id": 1,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch3x3_1_conv",
+            "d_ms": 1.1788001284003258,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.3768999595195055,
+            "total_local_ms": 9.42002008791983,
+            "prefix_latency_raw": 0.00029470003210008144,
+            "suffix_latency_raw": 0.0003768999595195055,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.0006715999916195869,
+            "full_branch_mobile_cost": 0.0026863999664783478
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "relu_1",
+            "d_ms": 1.3840000610798597,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.325599976349622,
+            "total_local_ms": 9.573920037429481,
+            "prefix_latency_raw": 0.00034600001526996493,
+            "suffix_latency_raw": 0.000325599976349622,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.0006715999916195869,
+            "full_branch_mobile_cost": 0.0026863999664783478
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 5,
+            "cut_node": "relu_2",
+            "d_ms": 2.686399966478348,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.0,
+            "total_local_ms": 10.550719966478347,
+            "prefix_latency_raw": 0.0006715999916195869,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.0006715999916195869,
+            "full_branch_mobile_cost": 0.0026863999664783478
+          }
+        ]
+      },
+      {
+        "branch_id": 2,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch3x3_2b_conv",
+            "d_ms": 0.9892000816762447,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.07069995626807213,
+            "total_local_ms": 8.924220037944316,
+            "prefix_latency_raw": 0.0002473000204190612,
+            "suffix_latency_raw": 7.069995626807213e-05,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.0003179999766871333,
+            "full_branch_mobile_cost": 0.0012719999067485332
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "branch3x3_2b_bn",
+            "d_ms": 1.1303999926894903,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.03539997851476073,
+            "total_local_ms": 9.03011997120425,
+            "prefix_latency_raw": 0.0002825999981723726,
+            "suffix_latency_raw": 3.539997851476073e-05,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.0003179999766871333,
+            "full_branch_mobile_cost": 0.0012719999067485332
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 3,
+            "cut_node": "cat",
+            "d_ms": 1.2719999067485332,
+            "t_ms": 15.728639999999999,
+            "s_ms": 0.0,
+            "total_local_ms": 17.000639906748532,
+            "prefix_latency_raw": 0.0003179999766871333,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 196608,
+            "full_branch_server_cost": 0.0003179999766871333,
+            "full_branch_mobile_cost": 0.0012719999067485332
+          }
+        ]
+      },
+      {
+        "branch_id": 3,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch3x3dbl_1_conv",
+            "d_ms": 1.2892000377178192,
+            "t_ms": 9.175040000000001,
+            "s_ms": 1.0051000863313675,
+            "total_local_ms": 11.469340124049188,
+            "prefix_latency_raw": 0.0003223000094294548,
+            "suffix_latency_raw": 0.0010051000863313675,
+            "activation_bytes": 114688,
+            "full_branch_server_cost": 0.0013274000957608223,
+            "full_branch_mobile_cost": 0.005309600383043289
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 4,
+            "cut_node": "branch3x3dbl_2_bn",
+            "d_ms": 4.036400001496077,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.31830009538680315,
+            "total_local_ms": 12.219020096882879,
+            "prefix_latency_raw": 0.0010091000003740191,
+            "suffix_latency_raw": 0.00031830009538680315,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.0013274000957608223,
+            "full_branch_mobile_cost": 0.005309600383043289
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 8,
+            "cut_node": "relu_6",
+            "d_ms": 5.309600383043289,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.0,
+            "total_local_ms": 13.173920383043288,
+            "prefix_latency_raw": 0.0013274000957608223,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.0013274000957608223,
+            "full_branch_mobile_cost": 0.005309600383043289
+          }
+        ]
+      },
+      {
+        "branch_id": 4,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch3x3dbl_3b_conv",
+            "d_ms": 0.9775999933481216,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.07530004950240254,
+            "total_local_ms": 8.917220042850523,
+            "prefix_latency_raw": 0.0002443999983370304,
+            "suffix_latency_raw": 7.530004950240254e-05,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.00031970004783943295,
+            "full_branch_mobile_cost": 0.0012788001913577318
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "branch3x3dbl_3b_bn",
+            "d_ms": 1.1223999317735434,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.039100064896047115,
+            "total_local_ms": 9.02581999666959,
+            "prefix_latency_raw": 0.00028059998294338584,
+            "suffix_latency_raw": 3.9100064896047115e-05,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.00031970004783943295,
+            "full_branch_mobile_cost": 0.0012788001913577318
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 3,
+            "cut_node": "cat_1",
+            "d_ms": 1.2788001913577318,
+            "t_ms": 15.728639999999999,
+            "s_ms": 0.0,
+            "total_local_ms": 17.00744019135773,
+            "prefix_latency_raw": 0.00031970004783943295,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 196608,
+            "full_branch_server_cost": 0.00031970004783943295,
+            "full_branch_mobile_cost": 0.0012788001913577318
+          }
+        ]
+      },
+      {
+        "branch_id": 5,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "avg_pool2d",
+            "d_ms": 0.39599998854100704,
+            "t_ms": 26.214399999999998,
+            "s_ms": 0.2772000734694302,
+            "total_local_ms": 26.887600062010435,
+            "prefix_latency_raw": 9.899999713525176e-05,
+            "suffix_latency_raw": 0.0002772000734694302,
+            "activation_bytes": 327680,
+            "full_branch_server_cost": 0.00037620007060468197,
+            "full_branch_mobile_cost": 0.0015048002824187279
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "branch_pool_bn",
+            "d_ms": 1.2960000894963741,
+            "t_ms": 3.9321599999999997,
+            "s_ms": 0.052200048230588436,
+            "total_local_ms": 5.280360137726962,
+            "prefix_latency_raw": 0.00032400002237409353,
+            "suffix_latency_raw": 5.2200048230588436e-05,
+            "activation_bytes": 49152,
+            "full_branch_server_cost": 0.00037620007060468197,
+            "full_branch_mobile_cost": 0.0015048002824187279
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 4,
+            "cut_node": "cat_2",
+            "d_ms": 1.5048002824187279,
+            "t_ms": 41.94304,
+            "s_ms": 0.0,
+            "total_local_ms": 43.44784028241873,
+            "prefix_latency_raw": 0.00037620007060468197,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 524288,
+            "full_branch_server_cost": 0.00037620007060468197,
+            "full_branch_mobile_cost": 0.0015048002824187279
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "model": "inception_v3",
+    "block_id": "Mixed_7c",
+    "block_type": "inception",
+    "status": "evaluated",
+    "cost_model": "fx_node_measured_proxy",
+    "branches": [
+      {
+        "branch_id": 0,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch1x1_conv",
+            "d_ms": 1.6852000262588263,
+            "t_ms": 6.553599999999999,
+            "s_ms": 0.05990004865452647,
+            "total_local_ms": 8.298700074913352,
+            "prefix_latency_raw": 0.00042130000656470656,
+            "suffix_latency_raw": 5.990004865452647e-05,
+            "activation_bytes": 81920,
+            "full_branch_server_cost": 0.00048120005521923304,
+            "full_branch_mobile_cost": 0.0019248002208769321
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "branch1x1_bn",
+            "d_ms": 1.8596001900732517,
+            "t_ms": 6.553599999999999,
+            "s_ms": 0.016300007700920105,
+            "total_local_ms": 8.429500197774171,
+            "prefix_latency_raw": 0.00046490004751831293,
+            "suffix_latency_raw": 1.6300007700920105e-05,
+            "activation_bytes": 81920,
+            "full_branch_server_cost": 0.00048120005521923304,
+            "full_branch_mobile_cost": 0.0019248002208769321
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 2,
+            "cut_node": "relu",
+            "d_ms": 1.9248002208769321,
+            "t_ms": 6.553599999999999,
+            "s_ms": 0.0,
+            "total_local_ms": 8.478400220876932,
+            "prefix_latency_raw": 0.00048120005521923304,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 81920,
+            "full_branch_server_cost": 0.00048120005521923304,
+            "full_branch_mobile_cost": 0.0019248002208769321
+          }
+        ]
+      },
+      {
+        "branch_id": 1,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch3x3_1_conv",
+            "d_ms": 1.8155998550355434,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.4209000035189092,
+            "total_local_ms": 10.100819858554452,
+            "prefix_latency_raw": 0.00045389996375888586,
+            "suffix_latency_raw": 0.0004209000035189092,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.0008747999672777951,
+            "full_branch_mobile_cost": 0.0034991998691111803
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "relu_1",
+            "d_ms": 2.0211997907608747,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.3695000195875764,
+            "total_local_ms": 10.25501981034845,
+            "prefix_latency_raw": 0.0005052999476902187,
+            "suffix_latency_raw": 0.0003695000195875764,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.0008747999672777951,
+            "full_branch_mobile_cost": 0.0034991998691111803
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 5,
+            "cut_node": "relu_2",
+            "d_ms": 3.4991998691111803,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.0,
+            "total_local_ms": 11.36351986911118,
+            "prefix_latency_raw": 0.0008747999672777951,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.0008747999672777951,
+            "full_branch_mobile_cost": 0.0034991998691111803
+          }
+        ]
+      },
+      {
+        "branch_id": 2,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch3x3_2b_conv",
+            "d_ms": 1.2360000982880592,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.0757999368943274,
+            "total_local_ms": 9.176120035182386,
+            "prefix_latency_raw": 0.0003090000245720148,
+            "suffix_latency_raw": 7.57999368943274e-05,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.0003847999614663422,
+            "full_branch_mobile_cost": 0.0015391998458653688
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "branch3x3_2b_bn",
+            "d_ms": 1.3812000397592783,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.039499951526522636,
+            "total_local_ms": 9.2850199912858,
+            "prefix_latency_raw": 0.0003453000099398196,
+            "suffix_latency_raw": 3.9499951526522636e-05,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.0003847999614663422,
+            "full_branch_mobile_cost": 0.0015391998458653688
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 3,
+            "cut_node": "cat",
+            "d_ms": 1.5391998458653688,
+            "t_ms": 15.728639999999999,
+            "s_ms": 0.0,
+            "total_local_ms": 17.267839845865367,
+            "prefix_latency_raw": 0.0003847999614663422,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 196608,
+            "full_branch_server_cost": 0.0003847999614663422,
+            "full_branch_mobile_cost": 0.0015391998458653688
+          }
+        ]
+      },
+      {
+        "branch_id": 3,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch3x3dbl_1_conv",
+            "d_ms": 2.0828000269830227,
+            "t_ms": 9.175040000000001,
+            "s_ms": 1.1382000520825386,
+            "total_local_ms": 12.396040079065562,
+            "prefix_latency_raw": 0.0005207000067457557,
+            "suffix_latency_raw": 0.0011382000520825386,
+            "activation_bytes": 114688,
+            "full_branch_server_cost": 0.0016589000588282943,
+            "full_branch_mobile_cost": 0.006635600235313177
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 4,
+            "cut_node": "branch3x3dbl_2_bn",
+            "d_ms": 5.140800029039383,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.37370005156844854,
+            "total_local_ms": 13.37882008060783,
+            "prefix_latency_raw": 0.0012852000072598457,
+            "suffix_latency_raw": 0.00037370005156844854,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.0016589000588282943,
+            "full_branch_mobile_cost": 0.006635600235313177
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 8,
+            "cut_node": "relu_6",
+            "d_ms": 6.635600235313177,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.0,
+            "total_local_ms": 14.499920235313176,
+            "prefix_latency_raw": 0.0016589000588282943,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.0016589000588282943,
+            "full_branch_mobile_cost": 0.006635600235313177
+          }
+        ]
+      },
+      {
+        "branch_id": 4,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "branch3x3dbl_3b_conv",
+            "d_ms": 1.1804001405835152,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.07429998368024826,
+            "total_local_ms": 9.119020124263763,
+            "prefix_latency_raw": 0.0002951000351458788,
+            "suffix_latency_raw": 7.429998368024826e-05,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.00036940001882612705,
+            "full_branch_mobile_cost": 0.0014776000753045082
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 1,
+            "cut_node": "branch3x3dbl_3b_bn",
+            "d_ms": 1.3232000637799501,
+            "t_ms": 7.864319999999999,
+            "s_ms": 0.03860000288113952,
+            "total_local_ms": 9.226120066661089,
+            "prefix_latency_raw": 0.00033080001594498754,
+            "suffix_latency_raw": 3.860000288113952e-05,
+            "activation_bytes": 98304,
+            "full_branch_server_cost": 0.00036940001882612705,
+            "full_branch_mobile_cost": 0.0014776000753045082
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 3,
+            "cut_node": "cat_1",
+            "d_ms": 1.4776000753045082,
+            "t_ms": 15.728639999999999,
+            "s_ms": 0.0,
+            "total_local_ms": 17.206240075304507,
+            "prefix_latency_raw": 0.00036940001882612705,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 196608,
+            "full_branch_server_cost": 0.00036940001882612705,
+            "full_branch_mobile_cost": 0.0014776000753045082
+          }
+        ]
+      },
+      {
+        "branch_id": 5,
+        "candidates": [
+          {
+            "candidate_id": 0,
+            "cut_index": 0,
+            "cut_node": "avg_pool2d",
+            "d_ms": 0.6856000982224941,
+            "t_ms": 41.94304,
+            "s_ms": 0.35090005258098245,
+            "total_local_ms": 42.97954015080348,
+            "prefix_latency_raw": 0.00017140002455562353,
+            "suffix_latency_raw": 0.00035090005258098245,
+            "activation_bytes": 524288,
+            "full_branch_server_cost": 0.000522300077136606,
+            "full_branch_mobile_cost": 0.002089200308546424
+          },
+          {
+            "candidate_id": 1,
+            "cut_index": 2,
+            "cut_node": "branch_pool_bn",
+            "d_ms": 1.8804001156240702,
+            "t_ms": 3.9321599999999997,
+            "s_ms": 0.052200048230588436,
+            "total_local_ms": 5.864760163854658,
+            "prefix_latency_raw": 0.00047010002890601754,
+            "suffix_latency_raw": 5.2200048230588436e-05,
+            "activation_bytes": 49152,
+            "full_branch_server_cost": 0.000522300077136606,
+            "full_branch_mobile_cost": 0.002089200308546424
+          },
+          {
+            "candidate_id": 2,
+            "cut_index": 4,
+            "cut_node": "cat_2",
+            "d_ms": 2.089200308546424,
+            "t_ms": 41.94304,
+            "s_ms": 0.0,
+            "total_local_ms": 44.03224030854643,
+            "prefix_latency_raw": 0.000522300077136606,
+            "suffix_latency_raw": 0.0,
+            "activation_bytes": 524288,
+            "full_branch_server_cost": 0.000522300077136606,
+            "full_branch_mobile_cost": 0.002089200308546424
+          }
+        ]
+      }
+    ]
+  }
+]
