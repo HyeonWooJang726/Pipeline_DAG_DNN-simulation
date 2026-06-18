@@ -112,9 +112,12 @@ Each proof results directory contains:
 
 ## Legacy Prototype Flow
 
-`run_experiment.py` and the non-v2 modules are early prototype / legacy code.
-They are kept for reference, but they are not used for the reported proof
-experiment or the bandwidth comparison result above.
+The early prototype `run_experiment.py` flow, `configs/default.yaml`, non-v2
+prototype modules, old task note, and old `results/` output have been moved to
+`legacy_prototype/`.
+
+They are kept only for reference. They are not used for the reported proof
+experiment, the single proof plot, or the bandwidth comparison result above.
 
 ## Cost model note
 
