@@ -1,8 +1,8 @@
 from typing import Any, Dict, List, Tuple
 
 
-def decc_branch_decompose_v2(block_module, max_candidates_per_branch: int = 3) -> Dict[str, Any]:
-    """Trace a block FX graph and build deterministic DECC-style branches."""
+def decc_branch_decompose_v2(block_module) -> Dict[str, Any]:
+    """Trace a block FX graph and build deterministic branches."""
     graph = trace_block_fx_graph(block_module)
     nodes = [n for n in graph["nodes"] if n["op"] not in ("placeholder", "output")]
     if not nodes:
@@ -122,7 +122,7 @@ def decc_branch_decompose_v2(block_module, max_candidates_per_branch: int = 3) -
         branches.append({
             "branch_id": branch_id,
             "nodes": branch_nodes,
-            "candidates": _make_candidates(branch_nodes, max_candidates_per_branch),
+            "candidates": _make_candidates(branch_nodes),
             "dependencies": branch_dependencies,
         })
 
@@ -193,9 +193,8 @@ def _build_dependencies(raw_branches, preds, node_to_branch):
     )
 
 
-def _make_candidates(branch_nodes: List[str], max_candidates_per_branch: int) -> List[Dict[str, Any]]:
-    count = min(max(1, max_candidates_per_branch), len(branch_nodes), 3)
-    indices = _candidate_indices(len(branch_nodes), count)
+def _make_candidates(branch_nodes: List[str]) -> List[Dict[str, Any]]:
+    indices = _candidate_indices(len(branch_nodes))
     return [
         {
             "candidate_id": candidate_id,
@@ -206,10 +205,8 @@ def _make_candidates(branch_nodes: List[str], max_candidates_per_branch: int) ->
     ]
 
 
-def _candidate_indices(length: int, count: int) -> List[int]:
-    if count <= 1:
-        return [length - 1]
-    raw = [0, (length - 1) // 2, length - 1] if count >= 3 else [0, length - 1]
+def _candidate_indices(length: int) -> List[int]:
+    raw = range(max(0, length))
     out = []
     for idx in raw:
         if idx not in out:

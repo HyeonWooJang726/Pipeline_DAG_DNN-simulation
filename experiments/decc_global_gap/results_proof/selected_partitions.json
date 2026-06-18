@@ -3,16 +3,16 @@
     "model": "vgg11",
     "block_id": "features",
     "decc_style_raw_vector": [
-      2
+      20
     ],
     "decc_style_vector": [
-      2
+      20
     ],
     "global_raw_vector": [
-      2
+      20
     ],
     "global_vector": [
-      2
+      20
     ],
     "decc_style_cut_nodes": [
       "_20"
@@ -233,25 +233,25 @@
     "global_raw_vector": [
       0,
       0,
-      0,
+      2,
       0
     ],
     "global_vector": [
       0,
       0,
-      0,
+      2,
       0
     ],
     "decc_style_cut_nodes": [
       "branch1x1_conv",
       "branch5x5_1_conv",
       "branch3x3dbl_1_conv",
-      "branch_pool_bn"
+      "branch_pool_conv"
     ],
     "global_cut_nodes": [
       "branch1x1_conv",
       "branch5x5_1_conv",
-      "branch3x3dbl_1_conv",
+      "relu_3",
       "avg_pool2d"
     ]
   },
@@ -273,25 +273,25 @@
     "global_raw_vector": [
       0,
       0,
-      0,
+      2,
       0
     ],
     "global_vector": [
       0,
       0,
-      0,
+      2,
       0
     ],
     "decc_style_cut_nodes": [
       "branch1x1_conv",
       "branch5x5_1_conv",
       "branch3x3dbl_1_conv",
-      "branch_pool_bn"
+      "branch_pool_conv"
     ],
     "global_cut_nodes": [
       "branch1x1_conv",
       "branch5x5_1_conv",
-      "branch3x3dbl_1_conv",
+      "relu_3",
       "avg_pool2d"
     ]
   },
@@ -313,25 +313,25 @@
     "global_raw_vector": [
       0,
       0,
-      0,
+      2,
       0
     ],
     "global_vector": [
       0,
       0,
-      0,
+      2,
       0
     ],
     "decc_style_cut_nodes": [
       "branch1x1_conv",
       "branch5x5_1_conv",
       "branch3x3dbl_1_conv",
-      "branch_pool_bn"
+      "branch_pool_conv"
     ],
     "global_cut_nodes": [
       "branch1x1_conv",
       "branch5x5_1_conv",
-      "branch3x3dbl_1_conv",
+      "relu_3",
       "avg_pool2d"
     ]
   },
@@ -340,27 +340,27 @@
     "block_id": "Mixed_6a",
     "decc_style_raw_vector": [
       0,
-      2,
+      6,
       0
     ],
     "decc_style_vector": [
       0,
-      2,
+      6,
       0
     ],
     "global_raw_vector": [
       0,
-      2,
+      8,
       0
     ],
     "global_vector": [
       0,
-      2,
+      8,
       0
     ],
     "decc_style_cut_nodes": [
       "branch3x3_conv",
-      "relu_3",
+      "branch3x3dbl_3_conv",
       "max_pool2d"
     ],
     "global_cut_nodes": [
@@ -387,25 +387,25 @@
     "global_raw_vector": [
       0,
       0,
-      1,
+      11,
       0
     ],
     "global_vector": [
       0,
       0,
-      1,
+      11,
       0
     ],
     "decc_style_cut_nodes": [
       "branch1x1_conv",
       "branch7x7_1_conv",
       "branch7x7dbl_1_conv",
-      "branch_pool_bn"
+      "branch_pool_conv"
     ],
     "global_cut_nodes": [
       "branch1x1_conv",
       "branch7x7_1_conv",
-      "branch7x7dbl_3_bn",
+      "relu_7",
       "avg_pool2d"
     ]
   },
@@ -427,25 +427,25 @@
     "global_raw_vector": [
       0,
       0,
-      1,
+      11,
       0
     ],
     "global_vector": [
       0,
       0,
-      1,
+      11,
       0
     ],
     "decc_style_cut_nodes": [
       "branch1x1_conv",
       "branch7x7_1_conv",
       "branch7x7dbl_1_conv",
-      "branch_pool_bn"
+      "branch_pool_conv"
     ],
     "global_cut_nodes": [
       "branch1x1_conv",
       "branch7x7_1_conv",
-      "branch7x7dbl_3_bn",
+      "relu_7",
       "avg_pool2d"
     ]
   },
@@ -467,25 +467,25 @@
     "global_raw_vector": [
       0,
       0,
-      1,
+      11,
       0
     ],
     "global_vector": [
       0,
       0,
-      1,
+      11,
       0
     ],
     "decc_style_cut_nodes": [
       "branch1x1_conv",
       "branch7x7_1_conv",
       "branch7x7dbl_1_conv",
-      "branch_pool_bn"
+      "branch_pool_conv"
     ],
     "global_cut_nodes": [
       "branch1x1_conv",
       "branch7x7_1_conv",
-      "branch7x7dbl_3_bn",
+      "relu_7",
       "avg_pool2d"
     ]
   },
@@ -507,20 +507,20 @@
     "global_raw_vector": [
       0,
       0,
-      2,
+      14,
       0
     ],
     "global_vector": [
       0,
       0,
-      2,
+      14,
       0
     ],
     "decc_style_cut_nodes": [
       "branch1x1_conv",
       "branch7x7_1_conv",
       "branch7x7dbl_1_conv",
-      "branch_pool_bn"
+      "branch_pool_conv"
     ],
     "global_cut_nodes": [
       "branch1x1_conv",
@@ -533,33 +533,33 @@
     "model": "inception_v3",
     "block_id": "Mixed_7a",
     "decc_style_raw_vector": [
-      2,
-      2,
+      3,
+      9,
       0
     ],
     "decc_style_vector": [
-      2,
-      2,
+      3,
+      9,
       0
     ],
     "global_raw_vector": [
-      0,
-      2,
+      3,
+      9,
       0
     ],
     "global_vector": [
-      0,
-      2,
+      3,
+      9,
       0
     ],
     "decc_style_cut_nodes": [
-      "relu_1",
-      "relu_5",
+      "branch3x3_2_conv",
+      "branch7x7x3_4_conv",
       "max_pool2d"
     ],
     "global_cut_nodes": [
-      "branch3x3_1_conv",
-      "relu_5",
+      "branch3x3_2_conv",
+      "branch7x7x3_4_conv",
       "max_pool2d"
     ]
   },
@@ -586,7 +586,7 @@
       0,
       0,
       0,
-      1,
+      7,
       0,
       0
     ],
@@ -594,7 +594,7 @@
       0,
       0,
       0,
-      1,
+      7,
       0,
       0
     ],
@@ -604,13 +604,13 @@
       "branch3x3_2b_conv",
       "branch3x3dbl_1_conv",
       "branch3x3dbl_3b_conv",
-      "branch_pool_bn"
+      "branch_pool_conv"
     ],
     "global_cut_nodes": [
       "branch1x1_conv",
       "branch3x3_1_conv",
       "branch3x3_2b_conv",
-      "branch3x3dbl_2_bn",
+      "branch3x3dbl_3a_bn",
       "branch3x3dbl_3b_conv",
       "avg_pool2d"
     ]
@@ -638,7 +638,7 @@
       0,
       0,
       0,
-      1,
+      7,
       0,
       0
     ],
@@ -646,7 +646,7 @@
       0,
       0,
       0,
-      1,
+      7,
       0,
       0
     ],
@@ -656,13 +656,13 @@
       "branch3x3_2b_conv",
       "branch3x3dbl_1_conv",
       "branch3x3dbl_3b_conv",
-      "branch_pool_bn"
+      "branch_pool_conv"
     ],
     "global_cut_nodes": [
       "branch1x1_conv",
       "branch3x3_1_conv",
       "branch3x3_2b_conv",
-      "branch3x3dbl_2_bn",
+      "branch3x3dbl_3a_bn",
       "branch3x3dbl_3b_conv",
       "avg_pool2d"
     ]

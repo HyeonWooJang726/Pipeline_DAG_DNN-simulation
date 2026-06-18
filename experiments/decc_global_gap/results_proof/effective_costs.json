@@ -6,10 +6,10 @@
     "decc_style": {
       "status": "evaluated",
       "raw_vector": [
-        2
+        20
       ],
       "repaired_vector": [
-        2
+        20
       ],
       "cut_nodes": [
         "_20"
@@ -17,7 +17,7 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 118.41759970411658,
+          "d_ms": 64.09080023877323,
           "t_ms": 8.02816,
           "s_ms": 0.0,
           "cut_index": 20,
@@ -26,8 +26,8 @@
         }
       ],
       "aggregation_events": [],
-      "final_latency_ms": 126.44575970411658,
-      "device_busy_ms": 118.41759970411658,
+      "final_latency_ms": 72.11896023877323,
+      "device_busy_ms": 64.09080023877323,
       "tx_busy_ms": 8.02816,
       "server_busy_ms": 0.0,
       "bottleneck_stage": "device"
@@ -35,10 +35,10 @@
     "global": {
       "status": "evaluated",
       "raw_vector": [
-        2
+        20
       ],
       "repaired_vector": [
-        2
+        20
       ],
       "cut_nodes": [
         "_20"
@@ -46,7 +46,7 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 118.41759970411658,
+          "d_ms": 64.09080023877323,
           "t_ms": 8.02816,
           "s_ms": 0.0,
           "cut_index": 20,
@@ -55,8 +55,8 @@
         }
       ],
       "aggregation_events": [],
-      "final_latency_ms": 126.44575970411658,
-      "device_busy_ms": 118.41759970411658,
+      "final_latency_ms": 72.11896023877323,
+      "device_busy_ms": 64.09080023877323,
       "tx_busy_ms": 8.02816,
       "server_busy_ms": 0.0,
       "bottleneck_stage": "device"
@@ -80,19 +80,19 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 2.40200012922287,
+          "d_ms": 1.8060000147670507,
           "t_ms": 64.22528,
-          "s_ms": 0.7240999257192016,
+          "s_ms": 0.5974000669084489,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
         }
       ],
       "aggregation_events": [],
-      "final_latency_ms": 67.35138005494207,
-      "device_busy_ms": 2.40200012922287,
+      "final_latency_ms": 66.6286800816755,
+      "device_busy_ms": 1.8060000147670507,
       "tx_busy_ms": 64.22528,
-      "server_busy_ms": 0.7240999257192016,
+      "server_busy_ms": 0.5974000669084489,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -109,19 +109,19 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 2.40200012922287,
+          "d_ms": 1.8060000147670507,
           "t_ms": 64.22528,
-          "s_ms": 0.7240999257192016,
+          "s_ms": 0.5974000669084489,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
         }
       ],
       "aggregation_events": [],
-      "final_latency_ms": 67.35138005494207,
-      "device_busy_ms": 2.40200012922287,
+      "final_latency_ms": 66.6286800816755,
+      "device_busy_ms": 1.8060000147670507,
       "tx_busy_ms": 64.22528,
-      "server_busy_ms": 0.7240999257192016,
+      "server_busy_ms": 0.5974000669084489,
       "bottleneck_stage": "tx"
     }
   },
@@ -143,19 +143,19 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 2.1792000625282526,
+          "d_ms": 1.4039999805390835,
           "t_ms": 64.22528,
-          "s_ms": 0.6680000224150717,
+          "s_ms": 0.49539998872205615,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
         }
       ],
       "aggregation_events": [],
-      "final_latency_ms": 67.07248008494332,
-      "device_busy_ms": 2.1792000625282526,
+      "final_latency_ms": 66.12467996926114,
+      "device_busy_ms": 1.4039999805390835,
       "tx_busy_ms": 64.22528,
-      "server_busy_ms": 0.6680000224150717,
+      "server_busy_ms": 0.49539998872205615,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -172,19 +172,19 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 2.1792000625282526,
+          "d_ms": 1.4039999805390835,
           "t_ms": 64.22528,
-          "s_ms": 0.6680000224150717,
+          "s_ms": 0.49539998872205615,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
         }
       ],
       "aggregation_events": [],
-      "final_latency_ms": 67.07248008494332,
-      "device_busy_ms": 2.1792000625282526,
+      "final_latency_ms": 66.12467996926114,
+      "device_busy_ms": 1.4039999805390835,
       "tx_busy_ms": 64.22528,
-      "server_busy_ms": 0.6680000224150717,
+      "server_busy_ms": 0.49539998872205615,
       "bottleneck_stage": "tx"
     }
   },
@@ -209,9 +209,9 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.3723999727517366,
+          "d_ms": 0.601600157096982,
           "t_ms": 32.11264,
-          "s_ms": 0.6600999622605741,
+          "s_ms": 0.36419997923076153,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
@@ -220,7 +220,7 @@
           "branch_id": 1,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.23450003936886787,
+          "s_ms": 0.10359997395426035,
           "cut_index": 0,
           "cut_node": "downsample_0",
           "cloud_only": true
@@ -245,13 +245,13 @@
             "add",
             "relu_1"
           ],
-          "moved_suffix_server_cost": 3.700004890561104e-05
+          "moved_suffix_server_cost": 3.260001540184021e-05
         }
       ],
-      "final_latency_ms": 34.37963997438118,
-      "device_busy_ms": 1.3723999727517366,
+      "final_latency_ms": 33.182040110282,
+      "device_busy_ms": 0.601600157096982,
       "tx_busy_ms": 32.11264,
-      "server_busy_ms": 0.894600001629442,
+      "server_busy_ms": 0.4677999531850219,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -271,9 +271,9 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.3723999727517366,
+          "d_ms": 0.601600157096982,
           "t_ms": 32.11264,
-          "s_ms": 0.6600999622605741,
+          "s_ms": 0.36419997923076153,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
@@ -282,7 +282,7 @@
           "branch_id": 1,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.23450003936886787,
+          "s_ms": 0.10359997395426035,
           "cut_index": 0,
           "cut_node": "downsample_0",
           "cloud_only": true
@@ -307,13 +307,13 @@
             "add",
             "relu_1"
           ],
-          "moved_suffix_server_cost": 3.700004890561104e-05
+          "moved_suffix_server_cost": 3.260001540184021e-05
         }
       ],
-      "final_latency_ms": 34.37963997438118,
-      "device_busy_ms": 1.3723999727517366,
+      "final_latency_ms": 33.182040110282,
+      "device_busy_ms": 0.601600157096982,
       "tx_busy_ms": 32.11264,
-      "server_busy_ms": 0.894600001629442,
+      "server_busy_ms": 0.4677999531850219,
       "bottleneck_stage": "tx"
     }
   },
@@ -335,19 +335,19 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.8331999890506268,
+          "d_ms": 0.8408001158386469,
           "t_ms": 32.11264,
-          "s_ms": 0.8920999825932086,
+          "s_ms": 0.2986000617966056,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
         }
       ],
       "aggregation_events": [],
-      "final_latency_ms": 34.837939971643834,
-      "device_busy_ms": 1.8331999890506268,
+      "final_latency_ms": 33.25204017763525,
+      "device_busy_ms": 0.8408001158386469,
       "tx_busy_ms": 32.11264,
-      "server_busy_ms": 0.8920999825932086,
+      "server_busy_ms": 0.2986000617966056,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -364,19 +364,19 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.8331999890506268,
+          "d_ms": 0.8408001158386469,
           "t_ms": 32.11264,
-          "s_ms": 0.8920999825932086,
+          "s_ms": 0.2986000617966056,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
         }
       ],
       "aggregation_events": [],
-      "final_latency_ms": 34.837939971643834,
-      "device_busy_ms": 1.8331999890506268,
+      "final_latency_ms": 33.25204017763525,
+      "device_busy_ms": 0.8408001158386469,
       "tx_busy_ms": 32.11264,
-      "server_busy_ms": 0.8920999825932086,
+      "server_busy_ms": 0.2986000617966056,
       "bottleneck_stage": "tx"
     }
   },
@@ -401,9 +401,9 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.8716000486165285,
+          "d_ms": 1.1471998877823353,
           "t_ms": 16.05632,
-          "s_ms": 0.920899969059974,
+          "s_ms": 0.5206001223996282,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
@@ -412,7 +412,7 @@
           "branch_id": 1,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.25949999690055847,
+          "s_ms": 0.2747999969869852,
           "cut_index": 0,
           "cut_node": "downsample_0",
           "cloud_only": true
@@ -437,13 +437,13 @@
             "add",
             "relu_1"
           ],
-          "moved_suffix_server_cost": 6.290001329034567e-05
+          "moved_suffix_server_cost": 5.940004484727979e-05
         }
       ],
-      "final_latency_ms": 19.10832001457706,
-      "device_busy_ms": 1.8716000486165285,
+      "final_latency_ms": 17.998920007168948,
+      "device_busy_ms": 1.1471998877823353,
       "tx_busy_ms": 16.05632,
-      "server_busy_ms": 1.1803999659605324,
+      "server_busy_ms": 0.7954001193866134,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -463,9 +463,9 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.8716000486165285,
+          "d_ms": 1.1471998877823353,
           "t_ms": 16.05632,
-          "s_ms": 0.920899969059974,
+          "s_ms": 0.5206001223996282,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
@@ -474,7 +474,7 @@
           "branch_id": 1,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.25949999690055847,
+          "s_ms": 0.2747999969869852,
           "cut_index": 0,
           "cut_node": "downsample_0",
           "cloud_only": true
@@ -499,13 +499,13 @@
             "add",
             "relu_1"
           ],
-          "moved_suffix_server_cost": 6.290001329034567e-05
+          "moved_suffix_server_cost": 5.940004484727979e-05
         }
       ],
-      "final_latency_ms": 19.10832001457706,
-      "device_busy_ms": 1.8716000486165285,
+      "final_latency_ms": 17.998920007168948,
+      "device_busy_ms": 1.1471998877823353,
       "tx_busy_ms": 16.05632,
-      "server_busy_ms": 1.1803999659605324,
+      "server_busy_ms": 0.7954001193866134,
       "bottleneck_stage": "tx"
     }
   },
@@ -527,19 +527,19 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 2.5487998500466347,
+          "d_ms": 1.3668001629412174,
           "t_ms": 16.05632,
-          "s_ms": 0.6688000285066664,
+          "s_ms": 0.599200080614537,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
         }
       ],
       "aggregation_events": [],
-      "final_latency_ms": 19.2739198785533,
-      "device_busy_ms": 2.5487998500466347,
+      "final_latency_ms": 18.022320243555754,
+      "device_busy_ms": 1.3668001629412174,
       "tx_busy_ms": 16.05632,
-      "server_busy_ms": 0.6688000285066664,
+      "server_busy_ms": 0.599200080614537,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -556,19 +556,19 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 2.5487998500466347,
+          "d_ms": 1.3668001629412174,
           "t_ms": 16.05632,
-          "s_ms": 0.6688000285066664,
+          "s_ms": 0.599200080614537,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
         }
       ],
       "aggregation_events": [],
-      "final_latency_ms": 19.2739198785533,
-      "device_busy_ms": 2.5487998500466347,
+      "final_latency_ms": 18.022320243555754,
+      "device_busy_ms": 1.3668001629412174,
       "tx_busy_ms": 16.05632,
-      "server_busy_ms": 0.6688000285066664,
+      "server_busy_ms": 0.599200080614537,
       "bottleneck_stage": "tx"
     }
   },
@@ -593,9 +593,9 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 2.0612000953406096,
+          "d_ms": 0.9363999124616385,
           "t_ms": 8.02816,
-          "s_ms": 1.0227999882772565,
+          "s_ms": 0.5274000577628613,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
@@ -604,7 +604,7 @@
           "branch_id": 1,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.16229995526373386,
+          "s_ms": 0.15079998411238194,
           "cut_index": 0,
           "cut_node": "downsample_0",
           "cloud_only": true
@@ -629,13 +629,13 @@
             "add",
             "relu_1"
           ],
-          "moved_suffix_server_cost": 3.619998460635543e-05
+          "moved_suffix_server_cost": 3.600004129111767e-05
         }
       ],
-      "final_latency_ms": 11.2744600388816,
-      "device_busy_ms": 2.0612000953406096,
+      "final_latency_ms": 9.642759954336881,
+      "device_busy_ms": 0.9363999124616385,
       "tx_busy_ms": 8.02816,
-      "server_busy_ms": 1.1850999435409904,
+      "server_busy_ms": 0.6782000418752432,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -655,9 +655,9 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 2.0612000953406096,
+          "d_ms": 0.9363999124616385,
           "t_ms": 8.02816,
-          "s_ms": 1.0227999882772565,
+          "s_ms": 0.5274000577628613,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
@@ -666,7 +666,7 @@
           "branch_id": 1,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.16229995526373386,
+          "s_ms": 0.15079998411238194,
           "cut_index": 0,
           "cut_node": "downsample_0",
           "cloud_only": true
@@ -691,13 +691,13 @@
             "add",
             "relu_1"
           ],
-          "moved_suffix_server_cost": 3.619998460635543e-05
+          "moved_suffix_server_cost": 3.600004129111767e-05
         }
       ],
-      "final_latency_ms": 11.2744600388816,
-      "device_busy_ms": 2.0612000953406096,
+      "final_latency_ms": 9.642759954336881,
+      "device_busy_ms": 0.9363999124616385,
       "tx_busy_ms": 8.02816,
-      "server_busy_ms": 1.1850999435409904,
+      "server_busy_ms": 0.6782000418752432,
       "bottleneck_stage": "tx"
     }
   },
@@ -719,19 +719,19 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 4.4027999974787235,
+          "d_ms": 1.3792000245302916,
           "t_ms": 8.02816,
-          "s_ms": 1.2679999927058816,
+          "s_ms": 0.6873001693747938,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
         }
       ],
       "aggregation_events": [],
-      "final_latency_ms": 13.698959990184605,
-      "device_busy_ms": 4.4027999974787235,
+      "final_latency_ms": 10.094660193905085,
+      "device_busy_ms": 1.3792000245302916,
       "tx_busy_ms": 8.02816,
-      "server_busy_ms": 1.2679999927058816,
+      "server_busy_ms": 0.6873001693747938,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -748,19 +748,19 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 4.4027999974787235,
+          "d_ms": 1.3792000245302916,
           "t_ms": 8.02816,
-          "s_ms": 1.2679999927058816,
+          "s_ms": 0.6873001693747938,
           "cut_index": 0,
           "cut_node": "conv1",
           "cloud_only": false
         }
       ],
       "aggregation_events": [],
-      "final_latency_ms": 13.698959990184605,
-      "device_busy_ms": 4.4027999974787235,
+      "final_latency_ms": 10.094660193905085,
+      "device_busy_ms": 1.3792000245302916,
       "tx_busy_ms": 8.02816,
-      "server_busy_ms": 1.2679999927058816,
+      "server_busy_ms": 0.6873001693747938,
       "bottleneck_stage": "tx"
     }
   },
@@ -786,32 +786,32 @@
         "branch1x1_conv",
         "branch5x5_1_conv",
         "branch3x3dbl_1_conv",
-        "branch_pool_bn"
+        "branch_pool_conv"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 0.6744000129401684,
+          "d_ms": 0.5315998569130898,
           "t_ms": 25.088,
-          "s_ms": 0.10350003140047193,
+          "s_ms": 0.10629999451339245,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 0.5672001279890537,
+          "d_ms": 0.46520004980266094,
           "t_ms": 18.816,
-          "s_ms": 0.508700089994818,
+          "s_ms": 0.38650003261864185,
           "cut_index": 0,
           "cut_node": "branch5x5_1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
-          "d_ms": 0.601199921220541,
+          "d_ms": 0.6219998467713594,
           "t_ms": 25.088,
-          "s_ms": 0.8721001213416457,
+          "s_ms": 0.5945999873802066,
           "cut_index": 0,
           "cut_node": "branch3x3dbl_1_conv",
           "cloud_only": false
@@ -820,9 +820,9 @@
           "branch_id": 3,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.47450000420212746,
-          "cut_index": 2,
-          "cut_node": "branch_pool_bn",
+          "s_ms": 0.30209997203201056,
+          "cut_index": 1,
+          "cut_node": "branch_pool_conv",
           "cloud_only": true
         }
       ],
@@ -844,13 +844,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 4.5199994929134846e-05
+          "moved_suffix_server_cost": 5.4100004490464926e-05
         }
       ],
-      "final_latency_ms": 71.01300013848395,
-      "device_busy_ms": 1.842800062149763,
+      "final_latency_ms": 70.42029981632531,
+      "device_busy_ms": 1.6187997534871101,
       "tx_busy_ms": 68.992,
-      "server_busy_ms": 1.958800246939063,
+      "server_busy_ms": 1.3894999865442514,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -858,54 +858,54 @@
       "raw_vector": [
         0,
         0,
-        0,
+        2,
         0
       ],
       "repaired_vector": [
         0,
         0,
-        0,
+        2,
         0
       ],
       "cut_nodes": [
         "branch1x1_conv",
         "branch5x5_1_conv",
-        "branch3x3dbl_1_conv",
+        "relu_3",
         "avg_pool2d"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 0.6744000129401684,
+          "d_ms": 0.5315998569130898,
           "t_ms": 25.088,
-          "s_ms": 0.10350003140047193,
+          "s_ms": 0.10629999451339245,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 0.5672001279890537,
+          "d_ms": 0.46520004980266094,
           "t_ms": 18.816,
-          "s_ms": 0.508700089994818,
+          "s_ms": 0.38650003261864185,
           "cut_index": 0,
           "cut_node": "branch5x5_1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
-          "d_ms": 0.601199921220541,
+          "d_ms": 0.8431999012827873,
           "t_ms": 25.088,
-          "s_ms": 0.8721001213416457,
-          "cut_index": 0,
-          "cut_node": "branch3x3dbl_1_conv",
+          "s_ms": 0.5392999737523496,
+          "cut_index": 2,
+          "cut_node": "relu_3",
           "cloud_only": false
         },
         {
           "branch_id": 3,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.47450000420212746,
+          "s_ms": 0.30209997203201056,
           "cut_index": 0,
           "cut_node": "avg_pool2d",
           "cloud_only": true
@@ -929,13 +929,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 4.5199994929134846e-05
+          "moved_suffix_server_cost": 5.4100004490464926e-05
         }
       ],
-      "final_latency_ms": 71.01300013848395,
-      "device_busy_ms": 1.842800062149763,
+      "final_latency_ms": 70.36499980269745,
+      "device_busy_ms": 1.839999807998538,
       "tx_busy_ms": 68.992,
-      "server_busy_ms": 1.958800246939063,
+      "server_busy_ms": 1.3341999729163945,
       "bottleneck_stage": "tx"
     }
   },
@@ -961,32 +961,32 @@
         "branch1x1_conv",
         "branch5x5_1_conv",
         "branch3x3dbl_1_conv",
-        "branch_pool_bn"
+        "branch_pool_conv"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 0.708000035956502,
+          "d_ms": 1.2795999646186829,
           "t_ms": 25.088,
-          "s_ms": 0.12400001287460327,
+          "s_ms": 0.14920008834451437,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 0.6132000125944614,
+          "d_ms": 0.7128000725060701,
           "t_ms": 18.816,
-          "s_ms": 0.6453999667428434,
+          "s_ms": 0.46310003381222486,
           "cut_index": 0,
           "cut_node": "branch5x5_1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
-          "d_ms": 1.25039997510612,
+          "d_ms": 0.798800028860569,
           "t_ms": 25.088,
-          "s_ms": 1.1335999588482082,
+          "s_ms": 0.7076000329107046,
           "cut_index": 0,
           "cut_node": "branch3x3dbl_1_conv",
           "cloud_only": false
@@ -995,9 +995,9 @@
           "branch_id": 3,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.839299988001585,
-          "cut_index": 2,
-          "cut_node": "branch_pool_bn",
+          "s_ms": 0.5305999657139182,
+          "cut_index": 1,
+          "cut_node": "branch_pool_conv",
           "cloud_only": true
         }
       ],
@@ -1019,13 +1019,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 7.090001599863172e-05
+          "moved_suffix_server_cost": 7.570005254819989e-05
         }
       ],
-      "final_latency_ms": 71.6728999828063,
-      "device_busy_ms": 2.5716000236570835,
+      "final_latency_ms": 71.50979996324331,
+      "device_busy_ms": 2.791200065985322,
       "tx_busy_ms": 68.992,
-      "server_busy_ms": 2.74229992646724,
+      "server_busy_ms": 1.850500120781362,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -1033,54 +1033,54 @@
       "raw_vector": [
         0,
         0,
-        0,
+        2,
         0
       ],
       "repaired_vector": [
         0,
         0,
-        0,
+        2,
         0
       ],
       "cut_nodes": [
         "branch1x1_conv",
         "branch5x5_1_conv",
-        "branch3x3dbl_1_conv",
+        "relu_3",
         "avg_pool2d"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 0.708000035956502,
+          "d_ms": 1.2795999646186829,
           "t_ms": 25.088,
-          "s_ms": 0.12400001287460327,
+          "s_ms": 0.14920008834451437,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 0.6132000125944614,
+          "d_ms": 0.7128000725060701,
           "t_ms": 18.816,
-          "s_ms": 0.6453999667428434,
+          "s_ms": 0.46310003381222486,
           "cut_index": 0,
           "cut_node": "branch5x5_1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
-          "d_ms": 1.25039997510612,
+          "d_ms": 1.0776000563055277,
           "t_ms": 25.088,
-          "s_ms": 1.1335999588482082,
-          "cut_index": 0,
-          "cut_node": "branch3x3dbl_1_conv",
+          "s_ms": 0.6379000260494649,
+          "cut_index": 2,
+          "cut_node": "relu_3",
           "cloud_only": false
         },
         {
           "branch_id": 3,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.839299988001585,
+          "s_ms": 0.5305999657139182,
           "cut_index": 0,
           "cut_node": "avg_pool2d",
           "cloud_only": true
@@ -1104,13 +1104,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 7.090001599863172e-05
+          "moved_suffix_server_cost": 7.570005254819989e-05
         }
       ],
-      "final_latency_ms": 71.6728999828063,
-      "device_busy_ms": 2.5716000236570835,
+      "final_latency_ms": 71.44009995638207,
+      "device_busy_ms": 3.0700000934302807,
       "tx_busy_ms": 68.992,
-      "server_busy_ms": 2.74229992646724,
+      "server_busy_ms": 1.7808001139201224,
       "bottleneck_stage": "tx"
     }
   },
@@ -1136,32 +1136,32 @@
         "branch1x1_conv",
         "branch5x5_1_conv",
         "branch3x3dbl_1_conv",
-        "branch_pool_bn"
+        "branch_pool_conv"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 0.7943999953567982,
+          "d_ms": 0.6075999699532986,
           "t_ms": 25.088,
-          "s_ms": 0.10059995111078024,
+          "s_ms": 0.083099992480129,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 0.6492000538855791,
+          "d_ms": 0.5271998234093189,
           "t_ms": 18.816,
-          "s_ms": 0.5155001999810338,
+          "s_ms": 0.3306000726297498,
           "cut_index": 0,
           "cut_node": "branch5x5_1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
-          "d_ms": 0.7588001899421215,
+          "d_ms": 0.5588000640273094,
           "t_ms": 25.088,
-          "s_ms": 1.6061999485827982,
+          "s_ms": 0.6371000199578702,
           "cut_index": 0,
           "cut_node": "branch3x3dbl_1_conv",
           "cloud_only": false
@@ -1170,9 +1170,9 @@
           "branch_id": 3,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.7452000863850117,
-          "cut_index": 2,
-          "cut_node": "branch_pool_bn",
+          "s_ms": 0.44020009227097034,
+          "cut_index": 1,
+          "cut_node": "branch_pool_conv",
           "cloud_only": true
         }
       ],
@@ -1194,13 +1194,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 5.319999763742089e-05
+          "moved_suffix_server_cost": 3.890000516548753e-05
         }
       ],
-      "final_latency_ms": 72.13780003032461,
-      "device_busy_ms": 2.202400239184499,
+      "final_latency_ms": 70.67690008218214,
+      "device_busy_ms": 1.693599857389927,
       "tx_busy_ms": 68.992,
-      "server_busy_ms": 2.967500186059624,
+      "server_busy_ms": 1.4910001773387194,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -1208,54 +1208,54 @@
       "raw_vector": [
         0,
         0,
-        0,
+        2,
         0
       ],
       "repaired_vector": [
         0,
         0,
-        0,
+        2,
         0
       ],
       "cut_nodes": [
         "branch1x1_conv",
         "branch5x5_1_conv",
-        "branch3x3dbl_1_conv",
+        "relu_3",
         "avg_pool2d"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 0.7943999953567982,
+          "d_ms": 0.6075999699532986,
           "t_ms": 25.088,
-          "s_ms": 0.10059995111078024,
+          "s_ms": 0.083099992480129,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 0.6492000538855791,
+          "d_ms": 0.5271998234093189,
           "t_ms": 18.816,
-          "s_ms": 0.5155001999810338,
+          "s_ms": 0.3306000726297498,
           "cut_index": 0,
           "cut_node": "branch5x5_1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
-          "d_ms": 0.7588001899421215,
+          "d_ms": 0.7048002444207668,
           "t_ms": 25.088,
-          "s_ms": 1.6061999485827982,
-          "cut_index": 0,
-          "cut_node": "branch3x3dbl_1_conv",
+          "s_ms": 0.6005999748595059,
+          "cut_index": 2,
+          "cut_node": "relu_3",
           "cloud_only": false
         },
         {
           "branch_id": 3,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.7452000863850117,
+          "s_ms": 0.44020009227097034,
           "cut_index": 0,
           "cut_node": "avg_pool2d",
           "cloud_only": true
@@ -1279,13 +1279,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 5.319999763742089e-05
+          "moved_suffix_server_cost": 3.890000516548753e-05
         }
       ],
-      "final_latency_ms": 72.13780003032461,
-      "device_busy_ms": 2.202400239184499,
+      "final_latency_ms": 70.64040003708378,
+      "device_busy_ms": 1.8396000377833843,
       "tx_busy_ms": 68.992,
-      "server_busy_ms": 2.967500186059624,
+      "server_busy_ms": 1.454500132240355,
       "bottleneck_stage": "tx"
     }
   },
@@ -1297,43 +1297,43 @@
       "status": "evaluated",
       "raw_vector": [
         0,
-        2,
+        6,
         0
       ],
       "repaired_vector": [
         0,
-        2,
+        6,
         0
       ],
       "cut_nodes": [
         "branch3x3_conv",
-        "relu_3",
+        "branch3x3dbl_3_conv",
         "max_pool2d"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 4.516799934208393,
+          "d_ms": 2.779599977657199,
           "t_ms": 35.51232,
-          "s_ms": 0.10789994848892093,
+          "s_ms": 0.1653000363148749,
           "cut_index": 0,
           "cut_node": "branch3x3_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 3.60920000821352,
+          "d_ms": 3.010400105267763,
           "t_ms": 8.87808,
-          "s_ms": 0.0,
-          "cut_index": 8,
-          "cut_node": "relu_3",
+          "s_ms": 0.04380004247650504,
+          "cut_index": 6,
+          "cut_node": "branch3x3dbl_3_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.3863999736495316,
+          "s_ms": 0.1735000405460596,
           "cut_index": 0,
           "cut_node": "max_pool2d",
           "cloud_only": true
@@ -1357,25 +1357,25 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 3.9300008211284876e-05
+          "moved_suffix_server_cost": 4.740001168102026e-05
         }
       ],
-      "final_latency_ms": 49.293599907857924,
-      "device_busy_ms": 8.125999942421913,
+      "final_latency_ms": 47.38730006067976,
+      "device_busy_ms": 5.790000082924962,
       "tx_busy_ms": 44.3904,
-      "server_busy_ms": 0.49429992213845253,
+      "server_busy_ms": 0.38260011933743954,
       "bottleneck_stage": "tx"
     },
     "global": {
       "status": "evaluated",
       "raw_vector": [
         0,
-        2,
+        8,
         0
       ],
       "repaired_vector": [
         0,
-        2,
+        8,
         0
       ],
       "cut_nodes": [
@@ -1386,16 +1386,16 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 4.516799934208393,
+          "d_ms": 2.779599977657199,
           "t_ms": 35.51232,
-          "s_ms": 0.10789994848892093,
+          "s_ms": 0.1653000363148749,
           "cut_index": 0,
           "cut_node": "branch3x3_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 3.60920000821352,
+          "d_ms": 3.1856002751737833,
           "t_ms": 8.87808,
           "s_ms": 0.0,
           "cut_index": 8,
@@ -1406,7 +1406,7 @@
           "branch_id": 2,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.3863999736495316,
+          "s_ms": 0.1735000405460596,
           "cut_index": 0,
           "cut_node": "max_pool2d",
           "cloud_only": true
@@ -1430,13 +1430,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 3.9300008211284876e-05
+          "moved_suffix_server_cost": 4.740001168102026e-05
         }
       ],
-      "final_latency_ms": 49.293599907857924,
-      "device_busy_ms": 8.125999942421913,
+      "final_latency_ms": 47.34350001820326,
+      "device_busy_ms": 5.965200252830982,
       "tx_busy_ms": 44.3904,
-      "server_busy_ms": 0.49429992213845253,
+      "server_busy_ms": 0.3388000768609345,
       "bottleneck_stage": "tx"
     }
   },
@@ -1462,32 +1462,32 @@
         "branch1x1_conv",
         "branch7x7_1_conv",
         "branch7x7dbl_1_conv",
-        "branch_pool_bn"
+        "branch_pool_conv"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.0495998430997133,
+          "d_ms": 1.040400005877018,
           "t_ms": 17.75616,
-          "s_ms": 0.09270006557926536,
+          "s_ms": 0.14369998825713992,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 0.8223999757319689,
+          "d_ms": 1.0019999463111162,
           "t_ms": 11.837439999999999,
-          "s_ms": 0.6026000482961535,
+          "s_ms": 0.6837000255472958,
           "cut_index": 0,
           "cut_node": "branch7x7_1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
-          "d_ms": 0.8040000684559345,
+          "d_ms": 0.8331998251378536,
           "t_ms": 11.837439999999999,
-          "s_ms": 1.112600031774491,
+          "s_ms": 1.0432999697513878,
           "cut_index": 0,
           "cut_node": "branch7x7dbl_1_conv",
           "cloud_only": false
@@ -1496,9 +1496,9 @@
           "branch_id": 3,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.5591999506577849,
-          "cut_index": 2,
-          "cut_node": "branch_pool_bn",
+          "s_ms": 0.3774999058805406,
+          "cut_index": 1,
+          "cut_node": "branch_pool_conv",
           "cloud_only": true
         }
       ],
@@ -1520,13 +1520,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 3.99000127799809e-05
+          "moved_suffix_server_cost": 5.519995465874672e-05
         }
       ],
-      "final_latency_ms": 44.152439825531985,
-      "device_busy_ms": 2.6759998872876167,
+      "final_latency_ms": 43.89223988150894,
+      "device_busy_ms": 2.875599777325988,
       "tx_busy_ms": 41.431039999999996,
-      "server_busy_ms": 2.367100096307695,
+      "server_busy_ms": 2.248199889436364,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -1534,54 +1534,54 @@
       "raw_vector": [
         0,
         0,
-        1,
+        11,
         0
       ],
       "repaired_vector": [
         0,
         0,
-        1,
+        11,
         0
       ],
       "cut_nodes": [
         "branch1x1_conv",
         "branch7x7_1_conv",
-        "branch7x7dbl_3_bn",
+        "relu_7",
         "avg_pool2d"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.0495998430997133,
+          "d_ms": 1.040400005877018,
           "t_ms": 17.75616,
-          "s_ms": 0.09270006557926536,
+          "s_ms": 0.14369998825713992,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 0.8223999757319689,
+          "d_ms": 1.0019999463111162,
           "t_ms": 11.837439999999999,
-          "s_ms": 0.6026000482961535,
+          "s_ms": 0.6837000255472958,
           "cut_index": 0,
           "cut_node": "branch7x7_1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
-          "d_ms": 3.013199893757701,
+          "d_ms": 3.9959996938705444,
           "t_ms": 11.837439999999999,
-          "s_ms": 0.5603000754490495,
-          "cut_index": 7,
-          "cut_node": "branch7x7dbl_3_bn",
+          "s_ms": 0.25260000256821513,
+          "cut_index": 11,
+          "cut_node": "relu_7",
           "cloud_only": false
         },
         {
           "branch_id": 3,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.5591999506577849,
+          "s_ms": 0.3774999058805406,
           "cut_index": 0,
           "cut_node": "avg_pool2d",
           "cloud_only": true
@@ -1605,13 +1605,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 3.99000127799809e-05
+          "moved_suffix_server_cost": 5.519995465874672e-05
         }
       ],
-      "final_latency_ms": 43.600139869206544,
-      "device_busy_ms": 4.885199712589383,
+      "final_latency_ms": 43.10153991432577,
+      "device_busy_ms": 6.038399646058679,
       "tx_busy_ms": 41.431039999999996,
-      "server_busy_ms": 1.8148001399822533,
+      "server_busy_ms": 1.4574999222531915,
       "bottleneck_stage": "tx"
     }
   },
@@ -1637,32 +1637,32 @@
         "branch1x1_conv",
         "branch7x7_1_conv",
         "branch7x7dbl_1_conv",
-        "branch_pool_bn"
+        "branch_pool_conv"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.2199999764561653,
+          "d_ms": 1.0348001960664988,
           "t_ms": 17.75616,
-          "s_ms": 0.11000002268701792,
+          "s_ms": 0.15049998182803392,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 1.0420000180602074,
+          "d_ms": 1.0543998796492815,
           "t_ms": 14.796800000000001,
-          "s_ms": 0.811500009149313,
+          "s_ms": 0.5822000675834715,
           "cut_index": 0,
           "cut_node": "branch7x7_1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
-          "d_ms": 1.1956000234931707,
+          "d_ms": 0.6328001618385315,
           "t_ms": 14.796800000000001,
-          "s_ms": 1.6307998448610306,
+          "s_ms": 1.653200131841004,
           "cut_index": 0,
           "cut_node": "branch7x7dbl_1_conv",
           "cloud_only": false
@@ -1671,9 +1671,9 @@
           "branch_id": 3,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.6795000517740846,
-          "cut_index": 2,
-          "cut_node": "branch_pool_bn",
+          "s_ms": 0.457199988886714,
+          "cut_index": 1,
+          "cut_node": "branch_pool_conv",
           "cloud_only": true
         }
       ],
@@ -1695,13 +1695,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 5.930004408583045e-05
+          "moved_suffix_server_cost": 8.089997572824359e-05
         }
       ],
-      "final_latency_ms": 50.88005987309128,
-      "device_busy_ms": 3.4576000180095434,
+      "final_latency_ms": 50.49496031679421,
+      "device_busy_ms": 2.7220002375543118,
       "tx_busy_ms": 47.349759999999996,
-      "server_busy_ms": 3.231799928471446,
+      "server_busy_ms": 2.8431001701392233,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -1709,54 +1709,54 @@
       "raw_vector": [
         0,
         0,
-        1,
+        11,
         0
       ],
       "repaired_vector": [
         0,
         0,
-        1,
+        11,
         0
       ],
       "cut_nodes": [
         "branch1x1_conv",
         "branch7x7_1_conv",
-        "branch7x7dbl_3_bn",
+        "relu_7",
         "avg_pool2d"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.2199999764561653,
+          "d_ms": 1.0348001960664988,
           "t_ms": 17.75616,
-          "s_ms": 0.11000002268701792,
+          "s_ms": 0.15049998182803392,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 1.0420000180602074,
+          "d_ms": 1.0543998796492815,
           "t_ms": 14.796800000000001,
-          "s_ms": 0.811500009149313,
+          "s_ms": 0.5822000675834715,
           "cut_index": 0,
           "cut_node": "branch7x7_1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
-          "d_ms": 4.4191996566951275,
+          "d_ms": 5.697600776329637,
           "t_ms": 14.796800000000001,
-          "s_ms": 0.8248999365605414,
-          "cut_index": 7,
-          "cut_node": "branch7x7dbl_3_bn",
+          "s_ms": 0.3869999782182276,
+          "cut_index": 11,
+          "cut_node": "relu_7",
           "cloud_only": false
         },
         {
           "branch_id": 3,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.6795000517740846,
+          "s_ms": 0.457199988886714,
           "cut_index": 0,
           "cut_node": "avg_pool2d",
           "cloud_only": true
@@ -1780,13 +1780,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 5.930004408583045e-05
+          "moved_suffix_server_cost": 8.089997572824359e-05
         }
       ],
-      "final_latency_ms": 50.07415996479079,
-      "device_busy_ms": 6.6811996512115,
+      "final_latency_ms": 49.22876016317144,
+      "device_busy_ms": 7.786800852045417,
       "tx_busy_ms": 47.349759999999996,
-      "server_busy_ms": 2.425900020170957,
+      "server_busy_ms": 1.576900016516447,
       "bottleneck_stage": "tx"
     }
   },
@@ -1812,32 +1812,32 @@
         "branch1x1_conv",
         "branch7x7_1_conv",
         "branch7x7dbl_1_conv",
-        "branch_pool_bn"
+        "branch_pool_conv"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.2947998475283384,
+          "d_ms": 0.9263998363167048,
           "t_ms": 17.75616,
-          "s_ms": 0.09789998875930905,
+          "s_ms": 0.1425000373274088,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 1.113999867811799,
+          "d_ms": 0.8071998599916697,
           "t_ms": 14.796800000000001,
-          "s_ms": 1.004299963824451,
+          "s_ms": 0.5631999811157584,
           "cut_index": 0,
           "cut_node": "branch7x7_1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
-          "d_ms": 1.0447998065501451,
+          "d_ms": 0.7116000633686781,
           "t_ms": 14.796800000000001,
-          "s_ms": 1.2639000196941197,
+          "s_ms": 1.430200005415827,
           "cut_index": 0,
           "cut_node": "branch7x7dbl_1_conv",
           "cloud_only": false
@@ -1846,9 +1846,9 @@
           "branch_id": 3,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.563700043130666,
-          "cut_index": 2,
-          "cut_node": "branch_pool_bn",
+          "s_ms": 0.48370001604780555,
+          "cut_index": 1,
+          "cut_node": "branch_pool_conv",
           "cloud_only": true
         }
       ],
@@ -1870,13 +1870,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 4.239997360855341e-05
+          "moved_suffix_server_cost": 8.58000130392611e-05
         }
       ],
-      "final_latency_ms": 50.47215991035312,
-      "device_busy_ms": 3.4535995218902826,
+      "final_latency_ms": 50.190059857780334,
+      "device_busy_ms": 2.4451997596770525,
       "tx_busy_ms": 47.349759999999996,
-      "server_busy_ms": 2.9298000154085457,
+      "server_busy_ms": 2.6196000399068,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -1884,54 +1884,54 @@
       "raw_vector": [
         0,
         0,
-        1,
+        11,
         0
       ],
       "repaired_vector": [
         0,
         0,
-        1,
+        11,
         0
       ],
       "cut_nodes": [
         "branch1x1_conv",
         "branch7x7_1_conv",
-        "branch7x7dbl_3_bn",
+        "relu_7",
         "avg_pool2d"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.2947998475283384,
+          "d_ms": 0.9263998363167048,
           "t_ms": 17.75616,
-          "s_ms": 0.09789998875930905,
+          "s_ms": 0.1425000373274088,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 1.113999867811799,
+          "d_ms": 0.8071998599916697,
           "t_ms": 14.796800000000001,
-          "s_ms": 1.004299963824451,
+          "s_ms": 0.5631999811157584,
           "cut_index": 0,
           "cut_node": "branch7x7_1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
-          "d_ms": 3.5867998376488686,
+          "d_ms": 5.067600170150399,
           "t_ms": 14.796800000000001,
-          "s_ms": 0.6284000119194388,
-          "cut_index": 7,
-          "cut_node": "branch7x7dbl_3_bn",
+          "s_ms": 0.34119997872039676,
+          "cut_index": 11,
+          "cut_node": "relu_7",
           "cloud_only": false
         },
         {
           "branch_id": 3,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.563700043130666,
+          "s_ms": 0.48370001604780555,
           "cut_index": 0,
           "cut_node": "avg_pool2d",
           "cloud_only": true
@@ -1955,13 +1955,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 4.239997360855341e-05
+          "moved_suffix_server_cost": 8.58000130392611e-05
         }
       ],
-      "final_latency_ms": 49.83665990257844,
-      "device_busy_ms": 5.995599552989006,
+      "final_latency_ms": 49.1010598310849,
+      "device_busy_ms": 6.801199866458774,
       "tx_busy_ms": 47.349759999999996,
-      "server_busy_ms": 2.294300007633865,
+      "server_busy_ms": 1.5306000132113695,
       "bottleneck_stage": "tx"
     }
   },
@@ -1987,32 +1987,32 @@
         "branch1x1_conv",
         "branch7x7_1_conv",
         "branch7x7dbl_1_conv",
-        "branch_pool_bn"
+        "branch_pool_conv"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.01200002245605,
+          "d_ms": 0.8592000231146812,
           "t_ms": 17.75616,
-          "s_ms": 0.09480002336204052,
+          "s_ms": 0.16039999900385737,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 0.9191997814923525,
+          "d_ms": 0.7744000758975744,
           "t_ms": 17.75616,
-          "s_ms": 1.0297999251633883,
+          "s_ms": 0.7063999655656517,
           "cut_index": 0,
           "cut_node": "branch7x7_1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
-          "d_ms": 1.3211998157203197,
+          "d_ms": 0.8223999757319689,
           "t_ms": 17.75616,
-          "s_ms": 1.9886999507434666,
+          "s_ms": 1.711999881081283,
           "cut_index": 0,
           "cut_node": "branch7x7dbl_1_conv",
           "cloud_only": false
@@ -2021,9 +2021,9 @@
           "branch_id": 3,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.6105999345891178,
-          "cut_index": 2,
-          "cut_node": "branch_pool_bn",
+          "s_ms": 0.6616000318899751,
+          "cut_index": 1,
+          "cut_node": "branch_pool_conv",
           "cloud_only": true
         }
       ],
@@ -2045,13 +2045,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 4.75000124424696e-05
+          "moved_suffix_server_cost": 0.00010740000288933516
         }
       ],
-      "final_latency_ms": 56.87977990778863,
-      "device_busy_ms": 3.252399619668722,
+      "final_latency_ms": 56.501279936085936,
+      "device_busy_ms": 2.4560000747442245,
       "tx_busy_ms": 53.26848,
-      "server_busy_ms": 3.723899833858013,
+      "server_busy_ms": 3.240399877540767,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -2059,13 +2059,13 @@
       "raw_vector": [
         0,
         0,
-        2,
+        14,
         0
       ],
       "repaired_vector": [
         0,
         0,
-        2,
+        14,
         0
       ],
       "cut_nodes": [
@@ -2077,25 +2077,25 @@
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.01200002245605,
+          "d_ms": 0.8592000231146812,
           "t_ms": 17.75616,
-          "s_ms": 0.09480002336204052,
+          "s_ms": 0.16039999900385737,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 0.9191997814923525,
+          "d_ms": 0.7744000758975744,
           "t_ms": 17.75616,
-          "s_ms": 1.0297999251633883,
+          "s_ms": 0.7063999655656517,
           "cut_index": 0,
           "cut_node": "branch7x7_1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
-          "d_ms": 9.275999618694186,
+          "d_ms": 7.670399500057101,
           "t_ms": 17.75616,
           "s_ms": 0.0,
           "cut_index": 14,
@@ -2106,7 +2106,7 @@
           "branch_id": 3,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.6105999345891178,
+          "s_ms": 0.6616000318899751,
           "cut_index": 0,
           "cut_node": "avg_pool2d",
           "cloud_only": true
@@ -2130,13 +2130,13 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 4.75000124424696e-05
+          "moved_suffix_server_cost": 0.00010740000288933516
         }
       ],
-      "final_latency_ms": 54.891079957045164,
-      "device_busy_ms": 11.207199422642589,
+      "final_latency_ms": 54.78928005500465,
+      "device_busy_ms": 9.303999599069357,
       "tx_busy_ms": 53.26848,
-      "server_busy_ms": 1.7351998831145465,
+      "server_busy_ms": 1.528399996459484,
       "bottleneck_stage": "tx"
     }
   },
@@ -2147,97 +2147,44 @@
     "decc_style": {
       "status": "evaluated",
       "raw_vector": [
-        2,
-        2,
+        3,
+        9,
         0
       ],
       "repaired_vector": [
-        2,
-        2,
+        3,
+        9,
         0
       ],
       "cut_nodes": [
-        "relu_1",
-        "relu_5",
+        "branch3x3_2_conv",
+        "branch7x7x3_4_conv",
         "max_pool2d"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 2.6759998872876167,
+          "d_ms": 2.373599912971258,
           "t_ms": 6.553599999999999,
-          "s_ms": 0.0,
-          "cut_index": 5,
-          "cut_node": "relu_1",
+          "s_ms": 0.1265999162569642,
+          "cut_index": 3,
+          "cut_node": "branch3x3_2_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 7.973599713295698,
+          "d_ms": 8.210800122469664,
           "t_ms": 3.9321599999999997,
-          "s_ms": 0.0,
-          "cut_index": 11,
-          "cut_node": "relu_5",
-          "cloud_only": false
-        },
-        {
-          "branch_id": 2,
-          "d_ms": 1.2104001361876726,
-          "t_ms": 15.728639999999999,
-          "s_ms": 0.053800002206116915,
-          "cut_index": 0,
-          "cut_node": "max_pool2d",
-          "cloud_only": false
-        }
-      ],
-      "aggregation_events": [],
-      "final_latency_ms": 30.36419960278943,
-      "device_busy_ms": 11.859999736770988,
-      "tx_busy_ms": 26.214399999999998,
-      "server_busy_ms": 0.053800002206116915,
-      "bottleneck_stage": "tx"
-    },
-    "global": {
-      "status": "evaluated",
-      "raw_vector": [
-        0,
-        2,
-        0
-      ],
-      "repaired_vector": [
-        0,
-        2,
-        0
-      ],
-      "cut_nodes": [
-        "branch3x3_1_conv",
-        "relu_5",
-        "max_pool2d"
-      ],
-      "effective_costs": [
-        {
-          "branch_id": 0,
-          "d_ms": 1.0924001690000296,
-          "t_ms": 17.75616,
-          "s_ms": 0.4496999317780137,
-          "cut_index": 0,
-          "cut_node": "branch3x3_1_conv",
-          "cloud_only": false
-        },
-        {
-          "branch_id": 1,
-          "d_ms": 7.973599713295698,
-          "t_ms": 3.9321599999999997,
-          "s_ms": 0.0,
-          "cut_index": 11,
-          "cut_node": "relu_5",
+          "s_ms": 0.07419998291879892,
+          "cut_index": 9,
+          "cut_node": "branch7x7x3_4_conv",
           "cloud_only": false
         },
         {
           "branch_id": 2,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.30260003404691815,
+          "s_ms": 0.1697000116109848,
           "cut_index": 0,
           "cut_node": "max_pool2d",
           "cloud_only": true
@@ -2261,14 +2208,87 @@
           "moved_nodes": [
             "cat"
           ],
-          "moved_suffix_server_cost": 5.3800002206116915e-05
+          "moved_suffix_server_cost": 6.399996345862746e-05
         }
       ],
-      "final_latency_ms": 23.08332020304695,
-      "device_busy_ms": 9.065999882295728,
-      "tx_busy_ms": 21.68832,
-      "server_busy_ms": 0.7522999658249319,
-      "bottleneck_stage": "tx"
+      "final_latency_ms": 14.760460029970705,
+      "device_busy_ms": 10.584400035440922,
+      "tx_busy_ms": 10.48576,
+      "server_busy_ms": 0.37049991078674793,
+      "bottleneck_stage": "device"
+    },
+    "global": {
+      "status": "evaluated",
+      "raw_vector": [
+        3,
+        9,
+        0
+      ],
+      "repaired_vector": [
+        3,
+        9,
+        0
+      ],
+      "cut_nodes": [
+        "branch3x3_2_conv",
+        "branch7x7x3_4_conv",
+        "max_pool2d"
+      ],
+      "effective_costs": [
+        {
+          "branch_id": 0,
+          "d_ms": 2.373599912971258,
+          "t_ms": 6.553599999999999,
+          "s_ms": 0.1265999162569642,
+          "cut_index": 3,
+          "cut_node": "branch3x3_2_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 1,
+          "d_ms": 8.210800122469664,
+          "t_ms": 3.9321599999999997,
+          "s_ms": 0.07419998291879892,
+          "cut_index": 9,
+          "cut_node": "branch7x7x3_4_conv",
+          "cloud_only": false
+        },
+        {
+          "branch_id": 2,
+          "d_ms": 0.0,
+          "t_ms": 0.0,
+          "s_ms": 0.1697000116109848,
+          "cut_index": 0,
+          "cut_node": "max_pool2d",
+          "cloud_only": true
+        }
+      ],
+      "aggregation_events": [
+        {
+          "event_type": "case1_full_cloud",
+          "from_branch": 0,
+          "from_node": "relu_1",
+          "to_branch": 2,
+          "to_node": "cat",
+          "reason": "dependency_source_already_cloud"
+        },
+        {
+          "event_type": "case2_suffix_merge",
+          "from_branch": 0,
+          "from_node": "relu_1",
+          "to_branch": 2,
+          "to_node": "cat",
+          "moved_nodes": [
+            "cat"
+          ],
+          "moved_suffix_server_cost": 6.399996345862746e-05
+        }
+      ],
+      "final_latency_ms": 14.760460029970705,
+      "device_busy_ms": 10.584400035440922,
+      "tx_busy_ms": 10.48576,
+      "server_busy_ms": 0.37049991078674793,
+      "bottleneck_stage": "device"
     }
   },
   {
@@ -2299,23 +2319,23 @@
         "branch3x3_2b_conv",
         "branch3x3dbl_1_conv",
         "branch3x3dbl_3b_conv",
-        "branch_pool_bn"
+        "branch_pool_conv"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.0740000288933516,
+          "d_ms": 0.9459999855607748,
           "t_ms": 6.553599999999999,
-          "s_ms": 0.09510002564638853,
+          "s_ms": 0.17539993859827518,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 1.1788001284003258,
+          "d_ms": 0.994799891486764,
           "t_ms": 7.864319999999999,
-          "s_ms": 0.6948999362066388,
+          "s_ms": 0.691200140863657,
           "cut_index": 0,
           "cut_node": "branch3x3_1_conv",
           "cloud_only": false
@@ -2331,9 +2351,9 @@
         },
         {
           "branch_id": 3,
-          "d_ms": 1.2892000377178192,
+          "d_ms": 1.3303998857736588,
           "t_ms": 9.175040000000001,
-          "s_ms": 1.3248001341708004,
+          "s_ms": 1.3090000138618052,
           "cut_index": 0,
           "cut_node": "branch3x3dbl_1_conv",
           "cloud_only": false
@@ -2351,9 +2371,9 @@
           "branch_id": 5,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.33570005325600505,
-          "cut_index": 2,
-          "cut_node": "branch_pool_bn",
+          "s_ms": 0.2787999692372978,
+          "cut_index": 1,
+          "cut_node": "branch_pool_conv",
           "cloud_only": true
         }
       ],
@@ -2394,7 +2414,7 @@
             "relu_3",
             "cat"
           ],
-          "moved_suffix_server_cost": 0.0003179999766871333
+          "moved_suffix_server_cost": 0.000287500093691051
         },
         {
           "event_type": "case2_suffix_merge",
@@ -2408,7 +2428,7 @@
             "relu_7",
             "cat_1"
           ],
-          "moved_suffix_server_cost": 0.00031970004783943295
+          "moved_suffix_server_cost": 0.0003136000013910234
         },
         {
           "event_type": "case2_suffix_merge",
@@ -2419,13 +2439,13 @@
           "moved_nodes": [
             "cat_2"
           ],
-          "moved_suffix_server_cost": 4.050001734867692e-05
+          "moved_suffix_server_cost": 4.7600013203918934e-05
         }
       ],
-      "final_latency_ms": 26.327460216320155,
-      "device_busy_ms": 3.5420001950114965,
+      "final_latency_ms": 26.126759968659876,
+      "device_busy_ms": 3.2711997628211975,
       "tx_busy_ms": 23.592959999999998,
-      "server_busy_ms": 2.450500149279833,
+      "server_busy_ms": 2.454400062561035,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -2434,7 +2454,7 @@
         0,
         0,
         0,
-        1,
+        7,
         0,
         0
       ],
@@ -2442,7 +2462,7 @@
         0,
         0,
         0,
-        1,
+        7,
         0,
         0
       ],
@@ -2450,25 +2470,25 @@
         "branch1x1_conv",
         "branch3x3_1_conv",
         "branch3x3_2b_conv",
-        "branch3x3dbl_2_bn",
+        "branch3x3dbl_3a_bn",
         "branch3x3dbl_3b_conv",
         "avg_pool2d"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.0740000288933516,
+          "d_ms": 0.9459999855607748,
           "t_ms": 6.553599999999999,
-          "s_ms": 0.09510002564638853,
+          "s_ms": 0.17539993859827518,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 1.1788001284003258,
+          "d_ms": 0.994799891486764,
           "t_ms": 7.864319999999999,
-          "s_ms": 0.6948999362066388,
+          "s_ms": 0.691200140863657,
           "cut_index": 0,
           "cut_node": "branch3x3_1_conv",
           "cloud_only": false
@@ -2484,18 +2504,18 @@
         },
         {
           "branch_id": 3,
-          "d_ms": 4.036400001496077,
+          "d_ms": 5.226799985393882,
           "t_ms": 7.864319999999999,
-          "s_ms": 0.6380001432262361,
-          "cut_index": 4,
-          "cut_node": "branch3x3dbl_2_bn",
+          "s_ms": 0.051099981646984816,
+          "cut_index": 7,
+          "cut_node": "branch3x3dbl_3a_bn",
           "cloud_only": false
         },
         {
           "branch_id": 4,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.0,
+          "s_ms": 0.2838000073097646,
           "cut_index": 0,
           "cut_node": "branch3x3dbl_3b_conv",
           "cloud_only": true
@@ -2504,7 +2524,7 @@
           "branch_id": 5,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.33570005325600505,
+          "s_ms": 0.2787999692372978,
           "cut_index": 0,
           "cut_node": "avg_pool2d",
           "cloud_only": true
@@ -2522,9 +2542,9 @@
         {
           "event_type": "case1_full_cloud",
           "from_branch": 3,
-          "from_node": "relu_5",
+          "from_node": "relu_6",
           "to_branch": 4,
-          "to_node": "branch3x3dbl_3b_conv",
+          "to_node": "cat_1",
           "reason": "dependency_source_already_cloud"
         },
         {
@@ -2547,21 +2567,18 @@
             "relu_3",
             "cat"
           ],
-          "moved_suffix_server_cost": 0.0003179999766871333
+          "moved_suffix_server_cost": 0.000287500093691051
         },
         {
           "event_type": "case2_suffix_merge",
           "from_branch": 3,
-          "from_node": "relu_5",
+          "from_node": "relu_6",
           "to_branch": 4,
-          "to_node": "branch3x3dbl_3b_conv",
+          "to_node": "cat_1",
           "moved_nodes": [
-            "branch3x3dbl_3b_conv",
-            "branch3x3dbl_3b_bn",
-            "relu_7",
             "cat_1"
           ],
-          "moved_suffix_server_cost": 0.00031970004783943295
+          "moved_suffix_server_cost": 2.9799994081258774e-05
         },
         {
           "event_type": "case2_suffix_merge",
@@ -2572,13 +2589,13 @@
           "moved_nodes": [
             "cat_2"
           ],
-          "moved_suffix_server_cost": 4.050001734867692e-05
+          "moved_suffix_server_cost": 4.7600013203918934e-05
         }
       ],
-      "final_latency_ms": 24.32994022537559,
-      "device_busy_ms": 6.289200158789754,
+      "final_latency_ms": 23.84193994375482,
+      "device_busy_ms": 7.1675998624414206,
       "tx_busy_ms": 22.282239999999998,
-      "server_busy_ms": 1.7637001583352685,
+      "server_busy_ms": 1.4803000376559794,
       "bottleneck_stage": "tx"
     }
   },
@@ -2610,23 +2627,23 @@
         "branch3x3_2b_conv",
         "branch3x3dbl_1_conv",
         "branch3x3dbl_3b_conv",
-        "branch_pool_bn"
+        "branch_pool_conv"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.6852000262588263,
+          "d_ms": 1.2147999368607998,
           "t_ms": 6.553599999999999,
-          "s_ms": 0.09790004696696997,
+          "s_ms": 0.17849996220320463,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 1.8155998550355434,
+          "d_ms": 2.0928001031279564,
           "t_ms": 7.864319999999999,
-          "s_ms": 0.8056999649852514,
+          "s_ms": 0.9626999963074923,
           "cut_index": 0,
           "cut_node": "branch3x3_1_conv",
           "cloud_only": false
@@ -2642,9 +2659,9 @@
         },
         {
           "branch_id": 3,
-          "d_ms": 2.0828000269830227,
+          "d_ms": 1.9968000706285238,
           "t_ms": 9.175040000000001,
-          "s_ms": 1.5076000709086657,
+          "s_ms": 1.5058000572025776,
           "cut_index": 0,
           "cut_node": "branch3x3dbl_1_conv",
           "cloud_only": false
@@ -2662,9 +2679,9 @@
           "branch_id": 5,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.4843000788241625,
-          "cut_index": 2,
-          "cut_node": "branch_pool_bn",
+          "s_ms": 0.4797999281436205,
+          "cut_index": 1,
+          "cut_node": "branch_pool_conv",
           "cloud_only": true
         }
       ],
@@ -2705,7 +2722,7 @@
             "relu_3",
             "cat"
           ],
-          "moved_suffix_server_cost": 0.0003847999614663422
+          "moved_suffix_server_cost": 0.00042939995182678103
         },
         {
           "event_type": "case2_suffix_merge",
@@ -2719,7 +2736,7 @@
             "relu_7",
             "cat_1"
           ],
-          "moved_suffix_server_cost": 0.00036940001882612705
+          "moved_suffix_server_cost": 0.00035560003016144037
         },
         {
           "event_type": "case2_suffix_merge",
@@ -2730,13 +2747,13 @@
           "moved_nodes": [
             "cat_2"
           ],
-          "moved_suffix_server_cost": 3.7999998312443495e-05
+          "moved_suffix_server_cost": 4.9399968702346087e-05
         }
       ],
-      "final_latency_ms": 27.270060175991656,
-      "device_busy_ms": 5.583599908277392,
+      "final_latency_ms": 26.793359922207,
+      "device_busy_ms": 5.30440011061728,
       "tx_busy_ms": 23.592959999999998,
-      "server_busy_ms": 2.8955001616850495,
+      "server_busy_ms": 3.126799943856895,
       "bottleneck_stage": "tx"
     },
     "global": {
@@ -2745,7 +2762,7 @@
         0,
         0,
         0,
-        1,
+        7,
         0,
         0
       ],
@@ -2753,7 +2770,7 @@
         0,
         0,
         0,
-        1,
+        7,
         0,
         0
       ],
@@ -2761,25 +2778,25 @@
         "branch1x1_conv",
         "branch3x3_1_conv",
         "branch3x3_2b_conv",
-        "branch3x3dbl_2_bn",
+        "branch3x3dbl_3a_bn",
         "branch3x3dbl_3b_conv",
         "avg_pool2d"
       ],
       "effective_costs": [
         {
           "branch_id": 0,
-          "d_ms": 1.6852000262588263,
+          "d_ms": 1.2147999368607998,
           "t_ms": 6.553599999999999,
-          "s_ms": 0.09790004696696997,
+          "s_ms": 0.17849996220320463,
           "cut_index": 0,
           "cut_node": "branch1x1_conv",
           "cloud_only": false
         },
         {
           "branch_id": 1,
-          "d_ms": 1.8155998550355434,
+          "d_ms": 2.0928001031279564,
           "t_ms": 7.864319999999999,
-          "s_ms": 0.8056999649852514,
+          "s_ms": 0.9626999963074923,
           "cut_index": 0,
           "cut_node": "branch3x3_1_conv",
           "cloud_only": false
@@ -2795,18 +2812,18 @@
         },
         {
           "branch_id": 3,
-          "d_ms": 5.140800029039383,
+          "d_ms": 6.534800166264176,
           "t_ms": 7.864319999999999,
-          "s_ms": 0.7431000703945756,
-          "cut_index": 4,
-          "cut_node": "branch3x3dbl_2_bn",
+          "s_ms": 0.06280001252889633,
+          "cut_index": 7,
+          "cut_node": "branch3x3dbl_3a_bn",
           "cloud_only": false
         },
         {
           "branch_id": 4,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.0,
+          "s_ms": 0.3085000207647681,
           "cut_index": 0,
           "cut_node": "branch3x3dbl_3b_conv",
           "cloud_only": true
@@ -2815,7 +2832,7 @@
           "branch_id": 5,
           "d_ms": 0.0,
           "t_ms": 0.0,
-          "s_ms": 0.4843000788241625,
+          "s_ms": 0.4797999281436205,
           "cut_index": 0,
           "cut_node": "avg_pool2d",
           "cloud_only": true
@@ -2833,9 +2850,9 @@
         {
           "event_type": "case1_full_cloud",
           "from_branch": 3,
-          "from_node": "relu_5",
+          "from_node": "relu_6",
           "to_branch": 4,
-          "to_node": "branch3x3dbl_3b_conv",
+          "to_node": "cat_1",
           "reason": "dependency_source_already_cloud"
         },
         {
@@ -2858,21 +2875,18 @@
             "relu_3",
             "cat"
           ],
-          "moved_suffix_server_cost": 0.0003847999614663422
+          "moved_suffix_server_cost": 0.00042939995182678103
         },
         {
           "event_type": "case2_suffix_merge",
           "from_branch": 3,
-          "from_node": "relu_5",
+          "from_node": "relu_6",
           "to_branch": 4,
-          "to_node": "branch3x3dbl_3b_conv",
+          "to_node": "cat_1",
           "moved_nodes": [
-            "branch3x3dbl_3b_conv",
-            "branch3x3dbl_3b_bn",
-            "relu_7",
             "cat_1"
           ],
-          "moved_suffix_server_cost": 0.00036940001882612705
+          "moved_suffix_server_cost": 4.710000939667225e-05
         },
         {
           "event_type": "case2_suffix_merge",
@@ -2883,13 +2897,13 @@
           "moved_nodes": [
             "cat_2"
           ],
-          "moved_suffix_server_cost": 3.7999998312443495e-05
+          "moved_suffix_server_cost": 4.9399968702346087e-05
         }
       ],
-      "final_latency_ms": 25.194840175477566,
-      "device_busy_ms": 8.641599910333753,
+      "final_latency_ms": 24.348139898298086,
+      "device_busy_ms": 9.842400206252933,
       "tx_busy_ms": 22.282239999999998,
-      "server_busy_ms": 2.1310001611709595,
+      "server_busy_ms": 1.9922999199479818,
       "bottleneck_stage": "tx"
     }
   }

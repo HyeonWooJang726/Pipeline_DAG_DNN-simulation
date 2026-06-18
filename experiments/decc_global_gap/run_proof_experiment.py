@@ -21,22 +21,19 @@ SUMMARY_COLUMNS = [
     "block_id",
     "block_type",
     "branches",
-    "candidates_total",
+    "branch_lengths",
+    "per_branch_candidate_counts",
     "combination_count",
-    "global_solver",
-    "decc_style_latency_ms",
-    "global_latency_ms",
-    "optimality_gap_percent",
-    "relative_slowdown_vs_global_percent",
+    "existing_latency_ms",
+    "global_opt_latency_ms",
+    "absolute_gap_ms",
+    "loss_percent",
     "device_busy_ms",
     "tx_busy_ms",
     "server_busy_ms",
     "bottleneck_stage",
     "cost_model",
-    "input_source",
-    "graph_kind",
     "status",
-    "skip_reason",
 ]
 
 
@@ -135,32 +132,26 @@ def run_one_block(block, collected_entry, model_name: str, cfg):
         "block_id": block_id,
         "block_type": block_type,
         "branches": 0,
-        "candidates_total": 0,
+        "branch_lengths": "",
+        "per_branch_candidate_counts": "",
         "combination_count": 0,
-        "global_solver": "",
-        "decc_style_latency_ms": "",
-        "global_latency_ms": "",
-        "optimality_gap_percent": "",
-        "relative_slowdown_vs_global_percent": "",
+        "existing_latency_ms": "",
+        "global_opt_latency_ms": "",
+        "absolute_gap_ms": "",
+        "loss_percent": "",
         "device_busy_ms": "",
         "tx_busy_ms": "",
         "server_busy_ms": "",
         "bottleneck_stage": "",
         "cost_model": "",
-        "input_source": input_source,
-        "graph_kind": "",
         "status": "skipped",
-        "skip_reason": "",
     }
 
     try:
         if not inputs:
             raise RuntimeError("no_collected_block_inputs")
 
-        decomposition = decc_branch_decompose_v2(
-            block["module"],
-            max_candidates_per_branch=int(cfg["max_candidates_per_branch"]),
-        )
+        decomposition = decc_branch_decompose_v2(block["module"])
         branches = decomposition["branches"]
         if not branches:
             raise RuntimeError("no_fx_compute_branches")
@@ -185,43 +176,42 @@ def run_one_block(block, collected_entry, model_name: str, cfg):
             branches,
             cost_table,
             aggregation_fn,
-            max_combinations=int(cfg["max_bruteforce_combinations_per_block"]),
         )
 
-        candidates_total = sum(len(branch["candidates"]) for branch in branches)
+        branch_lengths = [len(branch["nodes"]) for branch in branches]
+        per_branch_candidate_counts = [len(branch["candidates"]) for branch in branches]
         combination_count = global_result["combination_count"]
         summary = dict(base_summary)
         summary.update({
             "branches": len(branches),
-            "candidates_total": candidates_total,
+            "branch_lengths": json.dumps(branch_lengths),
+            "per_branch_candidate_counts": json.dumps(per_branch_candidate_counts),
             "combination_count": combination_count,
-            "global_solver": global_result["global_solver"],
-            "decc_style_latency_ms": decc["latency_s"] * 1000.0,
+            "existing_latency_ms": decc["latency_s"] * 1000.0,
             "cost_model": profile["cost_model"],
-            "graph_kind": decomposition["graph_kind"],
         })
 
+        skip_reason = ""
         if global_result["status"] == "skipped":
+            skip_reason = global_result["skip_reason"]
             summary.update({
                 "status": "skipped",
-                "skip_reason": global_result["skip_reason"],
             })
         else:
             decc_latency = decc["latency_s"]
             global_latency = global_result["latency_s"]
-            gap = 0.0 if decc_latency <= 0.0 else (decc_latency - global_latency) / decc_latency * 100.0
-            slowdown = 0.0 if global_latency <= 0.0 else (decc_latency - global_latency) / global_latency * 100.0
+            absolute_gap_ms = (decc_latency - global_latency) * 1000.0
+            loss_percent = 0.0 if decc_latency <= 0.0 else (decc_latency - global_latency) / decc_latency * 100.0
             global_eval = global_result["latency_eval"]
             summary.update({
-                "global_latency_ms": global_latency * 1000.0,
-                "optimality_gap_percent": gap,
-                "relative_slowdown_vs_global_percent": slowdown,
+                "global_opt_latency_ms": global_latency * 1000.0,
+                "absolute_gap_ms": absolute_gap_ms,
+                "loss_percent": loss_percent,
                 "device_busy_ms": global_eval["device_busy"] * 1000.0,
                 "tx_busy_ms": global_eval["tx_busy"] * 1000.0,
                 "server_busy_ms": global_eval["server_busy"] * 1000.0,
                 "bottleneck_stage": global_eval["bottleneck_stage"],
                 "status": "evaluated",
-                "skip_reason": "",
             })
 
         return {
@@ -231,7 +221,7 @@ def run_one_block(block, collected_entry, model_name: str, cfg):
                 "block_id": block_id,
                 "block_type": block_type,
                 "status": summary["status"],
-                "skip_reason": summary["skip_reason"],
+                "skip_reason": skip_reason,
                 "input_count": len(inputs),
                 "profile_sample_count": profile["sample_count"],
                 "branches": branches,
@@ -279,7 +269,6 @@ def run_one_block(block, collected_entry, model_name: str, cfg):
 
     except Exception as exc:
         summary = dict(base_summary)
-        summary["skip_reason"] = str(exc)
         return {
             "summaries": summary,
             "block_results": {

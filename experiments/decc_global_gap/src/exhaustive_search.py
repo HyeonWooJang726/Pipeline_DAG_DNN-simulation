@@ -1,6 +1,6 @@
 import itertools
 import math
-from typing import Callable, Dict, List
+from typing import Callable, Dict, List, Optional
 
 from src.latency_eval_v2 import evaluate_pipeline_latency_v2
 
@@ -32,10 +32,10 @@ def select_global_exhaustive_v2(
     branches: List[Dict],
     cost_table: List[List[Dict]],
     aggregation_fn: Callable,
-    max_combinations: int,
+    max_combinations: Optional[int] = None,
 ) -> Dict:
     combinations = _combination_count(cost_table)
-    if combinations > max_combinations:
+    if max_combinations is not None and combinations > max_combinations:
         return {
             "status": "skipped",
             "skip_reason": "skipped_too_many_combinations",

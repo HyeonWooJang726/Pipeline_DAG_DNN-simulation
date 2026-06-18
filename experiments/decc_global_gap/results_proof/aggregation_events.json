@@ -39,7 +39,7 @@
           "add",
           "relu_1"
         ],
-        "moved_suffix_server_cost": 3.700004890561104e-05
+        "moved_suffix_server_cost": 3.260001540184021e-05
       }
     ],
     "global": [
@@ -61,7 +61,7 @@
           "add",
           "relu_1"
         ],
-        "moved_suffix_server_cost": 3.700004890561104e-05
+        "moved_suffix_server_cost": 3.260001540184021e-05
       }
     ]
   },
@@ -93,7 +93,7 @@
           "add",
           "relu_1"
         ],
-        "moved_suffix_server_cost": 6.290001329034567e-05
+        "moved_suffix_server_cost": 5.940004484727979e-05
       }
     ],
     "global": [
@@ -115,7 +115,7 @@
           "add",
           "relu_1"
         ],
-        "moved_suffix_server_cost": 6.290001329034567e-05
+        "moved_suffix_server_cost": 5.940004484727979e-05
       }
     ]
   },
@@ -147,7 +147,7 @@
           "add",
           "relu_1"
         ],
-        "moved_suffix_server_cost": 3.619998460635543e-05
+        "moved_suffix_server_cost": 3.600004129111767e-05
       }
     ],
     "global": [
@@ -169,7 +169,7 @@
           "add",
           "relu_1"
         ],
-        "moved_suffix_server_cost": 3.619998460635543e-05
+        "moved_suffix_server_cost": 3.600004129111767e-05
       }
     ]
   },
@@ -200,7 +200,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 4.5199994929134846e-05
+        "moved_suffix_server_cost": 5.4100004490464926e-05
       }
     ],
     "global": [
@@ -221,7 +221,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 4.5199994929134846e-05
+        "moved_suffix_server_cost": 5.4100004490464926e-05
       }
     ]
   },
@@ -246,7 +246,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 7.090001599863172e-05
+        "moved_suffix_server_cost": 7.570005254819989e-05
       }
     ],
     "global": [
@@ -267,7 +267,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 7.090001599863172e-05
+        "moved_suffix_server_cost": 7.570005254819989e-05
       }
     ]
   },
@@ -292,7 +292,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 5.319999763742089e-05
+        "moved_suffix_server_cost": 3.890000516548753e-05
       }
     ],
     "global": [
@@ -313,7 +313,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 5.319999763742089e-05
+        "moved_suffix_server_cost": 3.890000516548753e-05
       }
     ]
   },
@@ -338,7 +338,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 3.9300008211284876e-05
+        "moved_suffix_server_cost": 4.740001168102026e-05
       }
     ],
     "global": [
@@ -359,7 +359,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 3.9300008211284876e-05
+        "moved_suffix_server_cost": 4.740001168102026e-05
       }
     ]
   },
@@ -384,7 +384,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 3.99000127799809e-05
+        "moved_suffix_server_cost": 5.519995465874672e-05
       }
     ],
     "global": [
@@ -405,7 +405,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 3.99000127799809e-05
+        "moved_suffix_server_cost": 5.519995465874672e-05
       }
     ]
   },
@@ -430,7 +430,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 5.930004408583045e-05
+        "moved_suffix_server_cost": 8.089997572824359e-05
       }
     ],
     "global": [
@@ -451,7 +451,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 5.930004408583045e-05
+        "moved_suffix_server_cost": 8.089997572824359e-05
       }
     ]
   },
@@ -476,7 +476,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 4.239997360855341e-05
+        "moved_suffix_server_cost": 8.58000130392611e-05
       }
     ],
     "global": [
@@ -497,7 +497,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 4.239997360855341e-05
+        "moved_suffix_server_cost": 8.58000130392611e-05
       }
     ]
   },
@@ -522,7 +522,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 4.75000124424696e-05
+        "moved_suffix_server_cost": 0.00010740000288933516
       }
     ],
     "global": [
@@ -543,14 +543,34 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 4.75000124424696e-05
+        "moved_suffix_server_cost": 0.00010740000288933516
       }
     ]
   },
   {
     "model": "inception_v3",
     "block_id": "Mixed_7a",
-    "decc_style": [],
+    "decc_style": [
+      {
+        "event_type": "case1_full_cloud",
+        "from_branch": 0,
+        "from_node": "relu_1",
+        "to_branch": 2,
+        "to_node": "cat",
+        "reason": "dependency_source_already_cloud"
+      },
+      {
+        "event_type": "case2_suffix_merge",
+        "from_branch": 0,
+        "from_node": "relu_1",
+        "to_branch": 2,
+        "to_node": "cat",
+        "moved_nodes": [
+          "cat"
+        ],
+        "moved_suffix_server_cost": 6.399996345862746e-05
+      }
+    ],
     "global": [
       {
         "event_type": "case1_full_cloud",
@@ -569,7 +589,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 5.3800002206116915e-05
+        "moved_suffix_server_cost": 6.399996345862746e-05
       }
     ]
   },
@@ -613,7 +633,7 @@
           "relu_3",
           "cat"
         ],
-        "moved_suffix_server_cost": 0.0003179999766871333
+        "moved_suffix_server_cost": 0.000287500093691051
       },
       {
         "event_type": "case2_suffix_merge",
@@ -627,7 +647,7 @@
           "relu_7",
           "cat_1"
         ],
-        "moved_suffix_server_cost": 0.00031970004783943295
+        "moved_suffix_server_cost": 0.0003136000013910234
       },
       {
         "event_type": "case2_suffix_merge",
@@ -638,7 +658,7 @@
         "moved_nodes": [
           "cat_2"
         ],
-        "moved_suffix_server_cost": 4.050001734867692e-05
+        "moved_suffix_server_cost": 4.7600013203918934e-05
       }
     ],
     "global": [
@@ -653,9 +673,9 @@
       {
         "event_type": "case1_full_cloud",
         "from_branch": 3,
-        "from_node": "relu_5",
+        "from_node": "relu_6",
         "to_branch": 4,
-        "to_node": "branch3x3dbl_3b_conv",
+        "to_node": "cat_1",
         "reason": "dependency_source_already_cloud"
       },
       {
@@ -678,21 +698,18 @@
           "relu_3",
           "cat"
         ],
-        "moved_suffix_server_cost": 0.0003179999766871333
+        "moved_suffix_server_cost": 0.000287500093691051
       },
       {
         "event_type": "case2_suffix_merge",
         "from_branch": 3,
-        "from_node": "relu_5",
+        "from_node": "relu_6",
         "to_branch": 4,
-        "to_node": "branch3x3dbl_3b_conv",
+        "to_node": "cat_1",
         "moved_nodes": [
-          "branch3x3dbl_3b_conv",
-          "branch3x3dbl_3b_bn",
-          "relu_7",
           "cat_1"
         ],
-        "moved_suffix_server_cost": 0.00031970004783943295
+        "moved_suffix_server_cost": 2.9799994081258774e-05
       },
       {
         "event_type": "case2_suffix_merge",
@@ -703,7 +720,7 @@
         "moved_nodes": [
           "cat_2"
         ],
-        "moved_suffix_server_cost": 4.050001734867692e-05
+        "moved_suffix_server_cost": 4.7600013203918934e-05
       }
     ]
   },
@@ -747,7 +764,7 @@
           "relu_3",
           "cat"
         ],
-        "moved_suffix_server_cost": 0.0003847999614663422
+        "moved_suffix_server_cost": 0.00042939995182678103
       },
       {
         "event_type": "case2_suffix_merge",
@@ -761,7 +778,7 @@
           "relu_7",
           "cat_1"
         ],
-        "moved_suffix_server_cost": 0.00036940001882612705
+        "moved_suffix_server_cost": 0.00035560003016144037
       },
       {
         "event_type": "case2_suffix_merge",
@@ -772,7 +789,7 @@
         "moved_nodes": [
           "cat_2"
         ],
-        "moved_suffix_server_cost": 3.7999998312443495e-05
+        "moved_suffix_server_cost": 4.9399968702346087e-05
       }
     ],
     "global": [
@@ -787,9 +804,9 @@
       {
         "event_type": "case1_full_cloud",
         "from_branch": 3,
-        "from_node": "relu_5",
+        "from_node": "relu_6",
         "to_branch": 4,
-        "to_node": "branch3x3dbl_3b_conv",
+        "to_node": "cat_1",
         "reason": "dependency_source_already_cloud"
       },
       {
@@ -812,21 +829,18 @@
           "relu_3",
           "cat"
         ],
-        "moved_suffix_server_cost": 0.0003847999614663422
+        "moved_suffix_server_cost": 0.00042939995182678103
       },
       {
         "event_type": "case2_suffix_merge",
         "from_branch": 3,
-        "from_node": "relu_5",
+        "from_node": "relu_6",
         "to_branch": 4,
-        "to_node": "branch3x3dbl_3b_conv",
+        "to_node": "cat_1",
         "moved_nodes": [
-          "branch3x3dbl_3b_conv",
-          "branch3x3dbl_3b_bn",
-          "relu_7",
           "cat_1"
         ],
-        "moved_suffix_server_cost": 0.00036940001882612705
+        "moved_suffix_server_cost": 4.710000939667225e-05
       },
       {
         "event_type": "case2_suffix_merge",
@@ -837,7 +851,7 @@
         "moved_nodes": [
           "cat_2"
         ],
-        "moved_suffix_server_cost": 3.7999998312443495e-05
+        "moved_suffix_server_cost": 4.9399968702346087e-05
       }
     ]
   }
