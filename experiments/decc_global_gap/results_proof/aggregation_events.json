@@ -39,7 +39,7 @@
           "add",
           "relu_1"
         ],
-        "moved_suffix_server_cost": 3.260001540184021e-05
+        "moved_suffix_server_cost": 3.683201037347317e-05
       }
     ],
     "global": [
@@ -61,7 +61,7 @@
           "add",
           "relu_1"
         ],
-        "moved_suffix_server_cost": 3.260001540184021e-05
+        "moved_suffix_server_cost": 3.683201037347317e-05
       }
     ]
   },
@@ -93,7 +93,7 @@
           "add",
           "relu_1"
         ],
-        "moved_suffix_server_cost": 5.940004484727979e-05
+        "moved_suffix_server_cost": 4.091600188985467e-05
       }
     ],
     "global": [
@@ -115,7 +115,7 @@
           "add",
           "relu_1"
         ],
-        "moved_suffix_server_cost": 5.940004484727979e-05
+        "moved_suffix_server_cost": 4.091600188985467e-05
       }
     ]
   },
@@ -147,7 +147,7 @@
           "add",
           "relu_1"
         ],
-        "moved_suffix_server_cost": 3.600004129111767e-05
+        "moved_suffix_server_cost": 4.115200601518154e-05
       }
     ],
     "global": [
@@ -169,7 +169,7 @@
           "add",
           "relu_1"
         ],
-        "moved_suffix_server_cost": 3.600004129111767e-05
+        "moved_suffix_server_cost": 4.115200601518154e-05
       }
     ]
   },
@@ -200,7 +200,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 5.4100004490464926e-05
+        "moved_suffix_server_cost": 4.785999655723572e-05
       }
     ],
     "global": [
@@ -221,7 +221,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 5.4100004490464926e-05
+        "moved_suffix_server_cost": 4.785999655723572e-05
       }
     ]
   },
@@ -246,7 +246,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 7.570005254819989e-05
+        "moved_suffix_server_cost": 5.63680031336844e-05
       }
     ],
     "global": [
@@ -267,7 +267,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 7.570005254819989e-05
+        "moved_suffix_server_cost": 5.63680031336844e-05
       }
     ]
   },
@@ -292,7 +292,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 3.890000516548753e-05
+        "moved_suffix_server_cost": 5.7204002514481546e-05
       }
     ],
     "global": [
@@ -313,7 +313,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 3.890000516548753e-05
+        "moved_suffix_server_cost": 5.7204002514481546e-05
       }
     ]
   },
@@ -338,7 +338,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 4.740001168102026e-05
+        "moved_suffix_server_cost": 4.757200600579381e-05
       }
     ],
     "global": [
@@ -359,7 +359,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 4.740001168102026e-05
+        "moved_suffix_server_cost": 4.757200600579381e-05
       }
     ]
   },
@@ -384,7 +384,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 5.519995465874672e-05
+        "moved_suffix_server_cost": 4.1244004387408494e-05
       }
     ],
     "global": [
@@ -405,7 +405,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 5.519995465874672e-05
+        "moved_suffix_server_cost": 4.1244004387408494e-05
       }
     ]
   },
@@ -430,7 +430,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 8.089997572824359e-05
+        "moved_suffix_server_cost": 4.802800249308348e-05
       }
     ],
     "global": [
@@ -451,7 +451,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 8.089997572824359e-05
+        "moved_suffix_server_cost": 4.802800249308348e-05
       }
     ]
   },
@@ -476,7 +476,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 8.58000130392611e-05
+        "moved_suffix_server_cost": 4.5012005139142274e-05
       }
     ],
     "global": [
@@ -497,7 +497,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 8.58000130392611e-05
+        "moved_suffix_server_cost": 4.5012005139142274e-05
       }
     ]
   },
@@ -522,7 +522,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 0.00010740000288933516
+        "moved_suffix_server_cost": 4.076399840414524e-05
       }
     ],
     "global": [
@@ -543,7 +543,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 0.00010740000288933516
+        "moved_suffix_server_cost": 4.076399840414524e-05
       }
     ]
   },
@@ -568,7 +568,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 6.399996345862746e-05
+        "moved_suffix_server_cost": 3.772399621084332e-05
       }
     ],
     "global": [
@@ -589,7 +589,7 @@
         "moved_nodes": [
           "cat"
         ],
-        "moved_suffix_server_cost": 6.399996345862746e-05
+        "moved_suffix_server_cost": 3.772399621084332e-05
       }
     ]
   },
@@ -633,7 +633,7 @@
           "relu_3",
           "cat"
         ],
-        "moved_suffix_server_cost": 0.000287500093691051
+        "moved_suffix_server_cost": 0.0004596520075574517
       },
       {
         "event_type": "case2_suffix_merge",
@@ -647,7 +647,7 @@
           "relu_7",
           "cat_1"
         ],
-        "moved_suffix_server_cost": 0.0003136000013910234
+        "moved_suffix_server_cost": 0.00043271999806165695
       },
       {
         "event_type": "case2_suffix_merge",
@@ -658,7 +658,7 @@
         "moved_nodes": [
           "cat_2"
         ],
-        "moved_suffix_server_cost": 4.7600013203918934e-05
+        "moved_suffix_server_cost": 4.602799890562892e-05
       }
     ],
     "global": [
@@ -698,7 +698,7 @@
           "relu_3",
           "cat"
         ],
-        "moved_suffix_server_cost": 0.000287500093691051
+        "moved_suffix_server_cost": 0.0004596520075574517
       },
       {
         "event_type": "case2_suffix_merge",
@@ -709,7 +709,7 @@
         "moved_nodes": [
           "cat_1"
         ],
-        "moved_suffix_server_cost": 2.9799994081258774e-05
+        "moved_suffix_server_cost": 2.9028002172708513e-05
       },
       {
         "event_type": "case2_suffix_merge",
@@ -720,7 +720,7 @@
         "moved_nodes": [
           "cat_2"
         ],
-        "moved_suffix_server_cost": 4.7600013203918934e-05
+        "moved_suffix_server_cost": 4.602799890562892e-05
       }
     ]
   },
@@ -764,7 +764,7 @@
           "relu_3",
           "cat"
         ],
-        "moved_suffix_server_cost": 0.00042939995182678103
+        "moved_suffix_server_cost": 0.0003680720063857734
       },
       {
         "event_type": "case2_suffix_merge",
@@ -778,7 +778,7 @@
           "relu_7",
           "cat_1"
         ],
-        "moved_suffix_server_cost": 0.00035560003016144037
+        "moved_suffix_server_cost": 0.00037720800610259176
       },
       {
         "event_type": "case2_suffix_merge",
@@ -789,7 +789,7 @@
         "moved_nodes": [
           "cat_2"
         ],
-        "moved_suffix_server_cost": 4.9399968702346087e-05
+        "moved_suffix_server_cost": 3.759200219064951e-05
       }
     ],
     "global": [
@@ -829,7 +829,7 @@
           "relu_3",
           "cat"
         ],
-        "moved_suffix_server_cost": 0.00042939995182678103
+        "moved_suffix_server_cost": 0.0003680720063857734
       },
       {
         "event_type": "case2_suffix_merge",
@@ -840,7 +840,7 @@
         "moved_nodes": [
           "cat_1"
         ],
-        "moved_suffix_server_cost": 4.710000939667225e-05
+        "moved_suffix_server_cost": 2.5239996612071992e-05
       },
       {
         "event_type": "case2_suffix_merge",
@@ -851,7 +851,7 @@
         "moved_nodes": [
           "cat_2"
         ],
-        "moved_suffix_server_cost": 4.9399968702346087e-05
+        "moved_suffix_server_cost": 3.759200219064951e-05
       }
     ]
   }

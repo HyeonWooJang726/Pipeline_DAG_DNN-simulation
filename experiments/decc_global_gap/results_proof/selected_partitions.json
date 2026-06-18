@@ -544,12 +544,12 @@
     ],
     "global_raw_vector": [
       3,
-      9,
+      11,
       0
     ],
     "global_vector": [
       3,
-      9,
+      11,
       0
     ],
     "decc_style_cut_nodes": [
@@ -559,7 +559,7 @@
     ],
     "global_cut_nodes": [
       "branch3x3_2_conv",
-      "branch7x7x3_4_conv",
+      "relu_5",
       "max_pool2d"
     ]
   },
