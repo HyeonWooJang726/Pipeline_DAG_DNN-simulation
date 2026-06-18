@@ -6,6 +6,9 @@ mobile_latency_scale: 4.0
 server_latency_scale: 1.0
 require_real_cifar10: false
 download_cifar10: true
+profile_max_samples: 5
+profile_repeat: 5
+profile_warmup: 1
 results_dir: results_proof_1000mbps
 
 models:

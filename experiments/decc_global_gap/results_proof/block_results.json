@@ -6,7 +6,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -525,7 +528,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "resnet18",
@@ -534,7 +537,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -733,7 +739,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "resnet18",
@@ -742,7 +748,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -941,7 +950,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "resnet18",
@@ -950,7 +959,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -1239,7 +1251,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "resnet18",
@@ -1248,7 +1260,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -1447,7 +1462,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "resnet18",
@@ -1456,7 +1471,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -1745,7 +1763,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "resnet18",
@@ -1754,7 +1772,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -1953,7 +1974,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "resnet18",
@@ -1962,7 +1983,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -2251,7 +2275,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "resnet18",
@@ -2260,7 +2284,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -2459,7 +2486,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "inception_v3",
@@ -2468,7 +2495,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -2901,7 +2931,7 @@
       {
         "name": "relu",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 3,
         "predecessors": [
           "branch1x1_bn"
@@ -2937,7 +2967,7 @@
       {
         "name": "relu_1",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 6,
         "predecessors": [
           "branch5x5_1_bn"
@@ -2973,7 +3003,7 @@
       {
         "name": "relu_2",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 9,
         "predecessors": [
           "branch5x5_2_bn"
@@ -3009,7 +3039,7 @@
       {
         "name": "relu_3",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 12,
         "predecessors": [
           "branch3x3dbl_1_bn"
@@ -3045,7 +3075,7 @@
       {
         "name": "relu_4",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 15,
         "predecessors": [
           "branch3x3dbl_2_bn"
@@ -3081,7 +3111,7 @@
       {
         "name": "relu_5",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 18,
         "predecessors": [
           "branch3x3dbl_3_bn"
@@ -3129,7 +3159,7 @@
       {
         "name": "relu_6",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 22,
         "predecessors": [
           "branch_pool_bn"
@@ -3141,7 +3171,7 @@
       {
         "name": "cat",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 23,
         "predecessors": [
           "relu",
@@ -3164,7 +3194,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "inception_v3",
@@ -3173,7 +3203,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -3606,7 +3639,7 @@
       {
         "name": "relu",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 3,
         "predecessors": [
           "branch1x1_bn"
@@ -3642,7 +3675,7 @@
       {
         "name": "relu_1",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 6,
         "predecessors": [
           "branch5x5_1_bn"
@@ -3678,7 +3711,7 @@
       {
         "name": "relu_2",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 9,
         "predecessors": [
           "branch5x5_2_bn"
@@ -3714,7 +3747,7 @@
       {
         "name": "relu_3",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 12,
         "predecessors": [
           "branch3x3dbl_1_bn"
@@ -3750,7 +3783,7 @@
       {
         "name": "relu_4",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 15,
         "predecessors": [
           "branch3x3dbl_2_bn"
@@ -3786,7 +3819,7 @@
       {
         "name": "relu_5",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 18,
         "predecessors": [
           "branch3x3dbl_3_bn"
@@ -3834,7 +3867,7 @@
       {
         "name": "relu_6",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 22,
         "predecessors": [
           "branch_pool_bn"
@@ -3846,7 +3879,7 @@
       {
         "name": "cat",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 23,
         "predecessors": [
           "relu",
@@ -3869,7 +3902,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "inception_v3",
@@ -3878,7 +3911,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -4311,7 +4347,7 @@
       {
         "name": "relu",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 3,
         "predecessors": [
           "branch1x1_bn"
@@ -4347,7 +4383,7 @@
       {
         "name": "relu_1",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 6,
         "predecessors": [
           "branch5x5_1_bn"
@@ -4383,7 +4419,7 @@
       {
         "name": "relu_2",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 9,
         "predecessors": [
           "branch5x5_2_bn"
@@ -4419,7 +4455,7 @@
       {
         "name": "relu_3",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 12,
         "predecessors": [
           "branch3x3dbl_1_bn"
@@ -4455,7 +4491,7 @@
       {
         "name": "relu_4",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 15,
         "predecessors": [
           "branch3x3dbl_2_bn"
@@ -4491,7 +4527,7 @@
       {
         "name": "relu_5",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 18,
         "predecessors": [
           "branch3x3dbl_3_bn"
@@ -4539,7 +4575,7 @@
       {
         "name": "relu_6",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 22,
         "predecessors": [
           "branch_pool_bn"
@@ -4551,7 +4587,7 @@
       {
         "name": "cat",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 23,
         "predecessors": [
           "relu",
@@ -4574,7 +4610,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "inception_v3",
@@ -4583,7 +4619,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -4875,7 +4914,7 @@
       {
         "name": "relu",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 3,
         "predecessors": [
           "branch3x3_bn"
@@ -4911,7 +4950,7 @@
       {
         "name": "relu_1",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 6,
         "predecessors": [
           "branch3x3dbl_1_bn"
@@ -4947,7 +4986,7 @@
       {
         "name": "relu_2",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 9,
         "predecessors": [
           "branch3x3dbl_2_bn"
@@ -4983,7 +5022,7 @@
       {
         "name": "relu_3",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 12,
         "predecessors": [
           "branch3x3dbl_3_bn"
@@ -4995,7 +5034,7 @@
       {
         "name": "max_pool2d",
         "op": "call_function",
-        "target": "<function boolean_dispatch.<locals>.fn at 0x000001F0B9E65760>",
+        "target": "<function boolean_dispatch.<locals>.fn at 0x0000023702458900>",
         "index": 13,
         "predecessors": [
           "x"
@@ -5007,7 +5046,7 @@
       {
         "name": "cat",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 14,
         "predecessors": [
           "relu",
@@ -5029,7 +5068,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "inception_v3",
@@ -5038,7 +5077,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -5570,7 +5612,7 @@
       {
         "name": "relu",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 3,
         "predecessors": [
           "branch1x1_bn"
@@ -5606,7 +5648,7 @@
       {
         "name": "relu_1",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 6,
         "predecessors": [
           "branch7x7_1_bn"
@@ -5642,7 +5684,7 @@
       {
         "name": "relu_2",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 9,
         "predecessors": [
           "branch7x7_2_bn"
@@ -5678,7 +5720,7 @@
       {
         "name": "relu_3",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 12,
         "predecessors": [
           "branch7x7_3_bn"
@@ -5714,7 +5756,7 @@
       {
         "name": "relu_4",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 15,
         "predecessors": [
           "branch7x7dbl_1_bn"
@@ -5750,7 +5792,7 @@
       {
         "name": "relu_5",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 18,
         "predecessors": [
           "branch7x7dbl_2_bn"
@@ -5786,7 +5828,7 @@
       {
         "name": "relu_6",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 21,
         "predecessors": [
           "branch7x7dbl_3_bn"
@@ -5822,7 +5864,7 @@
       {
         "name": "relu_7",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 24,
         "predecessors": [
           "branch7x7dbl_4_bn"
@@ -5858,7 +5900,7 @@
       {
         "name": "relu_8",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 27,
         "predecessors": [
           "branch7x7dbl_5_bn"
@@ -5906,7 +5948,7 @@
       {
         "name": "relu_9",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 31,
         "predecessors": [
           "branch_pool_bn"
@@ -5918,7 +5960,7 @@
       {
         "name": "cat",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 32,
         "predecessors": [
           "relu",
@@ -5941,7 +5983,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "inception_v3",
@@ -5950,7 +5992,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -6482,7 +6527,7 @@
       {
         "name": "relu",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 3,
         "predecessors": [
           "branch1x1_bn"
@@ -6518,7 +6563,7 @@
       {
         "name": "relu_1",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 6,
         "predecessors": [
           "branch7x7_1_bn"
@@ -6554,7 +6599,7 @@
       {
         "name": "relu_2",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 9,
         "predecessors": [
           "branch7x7_2_bn"
@@ -6590,7 +6635,7 @@
       {
         "name": "relu_3",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 12,
         "predecessors": [
           "branch7x7_3_bn"
@@ -6626,7 +6671,7 @@
       {
         "name": "relu_4",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 15,
         "predecessors": [
           "branch7x7dbl_1_bn"
@@ -6662,7 +6707,7 @@
       {
         "name": "relu_5",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 18,
         "predecessors": [
           "branch7x7dbl_2_bn"
@@ -6698,7 +6743,7 @@
       {
         "name": "relu_6",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 21,
         "predecessors": [
           "branch7x7dbl_3_bn"
@@ -6734,7 +6779,7 @@
       {
         "name": "relu_7",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 24,
         "predecessors": [
           "branch7x7dbl_4_bn"
@@ -6770,7 +6815,7 @@
       {
         "name": "relu_8",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 27,
         "predecessors": [
           "branch7x7dbl_5_bn"
@@ -6818,7 +6863,7 @@
       {
         "name": "relu_9",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 31,
         "predecessors": [
           "branch_pool_bn"
@@ -6830,7 +6875,7 @@
       {
         "name": "cat",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 32,
         "predecessors": [
           "relu",
@@ -6853,7 +6898,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "inception_v3",
@@ -6862,7 +6907,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -7394,7 +7442,7 @@
       {
         "name": "relu",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 3,
         "predecessors": [
           "branch1x1_bn"
@@ -7430,7 +7478,7 @@
       {
         "name": "relu_1",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 6,
         "predecessors": [
           "branch7x7_1_bn"
@@ -7466,7 +7514,7 @@
       {
         "name": "relu_2",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 9,
         "predecessors": [
           "branch7x7_2_bn"
@@ -7502,7 +7550,7 @@
       {
         "name": "relu_3",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 12,
         "predecessors": [
           "branch7x7_3_bn"
@@ -7538,7 +7586,7 @@
       {
         "name": "relu_4",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 15,
         "predecessors": [
           "branch7x7dbl_1_bn"
@@ -7574,7 +7622,7 @@
       {
         "name": "relu_5",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 18,
         "predecessors": [
           "branch7x7dbl_2_bn"
@@ -7610,7 +7658,7 @@
       {
         "name": "relu_6",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 21,
         "predecessors": [
           "branch7x7dbl_3_bn"
@@ -7646,7 +7694,7 @@
       {
         "name": "relu_7",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 24,
         "predecessors": [
           "branch7x7dbl_4_bn"
@@ -7682,7 +7730,7 @@
       {
         "name": "relu_8",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 27,
         "predecessors": [
           "branch7x7dbl_5_bn"
@@ -7730,7 +7778,7 @@
       {
         "name": "relu_9",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 31,
         "predecessors": [
           "branch_pool_bn"
@@ -7742,7 +7790,7 @@
       {
         "name": "cat",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 32,
         "predecessors": [
           "relu",
@@ -7765,7 +7813,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "inception_v3",
@@ -7774,7 +7822,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -8306,7 +8357,7 @@
       {
         "name": "relu",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 3,
         "predecessors": [
           "branch1x1_bn"
@@ -8342,7 +8393,7 @@
       {
         "name": "relu_1",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 6,
         "predecessors": [
           "branch7x7_1_bn"
@@ -8378,7 +8429,7 @@
       {
         "name": "relu_2",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 9,
         "predecessors": [
           "branch7x7_2_bn"
@@ -8414,7 +8465,7 @@
       {
         "name": "relu_3",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 12,
         "predecessors": [
           "branch7x7_3_bn"
@@ -8450,7 +8501,7 @@
       {
         "name": "relu_4",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 15,
         "predecessors": [
           "branch7x7dbl_1_bn"
@@ -8486,7 +8537,7 @@
       {
         "name": "relu_5",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 18,
         "predecessors": [
           "branch7x7dbl_2_bn"
@@ -8522,7 +8573,7 @@
       {
         "name": "relu_6",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 21,
         "predecessors": [
           "branch7x7dbl_3_bn"
@@ -8558,7 +8609,7 @@
       {
         "name": "relu_7",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 24,
         "predecessors": [
           "branch7x7dbl_4_bn"
@@ -8594,7 +8645,7 @@
       {
         "name": "relu_8",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 27,
         "predecessors": [
           "branch7x7dbl_5_bn"
@@ -8642,7 +8693,7 @@
       {
         "name": "relu_9",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 31,
         "predecessors": [
           "branch_pool_bn"
@@ -8654,7 +8705,7 @@
       {
         "name": "cat",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 32,
         "predecessors": [
           "relu",
@@ -8677,7 +8728,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "inception_v3",
@@ -8686,7 +8737,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -9044,7 +9098,7 @@
       {
         "name": "relu",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 3,
         "predecessors": [
           "branch3x3_1_bn"
@@ -9080,7 +9134,7 @@
       {
         "name": "relu_1",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 6,
         "predecessors": [
           "branch3x3_2_bn"
@@ -9116,7 +9170,7 @@
       {
         "name": "relu_2",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 9,
         "predecessors": [
           "branch7x7x3_1_bn"
@@ -9152,7 +9206,7 @@
       {
         "name": "relu_3",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 12,
         "predecessors": [
           "branch7x7x3_2_bn"
@@ -9188,7 +9242,7 @@
       {
         "name": "relu_4",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 15,
         "predecessors": [
           "branch7x7x3_3_bn"
@@ -9224,7 +9278,7 @@
       {
         "name": "relu_5",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 18,
         "predecessors": [
           "branch7x7x3_4_bn"
@@ -9236,7 +9290,7 @@
       {
         "name": "max_pool2d",
         "op": "call_function",
-        "target": "<function boolean_dispatch.<locals>.fn at 0x000001F0B9E65760>",
+        "target": "<function boolean_dispatch.<locals>.fn at 0x0000023702458900>",
         "index": 19,
         "predecessors": [
           "x"
@@ -9248,7 +9302,7 @@
       {
         "name": "cat",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 20,
         "predecessors": [
           "relu_1",
@@ -9270,7 +9324,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "inception_v3",
@@ -9279,7 +9333,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -9940,7 +9997,7 @@
       {
         "name": "relu",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 3,
         "predecessors": [
           "branch1x1_bn"
@@ -9976,7 +10033,7 @@
       {
         "name": "relu_1",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 6,
         "predecessors": [
           "branch3x3_1_bn"
@@ -10013,7 +10070,7 @@
       {
         "name": "relu_2",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 9,
         "predecessors": [
           "branch3x3_2a_bn"
@@ -10049,7 +10106,7 @@
       {
         "name": "relu_3",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 12,
         "predecessors": [
           "branch3x3_2b_bn"
@@ -10061,7 +10118,7 @@
       {
         "name": "cat",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 13,
         "predecessors": [
           "relu_2",
@@ -10098,7 +10155,7 @@
       {
         "name": "relu_4",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 16,
         "predecessors": [
           "branch3x3dbl_1_bn"
@@ -10134,7 +10191,7 @@
       {
         "name": "relu_5",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 19,
         "predecessors": [
           "branch3x3dbl_2_bn"
@@ -10171,7 +10228,7 @@
       {
         "name": "relu_6",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 22,
         "predecessors": [
           "branch3x3dbl_3a_bn"
@@ -10207,7 +10264,7 @@
       {
         "name": "relu_7",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 25,
         "predecessors": [
           "branch3x3dbl_3b_bn"
@@ -10219,7 +10276,7 @@
       {
         "name": "cat_1",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 26,
         "predecessors": [
           "relu_6",
@@ -10268,7 +10325,7 @@
       {
         "name": "relu_8",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 30,
         "predecessors": [
           "branch_pool_bn"
@@ -10280,7 +10337,7 @@
       {
         "name": "cat_2",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 31,
         "predecessors": [
           "relu",
@@ -10303,7 +10360,7 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   },
   {
     "model": "inception_v3",
@@ -10312,7 +10369,10 @@
     "status": "evaluated",
     "skip_reason": "",
     "input_count": 8,
-    "profile_sample_count": 1,
+    "profile_sample_count": 5,
+    "profile_repeat": 5,
+    "profile_warmup": 1,
+    "profile_measurement_count": 25,
     "branches": [
       {
         "branch_id": 0,
@@ -10973,7 +11033,7 @@
       {
         "name": "relu",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 3,
         "predecessors": [
           "branch1x1_bn"
@@ -11009,7 +11069,7 @@
       {
         "name": "relu_1",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 6,
         "predecessors": [
           "branch3x3_1_bn"
@@ -11046,7 +11106,7 @@
       {
         "name": "relu_2",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 9,
         "predecessors": [
           "branch3x3_2a_bn"
@@ -11082,7 +11142,7 @@
       {
         "name": "relu_3",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 12,
         "predecessors": [
           "branch3x3_2b_bn"
@@ -11094,7 +11154,7 @@
       {
         "name": "cat",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 13,
         "predecessors": [
           "relu_2",
@@ -11131,7 +11191,7 @@
       {
         "name": "relu_4",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 16,
         "predecessors": [
           "branch3x3dbl_1_bn"
@@ -11167,7 +11227,7 @@
       {
         "name": "relu_5",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 19,
         "predecessors": [
           "branch3x3dbl_2_bn"
@@ -11204,7 +11264,7 @@
       {
         "name": "relu_6",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 22,
         "predecessors": [
           "branch3x3dbl_3a_bn"
@@ -11240,7 +11300,7 @@
       {
         "name": "relu_7",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 25,
         "predecessors": [
           "branch3x3dbl_3b_bn"
@@ -11252,7 +11312,7 @@
       {
         "name": "cat_1",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 26,
         "predecessors": [
           "relu_6",
@@ -11301,7 +11361,7 @@
       {
         "name": "relu_8",
         "op": "call_function",
-        "target": "<function relu at 0x000001F0B9E66AC0>",
+        "target": "<function relu at 0x0000023702459C60>",
         "index": 30,
         "predecessors": [
           "branch_pool_bn"
@@ -11313,7 +11373,7 @@
       {
         "name": "cat_2",
         "op": "call_function",
-        "target": "<built-in method cat of type object at 0x00007FFC4DE9ADE0>",
+        "target": "<built-in method cat of type object at 0x00007FF8B3A7ADE0>",
         "index": 31,
         "predecessors": [
           "relu",
@@ -11336,6 +11396,6 @@
         "users": []
       }
     ],
-    "cost_model": "fx_node_measured_proxy"
+    "cost_model": "fx_node_measured_proxy_repeat_avg"
   }
 ]

@@ -54,7 +54,6 @@ SLIDE_COLUMNS = [
     "global_opt_latency_ms",
     "absolute_reduction_ms",
     "reduction_percent_vs_existing",
-    "bottleneck_stage",
     "status",
 ]
 

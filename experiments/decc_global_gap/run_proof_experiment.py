@@ -172,7 +172,13 @@ def run_one_block(block, collected_entry, model_name: str, cfg, run_input_source
         if not branches:
             raise RuntimeError("no_fx_compute_branches")
 
-        profile = profile_block_fx_nodes(block["module"], inputs, max_samples=1)
+        profile = profile_block_fx_nodes(
+            block["module"],
+            inputs,
+            max_samples=int(cfg.get("profile_max_samples", 5)),
+            profile_repeat=int(cfg.get("profile_repeat", 5)),
+            warmup=int(cfg.get("profile_warmup", 1)),
+        )
         cost_table = build_cost_table_v2(
             branches=branches,
             profile=profile,
@@ -240,6 +246,9 @@ def run_one_block(block, collected_entry, model_name: str, cfg, run_input_source
                 "skip_reason": skip_reason,
                 "input_count": len(inputs),
                 "profile_sample_count": profile["sample_count"],
+                "profile_repeat": profile["profile_repeat"],
+                "profile_warmup": profile["warmup"],
+                "profile_measurement_count": profile["measurement_count"],
                 "branches": branches,
                 "dependencies": decomposition["dependencies"],
                 "branching_events": decomposition["branching_events"],

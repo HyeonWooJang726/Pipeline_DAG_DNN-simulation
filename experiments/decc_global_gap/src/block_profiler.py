@@ -6,13 +6,21 @@ import torch
 
 
 @torch.no_grad()
-def profile_block_fx_nodes(block_module, block_inputs: Iterable, max_samples: int = 1) -> Dict:
+def profile_block_fx_nodes(
+    block_module,
+    block_inputs: Iterable,
+    max_samples: int = 5,
+    profile_repeat: int = 5,
+    warmup: int = 1,
+) -> Dict:
     """Measure FX node costs for a block using real collected block inputs."""
     from torch.fx import Interpreter, symbolic_trace
 
     inputs = list(block_inputs)[:max(1, max_samples)]
     if not inputs:
         raise ValueError("Cannot profile a block without collected block inputs")
+    profile_repeat = max(1, int(profile_repeat))
+    warmup = max(0, int(warmup))
 
     block_module.eval()
     traced = symbolic_trace(block_module)
@@ -35,21 +43,28 @@ def profile_block_fx_nodes(block_module, block_inputs: Iterable, max_samples: in
                 )
             return result
 
-    # One untimed run avoids measuring lazy module setup where it exists.
-    warmup = TimingInterpreter(traced)
-    _run_interpreter(warmup, inputs[0])
+    for _ in range(warmup):
+        warmup_runner = TimingInterpreter(traced)
+        for block_input in inputs:
+            _run_interpreter(warmup_runner, block_input)
 
     runner = TimingInterpreter(traced)
     for block_input in inputs:
-        _run_interpreter(runner, block_input)
+        for _ in range(profile_repeat):
+            _run_interpreter(runner, block_input)
 
-    count = max(1, len(inputs))
+    measurement_count = len(inputs) * profile_repeat
     return {
-        "latency_by_node": {name: value / count for name, value in runner.timings.items()},
+        "latency_by_node": {
+            name: value / measurement_count for name, value in runner.timings.items()
+        },
         "activation_bytes_by_node": dict(runner.activation_bytes),
         "input_bytes": _tensor_nbytes(inputs[0]),
-        "sample_count": count,
-        "cost_model": "fx_node_measured_proxy",
+        "sample_count": len(inputs),
+        "profile_repeat": profile_repeat,
+        "warmup": warmup,
+        "measurement_count": measurement_count,
+        "cost_model": "fx_node_measured_proxy_repeat_avg",
     }
 
 
