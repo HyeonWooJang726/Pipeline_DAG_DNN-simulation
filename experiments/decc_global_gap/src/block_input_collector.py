@@ -4,6 +4,7 @@ from typing import Dict, Iterable, List, Tuple
 import torch
 from torch.utils.data import DataLoader, TensorDataset
 from torchvision import datasets, transforms
+from torchvision.utils import save_image
 
 
 def make_proof_loader(
@@ -13,6 +14,7 @@ def make_proof_loader(
     seed: int,
     cifar10_root: str,
     require_real_cifar10: bool = False,
+    download_cifar10: bool = True,
 ) -> Tuple[DataLoader, str]:
     """Load CIFAR10 if present, otherwise use deterministic random fallback."""
     tf = transforms.Compose([
@@ -21,7 +23,12 @@ def make_proof_loader(
     ])
 
     try:
-        ds = datasets.CIFAR10(root=cifar10_root, train=False, download=False, transform=tf)
+        ds = datasets.CIFAR10(
+            root=cifar10_root,
+            train=False,
+            download=download_cifar10,
+            transform=tf,
+        )
         subset = list(islice(ds, num_images))
         if len(subset) < num_images:
             raise RuntimeError(f"CIFAR10 only yielded {len(subset)} images")
@@ -37,6 +44,19 @@ def make_proof_loader(
     ys = torch.zeros(len(xs), dtype=torch.long)
     loader = DataLoader(TensorDataset(xs, ys), batch_size=batch_size, shuffle=False)
     return loader, input_source
+
+
+def save_input_sample_grid(loader: DataLoader, out_path: str, input_source: str, max_images: int = 16) -> None:
+    """Save a grid of the exact input tensors used by the proof loader."""
+    dataset = getattr(loader, "dataset", None)
+    tensors = getattr(dataset, "tensors", None)
+    if not tensors:
+        raise RuntimeError("proof loader does not expose tensor samples")
+
+    xs = tensors[0][:max_images].detach().cpu()
+    out_path = str(out_path)
+    normalize = input_source == "random_fallback"
+    save_image(xs, out_path, nrow=min(4, len(xs)), normalize=normalize)
 
 
 @torch.no_grad()

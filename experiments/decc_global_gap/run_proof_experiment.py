@@ -8,7 +8,11 @@ import yaml
 
 from src.aggregation_v2 import apply_decc_aggregation_v2
 from src.block_extractor import extract_model_blocks
-from src.block_input_collector import collect_block_inputs, make_proof_loader
+from src.block_input_collector import (
+    collect_block_inputs,
+    make_proof_loader,
+    save_input_sample_grid,
+)
 from src.block_profiler import profile_block_fx_nodes
 from src.cost_table_v2 import build_cost_table_v2
 from src.decc_branching_v2 import decc_branch_decompose_v2
@@ -18,6 +22,7 @@ from src.model_loader import load_model
 
 SUMMARY_COLUMNS = [
     "model",
+    "input_source",
     "block_id",
     "block_type",
     "branches",
@@ -64,7 +69,7 @@ def main():
 
     for model_cfg in cfg["models"]:
         print(f"[RUN] {model_cfg['name']}")
-        outputs = run_one_model(model_cfg, cfg, experiment_dir)
+        outputs = run_one_model(model_cfg, cfg, experiment_dir, results_dir)
         summaries.extend(outputs["summaries"])
         block_results.extend(outputs["block_results"])
         selected_partitions.extend(outputs["selected_partitions"])
@@ -84,7 +89,7 @@ def main():
     print(summary_df)
 
 
-def run_one_model(model_cfg, cfg, experiment_dir: Path):
+def run_one_model(model_cfg, cfg, experiment_dir: Path, results_dir: Path):
     model_name = model_cfg["name"]
     input_size = int(model_cfg["input_size"])
     seed = int(cfg.get("seed", 0))
@@ -101,7 +106,11 @@ def run_one_model(model_cfg, cfg, experiment_dir: Path):
         seed=seed,
         cifar10_root=cifar10_root,
         require_real_cifar10=bool(cfg.get("require_real_cifar10", False)),
+        download_cifar10=bool(cfg.get("download_cifar10", True)),
     )
+    print(f"[INPUT] input_source={input_source}")
+    sample_grid_path = results_dir / "input_samples.png"
+    save_input_sample_grid(loader, sample_grid_path, input_source)
     collected = collect_block_inputs(model, blocks, loader, input_source)
 
     outputs = {
@@ -115,20 +124,27 @@ def run_one_model(model_cfg, cfg, experiment_dir: Path):
     }
 
     for block in blocks:
-        result = run_one_block(block, collected.get(block["block_id"], {}), model_name, cfg)
+        result = run_one_block(
+            block,
+            collected.get(block["block_id"], {}),
+            model_name,
+            cfg,
+            input_source,
+        )
         for key in outputs:
             outputs[key].append(result[key])
 
     return outputs
 
 
-def run_one_block(block, collected_entry, model_name: str, cfg):
+def run_one_block(block, collected_entry, model_name: str, cfg, run_input_source: str):
     block_id = block["block_id"]
     block_type = block["block_type"]
-    input_source = collected_entry.get("input_source", "unknown")
+    input_source = collected_entry.get("input_source", run_input_source)
     inputs = collected_entry.get("inputs", [])
     base_summary = {
         "model": model_name,
+        "input_source": input_source,
         "block_id": block_id,
         "block_type": block_type,
         "branches": 0,

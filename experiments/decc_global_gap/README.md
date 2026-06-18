@@ -45,7 +45,7 @@ Included:
 - DECC-style DFS branch decomposition
 - DECC-style dependency handling and aggregation hook
 - Profiling-based cost table instead of LEM
-- Fixed representative bandwidth
+- Fixed representative bandwidth per proof run
 - Fixed representative mobile/server speed setting
 - DECC-style vs global optimum comparison
 
@@ -68,19 +68,53 @@ cd experiments/decc_global_gap
 pip install -r requirements.txt
 ```
 
-## Run
+## Main Reported Proof Experiment
+
+The reported proof experiment uses `run_proof_experiment.py` and the v2 proof
+modules in `src/*_v2.py`.  It compares:
+
+- Existing / DECC-style branch-wise selection: each branch independently chooses
+  the candidate minimizing `d + t + s`.
+- Global exhaustive selection: all partition candidate vectors are searched and
+  the vector minimizing final pipeline latency is selected.
+
+Run the bandwidth comparison proof from this directory:
 
 ```bash
-python run_experiment.py --config configs/default.yaml
+cd experiments/decc_global_gap
+
+python run_proof_experiment.py --config configs/proof_100mbps.yaml
+python run_proof_experiment.py --config configs/proof_1000mbps.yaml
+python plot_bandwidth_latency_comparison.py
 ```
+
+The two bandwidth comparison configs evaluate InceptionV3 only, under fixed
+100 Mbps and 1000 Mbps conditions.
 
 ## Expected outputs
 
-Outputs are written to `results/`:
+The proof runs write per-bandwidth outputs to:
 
-- `summary.csv`: model-level latency and optimality gap
+- `results_proof_100mbps/`
+- `results_proof_1000mbps/`
+
+The bandwidth comparison script writes:
+
+- `results_bandwidth_comparison/figures/bandwidth_latency_comparison_ko.png`
+- `results_bandwidth_comparison/figures/bandwidth_latency_summary_ko.csv`
+
+Each proof results directory contains:
+
+- `summary.csv`: block-level final pipeline latency, optimality gap, and `input_source`
 - `selected_partitions.json`: selected candidate indices
 - `gantt_events.json`: timing events for plotting
+- `input_samples.png`: grid of the actual input tensors used by the proof loader
+
+## Legacy Prototype Flow
+
+`run_experiment.py` and the non-v2 modules are early prototype / legacy code.
+They are kept for reference, but they are not used for the reported proof
+experiment or the bandwidth comparison result above.
 
 ## Cost model note
 
@@ -92,6 +126,7 @@ node costs into branch prefix/suffix costs, and applies fixed latency scales:
 - `t_i^q`: profiled cut activation bytes divided by `bandwidth_mbps`
 - `s_i^q`: profiled branch suffix latency multiplied by `server_latency_scale`
 
-If CIFAR10 cannot be downloaded, the loader falls back to deterministic random
-inputs so the pipeline can still be smoke-tested.  Report that fallback if it is
-used for a final run.
+Set `download_cifar10: true` to allow the proof loader to download CIFAR10.
+If CIFAR10 cannot be loaded and `require_real_cifar10: false`, the loader falls
+back to deterministic random inputs and records `input_source=random_fallback`.
+If `require_real_cifar10: true`, the same CIFAR10 failure raises an error.
